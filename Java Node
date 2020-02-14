@@ -69,4 +69,12 @@
         c>  Math.floor(3.3) -> 3.0  比3.3小的最大整数
         d>  Math.round(5.5) -> 6.0  四舍五入
 
-11. day9_inherit....
+11. Inherit
+        a>  super.() 父类方法，子类没有重写
+
+
+12. Abstract
+        a>  abstract method only contain name, don't contains function.
+                public abstract void run()
+        b>  Abstract method must save in Abstract class.
+13.
