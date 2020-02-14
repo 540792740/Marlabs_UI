@@ -1,0 +1,27 @@
+1.  HTML: Hyper Text Markup Language
+    HTML5: HTML + CSS
+
+2.  Different between http and https:
+        a>  HTTP: Hyper Text Transfer Protocol
+
+        b>  HTTP    Unsecured; Port Number 80,  Operates at Application Layer
+            HTTPS   Secured;  Port Number 443, Operates at transport Layer
+        c>  HTTP:   No SSL certificates are required
+            HTTPS:  Required SSl Certificates
+        d>  HTTP:   No Encryption
+            HTTPS:  Encryption
+
+
+3.  Server: PC(xxx.com) -> Web Server
+    Client(Request): laptop(Chrome Browser)
+
+4.  Different between HTML and HTML5?
+        a> HTML5 is a version of HTML.
+
+5.  textBox: Not Resizable -> Single Line
+    textarea: Resizable -> Multi lines
+
+6.
+
+7.
+
