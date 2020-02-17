@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector</title>
+    <style>
+    /*  id选择器 '#', 最好是唯一的，优先级最高 */
+        #div1{color: red}
+
+    /*  元素选择器 优先级*/
+        div{color: green}
+
+    /*类选择器， 相同class*/
+        .p{color: black}
+
+    </style>
+
+    <style>
+        /*并集选择器*/
+        div,p{}
+
+        /*子选择器*/
+        div p{color: red;}
+
+        /*父选择器, 所有包含p的标签，有div 的标签会改变style*/
+        div > p{}
+    </style>
+
+    <style>
+        input[type='text']{
+            border: 5px solid;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="div1">
+        <p>Selector</p>
+    </div>
+    <p class="cls1"> class selector</p>
+    <input type="text" value="user">
+    <input type="password " value="password">
+
+</body>
+</html>

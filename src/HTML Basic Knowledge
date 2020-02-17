@@ -26,3 +26,17 @@
 7.  Different between Text_box and textarea?
         a>
 
+8. Selector:
+    a> Basic Selector:
+        1: #div1{color: red} -> id选择器
+        2: div{color: green} -> element selector
+        3: .p{color: black}  -> class selector
+    b>
+        1:  div,p{}
+        2:  div p{color: red;} -> 子选择器
+        3:  div > p{}父选择器
+    c>
+        input[type='text']{ border: 5px solid;}
+
+9. 06_12 css 属性。
+
