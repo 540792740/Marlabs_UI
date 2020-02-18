@@ -38,5 +38,36 @@
     c>
         input[type='text']{ border: 5px solid;}
 
-9. 06_12 css 属性。
+9. Css 属性:
+    a> font: line-height: 行高
+             border： 边框
+             text-align： 对齐方式
 
+10. 盒子模型：
+    a>  margin: 外边距
+    b>  padding: 外边距
+    c>  box-sizing: border-box; 盒子属性,最终大小不变
+    d>  float: left, right, center
+
+
+11. JavaScript:
+    a> <script src:"../js.html"></script>
+    b>  数据类型
+        1:  number      ->  int, float, NaN
+        2:  string      ->  "abc", 'abc'
+        3.  boolean     ->  true false
+        4.  null        ->
+        5.  undefined   ->
+    c> 变量
+        1.  String -> number:           type is number,  不能直接视为数字，进行加减会return NaN
+        2.  boolean -> number:          true: 1; false: 0
+        3.  number  -> boolean:         0 || Nan: true;    others: true;
+        4.  string  -> boolean:         空字符串: false;    other: true
+        5.  null&undefined -> boolean:
+        6.  object -> boolean:
+    d> 比较：
+        1.  “abc” > "acd"   ->  false
+        2.  '123' == 123    ->  true
+        3.  flag = true     ->  !flag : false
+
+    e>  三元运算： a > b ? 1 : 0
