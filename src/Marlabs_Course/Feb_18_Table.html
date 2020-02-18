@@ -43,21 +43,16 @@
         </p>
     </form>
 </dialog>
-
 <menu>
     <button  id="updateDetails" value="UpdateDetails">Update Details</button>
 </menu>
-
     <output> </output>
-
     <script>
-
         var updateButton = document.getElementById("updateDetails");
         var favDialog = document.getElementById("favDialog");
         var ouputBox = document.querySelector("output");
         var selectE1 = document.querySelector("select");
         var confirmBtn = document.getElementById("confirmBtn");
-
 
         updateButton.addEventListener('click', function onOpen(){
            if(typeof  favDialog.showModal == "function")
