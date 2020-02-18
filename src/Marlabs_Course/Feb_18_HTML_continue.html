@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function getvalue() {
+            var r = document.getElementsByTagName("input");
+            for (var i = 0; i < r.length - 1; i++) {
+                if (r[i].checked) {
+                    document.getElementById("result").innerHTML += (r[i].value + " ").toUpperCase();
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<!--ol contain order, ul does not contain order-->
+    <ol style= "list-style-type: lower-alpha; ">
+        <li>Jan</li>
+        <li>Feb</li>
+        <li>Mar</li>
+    </ol>
+
+<!--    <ol style="list-style-image: url(../../img/login_logo.png); width : 10px; height: 10px;">-->
+<!--        <li>Jan</li>-->
+<!--        <li>Feb</li>-->
+<!--        <li>Mar</li>-->
+<!--    </ol>-->
+<!--<br><br><br><br><br><br><br><br><br>-->
+
+
+<form action="">
+    Fruit:<br>
+    <input checked="true" name="fru" type="radio" value="Apple">Apple<br>
+    <input type="radio"   name="fru" value="Banana">Banana<br>
+    <input type="radio"   name="fru" value="Pineapple">Pineapple<br>
+    <input type="radio"   name="fru" value="Col">Col<br>
+
+    Drink:<br>
+    <input type="radio"   name="drink" value="coke">    coke    <br>
+    <input type="radio"   name="drink" value="pipes">   pipes   <br>
+    <input type="radio"   name="drink" value="Fanta">   Fanta   <br>
+    <input type="radio"   name="drink" value="Sprite">  Sprite  <br>
+</form>
+    <input type="submit" onclick="getvalue()" value="submit" >
+    <p id="result"></p>
+</body>
+</html>

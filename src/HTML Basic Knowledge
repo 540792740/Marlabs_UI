@@ -71,3 +71,7 @@
         3.  flag = true     ->  !flag : false
 
     e>  三元运算： a > b ? 1 : 0
+
+12. Log:
+    console.log()   -> backend show
+    document.write() -> Font show
