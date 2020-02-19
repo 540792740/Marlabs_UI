@@ -71,7 +71,20 @@
         3.  flag = true     ->  !flag : false
 
     e>  三元运算： a > b ? 1 : 0
+    f>  ===: equal value and equal type
+        !==: Not equal value or not equal type
+    g>  "use strict" -> the variable must be declare, cannot be deleted
+    h>
+    i>
+    j>
+    k>
+
+    
 
 12. Log:
     console.log()   -> backend show
     document.write() -> Font show
+
+13. BOM: Browser Object Model
+
+06.10
