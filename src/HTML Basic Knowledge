@@ -74,9 +74,12 @@
     f>  ===: equal value and equal type
         !==: Not equal value or not equal type
     g>  "use strict" -> the variable must be declare, cannot be deleted
-    h>
-    i>
-    j>
+
+    h>  Event: onload, Event happened after all page loaded.
+
+    i>   let is a keyword: {let x }
+            x cannot be used outside the block
+    j>  setInterval(function, 3000) -> 每隔3000ms运行一次function
     k>
 
     
@@ -89,4 +92,5 @@
 
 14. Picture tag: Different size of browser show different picture.
 
+15. <progress>  -> can show progress
 06.10
