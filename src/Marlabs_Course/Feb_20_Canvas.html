@@ -20,7 +20,14 @@
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var img = document.getElementById("scream");
-        ctx.drawImage(img, 0, 0, 800, 480, 0, 0, 310, 150);
+
+        var img2 = new Image();
+        img2.src="logo.jpg";
+        // img2.style.border = "Red";
+
+
+        ctx.drawImage(img, 0, 0, 800, 480, 0, 0, 31, 15);
+        ctx.drawImage(img2, 0, 0, 800, 480, 50, 50, 100, 100);
     }
 </script>
 </body>

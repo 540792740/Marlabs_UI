@@ -34,8 +34,10 @@
 
     // Assignment 8
     window.addEventListener('beforeunload', ev=>{
+        ev.preventDefault();
         alert("ss")
         ev.returnValue = "exit";
+        delete e['return']
     });
 </script>
 </body>
