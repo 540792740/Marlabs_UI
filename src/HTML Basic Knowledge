@@ -80,7 +80,10 @@
     i>   let is a keyword: {let x }
             x cannot be used outside the block
     j>  setInterval(function, 3000) -> 每隔3000ms运行一次function
-    k>
+
+    k>  async / await:
+            1>  In async function: await 接着then()
+            2>  resolve is a function. similar return. only in Promise.
 
     
 
