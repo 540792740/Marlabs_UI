@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Basic_Bootstapt/css/bootstrap.min.css">
+    <script src="../Basic_Bootstapt/jquery-3.2.1.min.js"></script>
+    <script src="../Basic_Bootstapt/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!--Assignment 8-->
+<p id="Date_time"></p>
+<input class="btn-success" onclick="start()" type="button" id="start" value="Start">
+<input class="btn-success" onclick="end()" type="button" id="end" value="End">
+<script>
+    var a = document.getElementById("Date_time");
+    function gettime(){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        a.innerHTML = h + " : " + m + " : " + s;
+    }
+    gettime();
+    function start() {
+        gettime();
+        time = setTimeout(function(){start()}, 1000);
+    }
+    function end() {clearTimeout(time);}
+</script>
+<!--Assignment 9-->
+
+
+</body>
+</html>
