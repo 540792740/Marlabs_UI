@@ -77,4 +77,5 @@
         a>  abstract method only contain name, don't contains function.
                 public abstract void run()
         b>  Abstract method must save in Abstract class.
-13.
+13. Interface
+        a>

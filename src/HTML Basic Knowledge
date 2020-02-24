@@ -96,4 +96,16 @@
 14. Picture tag: Different size of browser show different picture.
 
 15. <progress>  -> can show progress
+
+16. <input type="text" id="username" required pattern="[a-zA-Z0-9]{6,12}">
+
+17. Add notify:
+    $(#div).addEventListener('invalid', function(e){
+            if(input.validity.valueMissing){
+                e.target.setCustomValidity("Cannot be Empty");
+            }
+            else if(!input.validity.valid){
+                        e.target.setCustomValidity("doesnot satify the format")
+            });
+
 06.10
