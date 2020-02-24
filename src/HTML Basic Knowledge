@@ -100,7 +100,7 @@
 16. <input type="text" id="username" required pattern="[a-zA-Z0-9]{6,12}">
 
 17. Add notify:
-    $(#div).addEventListener('invalid', function(e){
+        document.getElementById("ss").addEventListener('invalid', function(e){
             if(input.validity.valueMissing){
                 e.target.setCustomValidity("Cannot be Empty");
             }
@@ -121,5 +121,11 @@
     and to resume execution of the async function after fulfillment.
     When resumed,
     the value of the await expression is that of the fulfilled Promise.
+
+20. JQuery
+        a>  jq -> js: Object jp[index],  or Object jq.get(index)
+            js -> jq: $(Object js)
+
+
 
 06.10
