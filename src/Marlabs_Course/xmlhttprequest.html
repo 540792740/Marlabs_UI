@@ -8,8 +8,7 @@
 <script>
 // read the image from server  --> get binary data + html
 
-    let url = "http://127.0.0.1:63342/UI/src/Marlabs_Course/P2.JPG?_ijt=94kjba2he5bt48kcps2pk9ort3";
-// src/Marlabs_Course/P2.JPG E:\Study Resource\UI\src\Marlabs_Course\P2.JPG
+    let url = "http://127.0.0.1:63342/UI/img/logo.jpg";
     const loadImage = url => {
         return new Promise(function(resolve, reject){
             var request = new XMLHttpRequest(); //Browser
@@ -28,7 +27,6 @@
     const embedImage = url=>{
         loadImage(url).then(function(result){
             const img = new Image();
-            img.src = imageUrl;
 
             var binaryData = [];
             binaryData.push(result);
@@ -39,7 +37,8 @@
             // a DOM File object.
 
             var imageUrl = window.URL.createObjectURL(new Blob(binaryData, {type:"image/jpg"}));
-            document.querySelector('body');
+            img.src = imageUrl;
+            document.querySelector('body').appendChild(img);
         },
             function(err){
             console.log(err);
