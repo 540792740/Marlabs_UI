@@ -8,13 +8,15 @@
 <script>
 // read the image from server  --> get binary data + html
 
-
+    let url = "http://127.0.0.1:63342/UI/src/Marlabs_Course/P2.JPG?_ijt=94kjba2he5bt48kcps2pk9ort3";
+// src/Marlabs_Course/P2.JPG E:\Study Resource\UI\src\Marlabs_Course\P2.JPG
     const loadImage = url => {
         return new Promise(function(resolve, reject){
             var request = new XMLHttpRequest(); //Browser
             request.open("GET", url, true);
             request.responseType = "arraybuffer";
-            request.onload = funtion(){
+
+            request.onload = function () {
                 if(request.status === 200){resolve(request.response)}
                 else{ // error happen
                     reject(Error("An error occured while loading the image: " + request.statusText));
@@ -26,16 +28,24 @@
     const embedImage = url=>{
         loadImage(url).then(function(result){
             const img = new Image();
-            var binaryData = [];
-            binartData.push(result);
-            var imageUrl = window.URL.createObjectURL(new Blob(binaryData, {type:"image/jpg"}));
             img.src = imageUrl;
-            document.querySelector('body').appendChild();
-        };
-        )
-    }
 
+            var binaryData = [];
+            binaryData.push(result);
+            img.viewport;
+            //The DOM URL.createObjectURL() and URL.revokeObjectURL() methods
+            // let you create simple URL strings that
+            // can be used to reference any data that can be referred to using
+            // a DOM File object.
 
+            var imageUrl = window.URL.createObjectURL(new Blob(binaryData, {type:"image/jpg"}));
+            document.querySelector('body');
+        },
+            function(err){
+            console.log(err);
+            });
+    };
+    embedImage(url);
 </script>
 </body>
 </html>
