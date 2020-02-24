@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// read the image from server  --> get binary data + html
+
+
+    const loadImage = url => {
+        return new Promise(function(resolve, reject){
+            var request = new XMLHttpRequest(); //Browser
+            request.open("GET", url, true);
+            request.responseType = "arraybuffer";
+            request.onload = funtion(){
+                if(request.status === 200){resolve(request.response)}
+                else{ // error happen
+                    reject(Error("An error occured while loading the image: " + request.statusText));
+                }
+            };
+            request.send();
+        });
+    };
+    const embedImage = url=>{
+        loadImage(url).then(function(result){
+            const img = new Image();
+            var binaryData = [];
+            binartData.push(result);
+            var imageUrl = window.URL.createObjectURL(new Blob(binaryData, {type:"image/jpg"}));
+            img.src = imageUrl;
+            document.querySelector('body').appendChild();
+        };
+        )
+    }
+
+
+</script>
+</body>
+</html>
