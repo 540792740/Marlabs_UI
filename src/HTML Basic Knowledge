@@ -108,4 +108,11 @@
                         e.target.setCustomValidity("doesnot satify the format")
             });
 
+18. AJAX:
+    a>  AJAX is not a programming language
+        is a technique for access web servers from a web page
+        stands for Asynchronous JS and XML..
+
+19. promise:  not immediately but eventually
+    resolve:
 06.10
