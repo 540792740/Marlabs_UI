@@ -28,8 +28,9 @@
 
         password.addEventListener("input", function (e) {
             let val = password.value;
+            var result = zxcvbn(val);
             if(val !== ""){
-                text.innerHTML = "Password strength is " + strength;
+                text.innerHTML = "Password strength is " + strength[result];
             }
         });
 
