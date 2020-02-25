@@ -130,4 +130,11 @@
                         $(function) can be excuted many times.
         c> Selector
 
+21. JSON: JavaScript Object Notation
+        a>  JSON is a lightweight data-interchge format
+                 is "self-describing" and easy to understand
+                 is language independent *
+         b> JSON using jS syntax but JSON format is text only. It can easily be sent to and from a server. And used as a data format by any programming language.
+
+
 06.10
