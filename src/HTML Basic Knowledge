@@ -125,7 +125,9 @@
 20. JQuery
         a>  jq -> js: Object jp[index],  or Object jq.get(index)
             js -> jq: $(Object js)
-
-
+        b>  $(function (){})  -> similar to  window.onload(){}
+            different: onload() -> 仅能用一次。
+                        $(function) can be excuted many times.
+        c> Selector
 
 06.10

@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <title>Event</title>
     <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        // window.onload = function() {
+        //     $("#b1").click(function () {
+        //         alert("abc");
+        //     });
+        // }
+
+        $(function () {
+            $("#b1").click(function () {
+                alert("abc");
+            });
+        })
+
+        $(function () {
+            $("#div1").css("background-color", "red")
+            $("#div1").css("backgroundColor", "yellow")
+        })
+
+    </script>
 
 </head>
 <body>
@@ -11,11 +30,7 @@
     <div id="div2">div2...</div>
     <input type="button" value="Click me" id="b1">
 
-    <script>
-        $("#b1").click(function () {
-            alert("abc");
-        });
-    </script>
+
 
 </body>
 </html>
