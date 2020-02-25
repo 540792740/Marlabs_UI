@@ -8,12 +8,13 @@
 <script>
     var opt={
         enableHeightAccuracy: true,
-        timeout: infinity,
+        timeout: Infinity,
         maximumAge:0
     };
 
     if(navigator.geolocation){
         document.write("All set");
+        // error = UNKNOWN_ERROR
         navigator.geolocation.getCurrentPosition(function (position) {
             document.write("Latitude" + position.coords.latitude + "<br>");
             document.write("Longitude" + position.coords.longitude + "<br>");
