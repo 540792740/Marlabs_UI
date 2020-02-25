@@ -167,10 +167,9 @@
         				2. removeAttr():删除属性
         				3. prop():  Get the value of a property
         				4. removeProp():删除属性
-
         				* attr和prop区别？
-        					1. 如果操作的是元素的固有属性，则建议使用prop
-        					2. 如果操作的是元素自定义的属性，则建议使用attr
+        					1. 固有属性，建议使用prop
+        					2. 自定义的属性，建议使用attr
 
         			2. 对class属性操作
         				1. addClass():添加class属性值

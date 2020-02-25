@@ -33,7 +33,7 @@
 			}
 	 </style>
     
-	<script type="text/javascript">
+	  <script type="text/javascript">
 	
 		//获取北京节点的name属性值
 
@@ -47,7 +47,28 @@
 		
 		
 	</script>
-	
+
+	  <script>
+			$(function () {
+				//Requirement 1
+				var name = $("#bj").attr("name");
+				// alert(name);
+
+				//Requirement 2
+				$("#bj").attr("name", "BEIJING");
+
+				// Requirement 3
+				$("#bj").attr("descrip", "di");
+
+				// Requirement 4
+				var checked = $("#hobby").prop("checked");
+				alert(checked);
+
+			});
+
+
+
+	  </script>
 	
 	</head>
 	 
@@ -57,7 +78,7 @@
 		 	 <li id="bj" name="beijing" xxx="yyy">北京</li>
 			 <li id="tj" name="tianjin">天津</li>
 		 </ul>
-		 <input type="checkbox" id="hobby"/>
+		 <input type="checkbox" checked id="hobby"/>
 		 
 		
 	</body>
