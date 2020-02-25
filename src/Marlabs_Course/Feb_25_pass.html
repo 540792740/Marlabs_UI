@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://github.com/bitzesty/zxcvbn-js/blob/master/data/zxcvbn.js">
+
+    </script>
+
+</head>
+<body>
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <meter max="4" id="password-strength"></meter>
+    <p id="password-strength-text"></p>
+    <script>
+        var strength = {
+            0:"Weakest",
+            1:"Weak",
+            2:"OK",
+            3:"Good",
+            4:"Strong"
+        };
+        var password  =document.getElementById("password");
+        var meter = document.getElementById("password-strength");
+        var text = document.getElementById("password-strength-text");
+
+        password.addEventListener("input", function (e) {
+            let val = password.value;
+            if(val !== ""){
+                text.innerHTML = "Password strength is " + strength;
+            }
+        });
+
+    </script>
+
+</div>
+</body>
+</html>
