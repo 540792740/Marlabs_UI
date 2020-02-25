@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
 </head>
 
 <body>
@@ -12,6 +13,7 @@
     <meter max="4" id="password-strength"></meter>
     <p id="password-strength-text"></p>
     <script>
+        // cloudflare zxcvbn
         var strength = {
             0:"Weakest",
             1:"Weak",
@@ -24,10 +26,15 @@
         var text = document.getElementById("password-strength-text");
 
         password.addEventListener("input", function (e) {
-            let val = password.value;
+            var val = password.value;
             var result = zxcvbn(val);
+            meter.value = result.score;
+
             if(val !== ""){
-                text.innerHTML = "Password strength is " + strength[result];
+                text.innerHTML = "Password strength is " + strength[result.score];
+            }
+            else{
+                text.innerHTML = " ";
             }
         });
 

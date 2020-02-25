@@ -138,4 +138,6 @@
 
         c> JSON.parse(): Use the JavaScript function JSON.parse() to convert text into a JavaScript object
 
+22. Password settle: Feb_25_Strength_pass: cloud flare -> zxcvbn: contains the strength of password.
+
 06.10
