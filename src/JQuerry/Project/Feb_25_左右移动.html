@@ -4,10 +4,8 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<script  src="../jquery-3.3.1.min.js"></script>
-
-
 		<style>
-			#leftName , #btn,#rightName{
+			#leftName , #btn, #rightName{
 				float: left;
 				width: 100px;
 				height: 300px;
@@ -27,6 +25,17 @@
 		<script>
 
 			//需求：实现下拉列表选择条目左右选择功能
+			$(function () {
+				$("#toRight").click(function () {
+					$("#leftName > option:selected").appendTo($("#rightName"))
+				});
+			});
+
+			$(function () {
+				$("#toLeft").click(function () {
+					$("#leftName").append($("#rightName > option:selected"));
+				});
+			});
 
 
 		</script>

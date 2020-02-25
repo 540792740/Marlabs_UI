@@ -14,7 +14,12 @@
     </style>
 	<script>
         //需求：点击qq表情，将其追加到发言框中
-        
+        // add click event
+        $(function () {
+           $("ul img").click(function () {
+               $(this).clone(true).prependTo($("p"))
+           });
+        });
 		
 		
     </script>
