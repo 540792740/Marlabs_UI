@@ -79,3 +79,8 @@
         b>  Abstract method must save in Abstract class.
 13. Interface
         a>
+
+
+14. For loop:
+        a> for(let i = 0,f; f=files[i];i++){}
+            condition is optional, one can be true, the for loop will never stop.
