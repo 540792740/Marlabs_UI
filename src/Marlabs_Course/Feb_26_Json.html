@@ -23,21 +23,24 @@
     // document.write(obj.book.Author + "<br>")
     // document.write(obj.book.year + "<br>")
     // document.write(obj.book.price.paperback + "<br>")
+    var r;
     function print(obj) {
         for(var k in obj){
-            document.write(k + " : " + obj[k] + "<br>");
             // console.log(k + " " + obj[k]);
             // document.write(k);
-            // if(obj[k].lengt){
-            //     document.write(obj + " : " + obj[k] + "<br>")
-            //     continue
-            // }
             if(obj[k] instanceof Object){
+                r = k;
                 print(obj[k])
             }
-            else{
-                //document.write(k + " : " + obj[k] + "<br>")
+            else {
+                if (r == obj) {
+                    document.write(r + " : " + obj[k] + "<br>")
                 }
+                else{
+                    document.write(k + " : " + obj[k] + "<br>")
+
+                }
+            }
 
         }
     }
