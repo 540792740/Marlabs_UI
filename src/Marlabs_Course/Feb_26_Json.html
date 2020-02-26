@@ -6,7 +6,18 @@
 </head>
 <body>
 <script>
-
+    // ES6, 'tilde to write multiline data
+    var json = `{
+        "book" : {
+            "name" : "John Wick",
+            "Author" : "Adam",
+            "year" : "2020",
+            "genere" : "Fiction",
+            "price" : "$20"
+        }
+    }`;
+    var obj = JSON.parse(json);
+    console.log(obj)
 </script>
 </body>
 </html>
