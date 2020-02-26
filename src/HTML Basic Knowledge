@@ -197,8 +197,11 @@
 
         c> JSON.parse(): Use the JavaScript function JSON.parse() to convert text into a JavaScript object
 
+22. AJAX: Asynchronous JavaScript and XML
+        a>  Web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page
+        b>  Advantage: Makes the application faster and more responsive to user actions.
+        c>
 
-
-22. Password settle: Feb_25_Strength_pass: cloud flare -> zxcvbn: contains the strength of password.
+23. Password settle: Feb_25_Strength_pass: cloud flare -> zxcvbn: contains the strength of password.
 
 06.10
