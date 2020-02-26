@@ -8,16 +8,41 @@
 <script>
     // ES6, 'tilde to write multiline data
     var json = `{
+        "company" : ["Samgsung" , "Apple"],
         "book" : {
             "name" : "John Wick",
             "Author" : "Adam",
-            "year" : "2020",
+            "year" : 2020,
             "genere" : "Fiction",
-            "price" : "$20"
+            "price" : {"paperback":"$20"}
         }
     }`;
     var obj = JSON.parse(json);
-    console.log(obj)
+    console.log(obj);
+    document.write(typeof (obj["company"]) +  "<br>");
+    // document.write(obj.book.Author + "<br>")
+    // document.write(obj.book.year + "<br>")
+    // document.write(obj.book.price.paperback + "<br>")
+    function print(obj) {
+        for(var k in obj){
+            document.write(k + " : " + obj[k] + "<br>");
+            // console.log(k + " " + obj[k]);
+            // document.write(k);
+            // if(obj[k].lengt){
+            //     document.write(obj + " : " + obj[k] + "<br>")
+            //     continue
+            // }
+            if(obj[k] instanceof Object){
+                print(obj[k])
+            }
+            else{
+                //document.write(k + " : " + obj[k] + "<br>")
+                }
+
+        }
+    }
+    print(obj)
+
 </script>
 </body>
 </html>
