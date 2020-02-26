@@ -204,4 +204,28 @@
 
 23. Password settle: Feb_25_Strength_pass: cloud flare -> zxcvbn: contains the strength of password.
 
-06.10
+24. XML: Extensible Markup Language
+        a> Different between XML and HTML:
+            1. Tag is self-descriptive of XML, not predefined like HTML.
+            2. XML is used to store and transport data, HTML is used for display data.
+
+        b>  XML is a W3c Recommendation.
+
+        c> File format:
+            1> First Line must be declaration   <?xml version="1.0" encoding="UTF-8"?>
+            2> Must contain only one root tag.
+            3> Must contain </tag>, close tag.
+
+        d>  Other format
+            1> Capitalized
+            2> id is unique
+
+        f>  CDATA area: Just like document.write()
+
+        g>
+
+        h>
+
+        i>
+        j>
+        k>
