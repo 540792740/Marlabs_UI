@@ -6,7 +6,25 @@
 </head>
 <body>
     <input type="file" name="files[]" multiple>
+    <output id="list"></output>
+    <script>
+        function handleFileSelect(evt){
+            var files = evt.target.files;
+            for(var i = 0, f; f=files[i]; i++){
+                var reader = new FileReader();
+                reader.onload =  (function(theFile){
+                    return function (e) {
+                        var span = document.getElementById("span");
+                        span.innerHTML = ["<p>",e.target.result,"</p>"].join("")
+                        document.getElementById('list').insertBefore(span, null)
+                    }
+                })(f);
+                reader.readAsText(f);
+            }
+        }
 
+        document.getElementById("list").addEventListener('change', handleFileSelect())
+    </script>
 
 </body>
 </html>
