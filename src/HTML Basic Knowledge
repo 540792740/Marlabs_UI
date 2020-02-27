@@ -229,3 +229,7 @@
         i>
         j>
         k>
+
+25.  reader.onload = (function(theFile))(f) -> f trans to theFile
+        console.log((function (x){return x*x;})(2));
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insertBefore</title>
+    <script  src="../JQuerry/jquery-3.3.1.min.js"></script>
+
+    <script>
+        console.log((function (x){return x*x;})(2));
+        document.write([1,2,3].join(" "))
+    </script>
+</head>
+<body>
+<ul id="1st">
+    <li>apple</li>
+    <li id="1">samsung</li>
+</ul>
+<input type="button" onclick="fn()">
+<script>
+    function fn() {
+        var ni = document.createElement("li");
+        var tn = document.createTextNode("New Name");
+        var lst = document.getElementById("1st")
+        ni.appendChild(tn);
+
+        // document.write(ni)
+        lst.insertBefore(ni, lst.childNodes[2]);
+        // $("#1 ").prepend(ni)
+
+    }
+</script>
+</body>
+</html>
