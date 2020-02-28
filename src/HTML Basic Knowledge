@@ -244,3 +244,4 @@
 25.  reader.onload = (function(theFile))(f) -> f trans to theFile
         console.log((function (x){return x*x;})(2));
 
+26.  lorem*5 + TAB
