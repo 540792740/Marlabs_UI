@@ -13,10 +13,10 @@
 </head>
 <body>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrag(event)">
+<div id="div1" ondrop="drop(event, 'div1')" ondragover="allowDrag(event)">
     <img id="drag1" ondragstart="drag(event)" src="logo.jpg" draggable="true">
 </div>
-<div id="div2" ondrop="drop(event)" ondragover="allowDrag(event)"></div>
+<div id="div2" ondrop="drop(event, 'div2')" ondragover="allowDrag(event)"></div>
 
 <script>
     function allowDrag(ev) {
@@ -32,11 +32,26 @@
         ev.dataTransfer.setData("text", ev.target.id);
     }
 
-    function drop(ev){
+    function drop(ev, div_id){
         ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data))
+
+        var hasImages = hasImage(div_id);
+        if(hasImages == false) {
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data))
+        }
     }
+    function hasImage(id) {
+        // var arrival_div = document.getElementById(id);
+        var childElements = document.getElementById(id).childNodes;
+        for(var i = 0; i < childElements.length; i++){
+            if(childElements[i].localName != null && childElements[i].localName.toLowerCase() == "img"){
+                return true;
+            }
+        }
+        return false
+    }
+
 </script>
 </body>
 </html>
