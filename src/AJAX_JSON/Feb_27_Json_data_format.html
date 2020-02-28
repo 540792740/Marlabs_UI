@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json_data_format</title>
+</head>
+<body>
+<script>
+
+    var ps = [{"name" : "JW", "age" : 23, "gender" : "M"},
+              {"name" : "PMS", "age" : 13, "gender" : "M"},];
+
+    var person = {"person":[
+        {"name" : "JW", "age" : 23, "gender" : "M"},
+        {"name" : "KMS", "age" : 24, "gender" : "F"},
+        {"name" : "PMS", "age" : 13, "gender" : "M"},
+        {"name" : "AA", "age" : 73, "gender" : "F"}
+    ]};
+    // alert(person.person[1].name);
+    function fun(obj) {
+        for (var k in obj) {
+            if (obj[k] instanceof Object) {
+                fun(obj[k])
+            }
+            else{
+                document.write(k + " : " + obj[k] + "  <br>");
+            }
+        }
+    }
+    fun(person);
+</script>
+</body>
+</html>
