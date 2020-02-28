@@ -189,18 +189,29 @@
         			10. empty():清空元素的所有后代元素。
 
 21. JSON: JavaScript Object Notation
-        a>  JSON is a lightweight data-interchge format
+        a>  JSON is a lightweight data format
                  is "self-describing" and easy to understand
                  is language independent *
+        b>  JSON:   Key value pair
+                    separate by ","
+                    {} save
 
-        b> JSON using jS syntax but JSON format is text only. It can easily be sent to and from a server. And used as a data format by any programming language.
+        c> JSON using jS syntax but JSON format is text only. It can easily be sent to and from a server. And used as a data format by any programming language.
 
-        c> JSON.parse(): Use the JavaScript function JSON.parse() to convert text into a JavaScript object
+        d> JSON.parse(): Use the JavaScript function JSON.parse() to convert text into a JavaScript object
+
+
+        e>
+
+        f>
+
+
 
 22. AJAX: Asynchronous JavaScript and XML
         a>  Web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page
         b>  Advantage: Makes the application faster and more responsive to user actions.
-        c>
+        c>  In Query:
+            $.get, $.post, $.ajax
 
 23. Password settle: Feb_25_Strength_pass: cloud flare -> zxcvbn: contains the strength of password.
 
