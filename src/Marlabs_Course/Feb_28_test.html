@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--Web API()
+        API is a component(code-classes----packages(group of classes))
+    -->
+</head>
+<body>
+<input type="file" id="files" name="files[]" multiple>
+<output id="list"></output>
+<script>
+    function handleFileSeclet(e) {
+        console.log(e);
+        var files = e.target.files;
+        var output = [];
+
+        for(let i = 0,f;f=files[i];i++){
+
+            output.push(
+                '<li><strong>',
+                f.name,
+                '</strong></li>',
+                'type:',
+                f.type,
+                'size',
+                f.size,
+                //'bytes, last modified:',
+                //f.lastModifiedDate,
+                "<br>"
+            );
+        }
+        document.getElementById('list').InnerHTML = "<ul>" + output.join(" ") + '</ul>';
+        document.write(output)
+
+    }
+    document.getElementById("files").addEventListener('change', handleFileSeclet);
+</script>
+</body>
+</html>
