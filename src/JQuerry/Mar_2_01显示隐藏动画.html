@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Insert title here</title>
-    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script  src="jquery-3.3.1.min.js"></script>
+    <script>
+        function hideFn() {
+            $("#showDiv").hide(5000, "linear",function () {
+                alert(" Hidden ");
+            });
+        }
+
+        function showFn() {
+            $("#showDiv").show("slow", "swing",function () {
+               alert(" Showing ");
+            });
+        }
+        function toggleFn() {
+            $("#showDiv").toggle(4000);
+        }
+    </script>
 </head>
 <body>
 <input type="button" value="点击按钮隐藏div" onclick="hideFn()">
