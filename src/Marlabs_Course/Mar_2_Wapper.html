@@ -6,8 +6,12 @@
     <style>
         .wrapper{
             display: grid;
-            grid-template-columns: 70% 30%;
+            grid-template-columns: 1fr 2fr 1fr;
+            /*grid-template-columns: repeat(3,1fr);*/
+            /*grid-template-columns: repeat(4,1fr 2fr);*/
+            /*grid-auto-rows: 100px;*/
             grid-gap:1em;
+            align-content: end ;
         }
 
         .wrapper > div{
@@ -17,7 +21,10 @@
         .wrapper > div:nth-child(odd){
             background: yellow;
         }
-
+        #item1{
+            grid-area: 1 / 2 / 2 / 4;
+            background-color: blue;
+        }
     </style>
     <script>
 
@@ -26,7 +33,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <div> necessitatibus nemo officiis quis sapiente unde velit vero.</div>
+    <div id="item1"> aaa</div>
     <div> necessitatibus nemo officiis quis sapiente unde velit vero.</div>
     <div> necessitatibus nemo officiis quis sapiente unde velit vero.</div>
     <div> necessitatibus nemo officiis quis sapiente unde velit vero.</div>
