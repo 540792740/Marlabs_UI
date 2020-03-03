@@ -196,7 +196,10 @@
                 2. Slide:   slideDown(), slideUp(), slideToggle()
                             slideToggle([speed],[easing],[fn])
                 3. fade:    fadeIn(), fadeOut(), fadeToggle()
-        f>
+
+        f> Traverse
+                1. for(var i = 0; i < arr.length; i++){}
+                2.
 
         g>
 
