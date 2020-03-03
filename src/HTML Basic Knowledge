@@ -187,7 +187,17 @@
         			8. e.insertBefore(a)  a e ->Position swap
         			9. remove():移除元素
         			10. empty():清空元素的所有后代元素。
+        e> Jquery Effect
+                1. show([speed,[easing],[fn]])
+                        "speed" : slow, normal, fast
+                        "easing" : swing, linear
+                        "fn" : After effect, run the function
+                 2.
+        f>
 
+        g>
+
+        h>
 21. JSON: JavaScript Object Notation
         a>  JSON is a lightweight data format
                  is "self-describing" and easy to understand
