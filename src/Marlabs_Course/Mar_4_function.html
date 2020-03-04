@@ -67,6 +67,22 @@
     console.log("Next level -----------------------")
 
     //reduce()
+    numbers = [175, 50, 25];
+    console.log(numbers.reduce(myFunc1));
+    console.log(numbers.reduceRight(myFunc1));
+
+    function myFunc1(total, num){
+        return total - num;
+    }
+    console.log("Next level -----------------------")
+
+    // reverse()
+    console.log("fruit : " + fruits)
+    console.log("Reverse : " + fruits.reverse());
+    console.log("Next level -----------------------")
+
+    // shift
+    // arr.shift == arr.popleft()
 
     // filter
 
