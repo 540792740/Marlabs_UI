@@ -5,19 +5,13 @@
     <title>functions</title>
 </head>
 <body>
-<p>Click the button to return the value of the first element in the array that has a value above a specific number.</p>
-<p>Minimum age: <input type="number" id="ageToCheck" value="18"></p>
-<button onclick="myFunction()">Try it</button>
-<p>Value: <span id="demo"></span></p>
-<p><strong>Note:</strong> The find() method is not supported in IE 11 (and earlier versions).</p>
 <script>
-
 
     // Some(), every()
     const myNumbers = [3, -5, -1, -10, -7];
     const isPositive = (element) => typeof element === "number" && element > 0;
     // const allPositiveCheck = myNumbers.some(isPositive)
-    const allPositiveCheck = myNumbers.every(isPositive)
+    const allPositiveCheck = myNumbers.every(isPositive);
     console.log(allPositiveCheck);
 
     // map()
@@ -35,21 +29,30 @@
        ids.push(officer.id);
     });
     console.log(ids);
+    console.log("Next level -----------------------")
 
     // Using map
-    var ids = officers.map(function(officer){
-        return officer.id;
-    });
-    console.log(ids);
+    console.log("map: ");
+    var numbers = [4, 9, 16, 25];
+    function myFunction1() {
+      console.log(numbers.map(Math.sqrt));
+    }
+    myFunction1();
+
+    console.log("Next level -----------------------")
 
     //ES6...arrow function
     var ids = officers.map(officer=>officer.id);
     console.log(ids);
+    console.log("Next level -----------------------")
 
     //find()
     var ages = [4, 12, 16, 20];
-    function checkAdult(age) {return age >= document.getElementById("ageToCheck").value;}
-    function myFunction() {document.getElementById("demo").innerHTML = ages.find(checkAdult);}
+    function checkAdult(age) {return age >= 18;}
+    function myFunction2() {console.log(ages.find(checkAdult));}
+    myFunction2();
+    console.log("Next level -----------------------");
+
 
     // foreach
     var fruits = ["apple", "orange", "cherry"];
@@ -57,9 +60,13 @@
     function myFunction(item, index) {
         console.log(index + ' : ' + item)
     }
+    console.log("Next level -----------------------");
+
+    //from()
+    console.log(Array.from("ABCDEFG"));
+    console.log("Next level -----------------------")
 
     //reduce()
-
 
     // filter
 
