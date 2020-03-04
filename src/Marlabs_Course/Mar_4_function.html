@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+</head>
+<body>
+<script>
+    // Some()
+    const myNumbers = [3, -5, -1, -10, -7];
+    const isPositive = (element) => typeof element === "number" && element > 0;
+    // const allPositiveCheck = myNumbers.some(isPositive)
+    const allPositiveCheck = myNumbers.every(isPositive)
+    console.log(allPositiveCheck);
+
+    // map()
+    officers = [
+        {id:1, name:"JW"},
+        {id:2, name:"WD"},
+        {id:3, name:"LD"},
+        {id:4, name:"NC"},
+        {id:5, name:"YS"}
+    ];
+
+    //foreach
+    var ids = [];
+    officers.forEach(function (officer) {
+       ids.push(officer.id);
+    });
+    console.log(ids);
+
+    // Using map
+    var ids = officers.map(function(officer){
+        return officer.id;
+    });
+    console.log(ids);
+
+    //ES6...arrow function
+    var ids = officers.map(officer=>officer.id);
+    console.log(ids);
+
+
+
+    //reduce()
+
+
+    // filter
+
+
+</script>
+</body>
+</html>
