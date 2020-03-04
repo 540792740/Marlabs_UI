@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Mar_3_Assignment</title>
+
+
 </head>
 <body>
+<p id="a1"></p>
+<script>
+        //Assignment 12
+        var num = parseInt(Math.random() * 10) + 1;
+        document.getElementById("a1").innerHTML = num;
+        var gues = 0;
+        while (gues != num){
+            gues = prompt("Please enter a number between 1 to 10");
+            if(gues != num){
+                alert("guess");}
+            else{
+                alert("good");
+                break;
+            }
+        }
 
+</script>
 </body>
 </html>
