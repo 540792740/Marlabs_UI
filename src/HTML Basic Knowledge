@@ -84,7 +84,15 @@
     k>  async / await:
             1>  In async function: await 接着then()
             2>  resolve is a function. similar return. only in Promise.
+    l> Array
+            1> array.fill(value, start, end);
+            2>
+            3>
+            4>
 
+    m>
+
+    n>
     
 
 12. Log:
