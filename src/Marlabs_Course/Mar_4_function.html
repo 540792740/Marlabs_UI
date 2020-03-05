@@ -34,10 +34,10 @@
     // Using map
     console.log("map: ");
     var numbers = [4, 9, 16, 25];
-    function myFunction1() {
+    function MapFunction1() {
       console.log(numbers.map(Math.sqrt));
     }
-    myFunction1();
+    MapFunction1();
 
     console.log("Next level -----------------------")
 
@@ -49,15 +49,15 @@
     //find()
     var ages = [4, 12, 16, 20];
     function checkAdult(age) {return age >= 18;}
-    function myFunction2() {console.log(ages.find(checkAdult));}
-    myFunction2();
+    function FindFunction2() {console.log(ages.find(checkAdult));}
+    FindFunction2();
     console.log("Next level -----------------------");
 
 
     // foreach
     var fruits = ["apple", "orange", "cherry", "banana"];
-    fruits.forEach(myFunction);
-    function myFunction(item, index) {
+    fruits.forEach(forEachFunction);
+    function forEachFunction(item, index) {
         console.log(index + ' : ' + item)
     }
     console.log("Next level -----------------------");
@@ -68,10 +68,10 @@
 
     //reduce()
     numbers = [175, 50, 25];
-    console.log(numbers.reduce(myFunc1));
-    console.log(numbers.reduceRight(myFunc1));
+    console.log(numbers.reduce(ReduceFunc1));
+    console.log(numbers.reduceRight(ReduceFunc1));
 
-    function myFunc1(total, num){
+    function ReduceFunc1(total, num){
         return total - num;
     }
     console.log("Next level -----------------------")

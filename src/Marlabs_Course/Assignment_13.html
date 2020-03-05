@@ -7,8 +7,28 @@
 <body>
 <script>
     var str = prompt("Please input a sentence, I will capitalize the first letter of each word and display it on console")
-    a = str.split(" ");
-    alert(a[0].toUpperCase())
+    // For loop
+    function Upperfunc1(str){
+        a = str.split(" ");
+        for (var i = 0; i < a.length; i++) {
+            a[i] = a[i].slice(0, 1).toUpperCase() + a[i].slice(1).toLowerCase()
+            alert("func1" + a.join(" "))
+        }
+    }
+    function Upperfunc2(str) {
+        a = str.split(" ");
+        for (var i = 0; i < a.length; i++) {
+            a[i] = a[i].replace(a[i].charAt(0), a[i].charAt(0).toUpperCase())
+        }
+        alert("func2: " + a.join(" "))
+
+    }
+
+
+
+    Upperfunc2(str);
+
+
+
 </script>
 </body>
-</html>
