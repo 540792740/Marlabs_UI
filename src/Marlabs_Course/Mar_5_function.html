@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>function</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input").click(function () {
+                // $("div").html("New");
+                $("#div1").html("New");
+            });
+        });
+    </script>
 </head>
 <body>
+<div id="div1">
+    The div tag
+</div>
+<input type="button" value="click">
+
 <script>
     const dataInfo = [2020, 0, 16];
     const date = new Date(...dataInfo);
