@@ -9,8 +9,31 @@
     arr1 = ["a", "b", "c"];
     arr2 = [1, 2, 3, 4, 5];
     function combineArr(arr1, arr2){
+        // Init length and return array
+        ls1 = arr1.length - 1;
+        ls2 = arr2.length - 1;
+        res = [];
 
+        // Init two pointer
+        a = 0;
+        b = 0;
+
+        // Add all element into res
+        while(a <= ls1 || b <= ls2) {
+            if (a <= ls1) {
+                res.push(arr1[a]);
+                a += 1;
+            }
+            if (b <= ls2) {
+                res.push(arr2[b]);
+                b += 1
+            }
+        }
+        for(a in res){
+        console.log(res[a])};
+        return res;
     }
+    combineArr(arr1, arr2);
 
 </script>
 </body>
