@@ -6,14 +6,41 @@
 </head>
 <body>
 <script>
-    target = 100;
-    arr = [];
-    function getTarget(target, path, arr) {
-        if (target == 0){
-            arr.put(path)
+    var n, r, f, num;
+    // num is 1 , 2, ... 9
+    // r is the sum till now
+    // n last num
+    // f flag, + or -
+    function getTarget(path, num, r, n, f) {
+        path += num;
+        n = n * 10 + num;
+        if (num == 9){
+            if(r + f * n == 100){
+                console.log(path + " = 100")
+            }
+            path =  path.slice(0, path.length - 1);
+            return;
         };
 
+        // When nothing add
+        getTarget(path, num + 1, r, n, f);
+        if(path.charAt(path.length - 1) === "+" || path.charAt(path.length - 1) === "-"){
+            return;
+        }
+        r += f * n;
+
+        // When add +
+        path += "+";
+        getTarget(path, num + 1, r, 0, 1);
+
+
+        // When add -
+        path.replace(path.length - 1, "-");
+        getTarget(path, num + 1, r, 0, -1);
+        path.slice(0, path.length - 2);
+
     }
+    getTarget("", 1, 0, 0, 1)
 </script>
 </body>
 </html>
