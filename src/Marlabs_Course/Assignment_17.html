@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 17</title>
+</head>
+<body>
+<script>
+    function getLastN(arr, n) {
+        // init length of array
+        ls = arr.length - 1;
+        if (n > ls){n = ls;}
+        console.log(arr.reverse().slice(0, n));
+        return arr.reverse().slice(0, n);
+    }
+    arr = [1, 2, 3, 4, 5, 6, 7];
+    getLastN(arr, 4);
+
+</script>
+</body>
+</html>
