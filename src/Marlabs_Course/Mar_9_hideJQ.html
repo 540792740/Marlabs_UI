@@ -7,7 +7,8 @@
     <script>
         $(document).ready(function () {
             $("div").click(function () {
-                $(this).remove();
+                // $(this).remove();
+                $(this).before("<p>New P</p>")
             })
         })
     </script>
