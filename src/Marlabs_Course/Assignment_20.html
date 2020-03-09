@@ -6,24 +6,33 @@
 </head>
 <body>
 <script>
-    var CD = [{"name": "Taylor Swift"},
-                {"publisher" : "Self"},
-                {"price": 12}
-            ];
-    function SortByKey(obj){
+    var cd1 = {"name": "Taylor Swift", "publisher" : "Self","price": 12};
+    var cd2 = {"name": "Michael Jackson", "publisher" : "Vocals","price": 32};
+    var cd3 = {"name": "Lady Gaga", "publisher" : "Vocals","price": 52};
+    var cd4 = {"name": "Rihanna", "publisher" : "Fenty Beauty","price": 17};
+    var CD = [cd1,cd2,cd3,cd4];
+
+    function SortByName(obj) {
         // Get all key, sort key
         var keys = [];
-        for(var i in obj){
-            for(j in obj[i]) {
-                keys.push(j);
-                // key sort()
+        for(var i in obj) {
+            keys.push(obj[i].name);
+        }
+        keys.sort();
+
+        //Init res
+        var res = [];
+
+        //Find match name and push into res
+        for (var i in keys) {
+            for (j in obj) {
+
                 keys.sort();
             }
         }
-
-
     }
-    SortByKey(CD)
+        SortByName(CD)
+    // console.log(SortByKey(CD))
     // a = {}
 
 </script>
