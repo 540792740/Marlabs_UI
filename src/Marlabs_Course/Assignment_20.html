@@ -6,16 +6,26 @@
 </head>
 <body>
 <script>
-    var CD = {"name": "Taylor Swift", "publisher" : "Self","price": 12};
-    function SortByKey(obj, key){
+    var CD = [{"name": "Taylor Swift"},
+                {"publisher" : "Self"},
+                {"price": 12}
+            ];
+    function SortByKey(obj){
         // Get all key, sort key
+        var keys = [];
+        for(var i in obj){
+            for(j in obj[i]) {
+                keys.push(j);
+                // key sort()
+                keys.sort();
+            }
+        }
 
-        //generate new list
 
-
-
-        obj.sort()
     }
+    SortByKey(CD)
+    // a = {}
+
 </script>
 </body>
 </html>
