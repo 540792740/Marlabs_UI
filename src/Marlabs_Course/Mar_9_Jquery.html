@@ -5,10 +5,20 @@
     <title>Jquery</title>
     <script src="jquery-3.3.1.min.js"></script>
     <script>
-        $(document).ready()
+        $(document).ready(function () {
+            let c = 0;
+            $(".button").bind("click", function () {
+                c++;
+                alert("Your click " +  $(this).text() + "button");
+                if(c >= 2){
+                    $(".buttons").unbind("click");
+                }
+            })
+        });
     </script>
 </head>
 <body>
-
+    <span class="bold buttons">Bold</span>
+    <span class="italic buttons">Ital</span>
 </body>
 </html>
