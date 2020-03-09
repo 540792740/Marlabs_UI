@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_19</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<script>
+    // Store CD information:
+    var CD = {"CD": [
+            {"name": "Taylor Swift", "publisher" : "Self","price": 12},
+            {"name": "Michael Jackson", "publisher" : "Vocals","price": 32},
+            {"name": "Lady Gaga", "publisher" : "Vocals","price": 52},
+            {"name": "Rihanna", "publisher" : "Fenty Beauty","price": 17}
+        ]};
+
+    function displayAllDetails(obj) {
+        for(var k in obj) {
+            if (obj[k] instanceof Object) {
+                displayAllDetails(obj[k])
+            } else {
+                if(k === "price"){
+                    console.log(k + " : " + parseInt(obj[k] * 1.1 * 0.9))
+
+                }
+                else {
+                    console.log(k + " : " + obj[k])
+                }
+            }
+        }
+    }
+    displayAllDetails(CD)
+    
+</script>
+</body>
+</html>
