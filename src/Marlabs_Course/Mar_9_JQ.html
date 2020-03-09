@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                $(this).replaceWith("<h1>The New Content</h1>>");
+            });
+        });
+
+    </script>
+    <style>
+        #division{
+            width: 60px;
+            margin: 10px;
+            padding: 12px;
+            border: 2px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <span id="result"></span>
+    <div id="division" style="background-color: cornflowerblue;">This is blue</div>
+
+</body>
+</html>
