@@ -26,14 +26,14 @@
         //Find match name and push into res
         for (var i in keys) {
             for (j in obj) {
-
-                keys.sort();
+                if(obj[j].name == keys[i]){
+                    res.push(CD[j])
+                }
             }
         }
+        return res;
     }
-        SortByName(CD)
-    // console.log(SortByKey(CD))
-    // a = {}
+    console.log(SortByName(CD))
 
 </script>
 </body>
