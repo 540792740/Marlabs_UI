@@ -269,3 +269,7 @@
         console.log((function (x){return x*x;})(2));
 
 26.  lorem*5 + TAB
+
+27.  Prototype property allows your to add new properties to constructor\
+        a> Person.prototype.nationality = "English";
+
