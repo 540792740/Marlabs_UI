@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <style>
+        body{
+            counter-reset: selection;
+        }
+        h2::before{
+            counter-increment: selection;
+            content: "Section " counter(selection) ": ";
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Using CSS Counters:</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+
+</body>
+</html>
