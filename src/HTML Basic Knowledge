@@ -42,7 +42,16 @@
     a> font: line-height: 行高
              border： 边框
              text-align： 对齐方式
-
+    b> Animations:
+            1> @keyframes Rules: gradually change from the current style to the new style
+                @keyframes example {
+                    from {background-color: red;}
+                    to {background-color: yellow;
+                 }
+             2> div{
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    }
 10. 盒子模型：
     a>  margin: 外边距
     b>  padding: 外边距
