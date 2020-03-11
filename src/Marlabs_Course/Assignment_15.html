@@ -5,6 +5,7 @@
     <title>Assignment 15</title>
 </head>
 <body>
+<p id="id1"></p>
 <script>
     var n, r, f, num;
     // num is 1 , 2, ... 9
@@ -16,7 +17,8 @@
         n = n * 10 + num;
         if (num == 9){
             if(r + f * n == 100){
-                console.log(path + " = 100")
+                console.log(path + " = 100");
+                document.getElementById("id1").innerHTML += "<br>" + path + " = 100"
             }
             path =  path.slice(0, path.length - 1);
             return;
@@ -40,7 +42,14 @@
         path.slice(0, path.length - 2);
 
     }
+    var begintime= +new Date();
+
     getTarget("", 1, 0, 0, 1)
+    var endtime = +new Date();
+    console.log()
+    DATETIME = endtime - begintime
+    document.getElementById("id1").innerHTML += "<br>" + DATETIME;
+
 </script>
 </body>
 </html>
