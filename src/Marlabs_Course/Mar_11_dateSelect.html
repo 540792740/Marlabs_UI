@@ -5,10 +5,18 @@
     <title>DataSelect</title>
     <style>
         span::after{
+            padding-left: 15px;
+        }
+        span::after{
 
         }
         input:invalid + span::after{
             content : "X";
+            color: red;
+        }
+        input:valid + span::after{
+            content : "√";
+            color: green;
         }
 
     </style>
