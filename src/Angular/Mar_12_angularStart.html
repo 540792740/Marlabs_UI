@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+<!--    <script src="angular.js"></script>-->
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <div>
+        {{2 + 5}}
+        <hr>
+        {{   {"name":"Adam", "age":"12"}.name   }}
+        <hr>
+        {{   ["Apple","Mango", "Groups"][1]  }}
+        <hr>
+        {{1 == 1}}
+    </div>
+
+    <script>
+        var myApp = angular.module("myModule",[])
+
+        var myController = function($scope){
+            $scope.message = "Angular is awesome";
+        }
+
+    </script>
+</body>
+</html>
