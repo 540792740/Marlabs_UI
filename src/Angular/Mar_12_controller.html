@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>controller</title>
+    <script src="angular.js"></script>
+    <script src="Mar_12_m.js"></script>
+    <style>
+        td{
+            border: 1px solid black;
+            padding: 5px
+        }
+    </style>
+</head>
+<body style="font-family: 'Arial Rounded MT Bold'">
+    <div ng-controller= "myController">
+<!--        part 1-->
+<!--        {{message}}-->
+<!--        <hr>-->
+<!--        <div>First Name:{{employee.firstName}}</div>-->
+<!--        <div>Last Name:{{employee.lastName}}</div>-->
+<!--        <div>Gender:{{employee.gender}}</div>-->
+
+
+<!--        part 2 -->
+<!--        <div>-->
+<!--            <img ng-src="img/logo.jpg">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div>Name: {{technology.name}}</div>-->
+<!--            <div>Role: {{technology.role}}</div>-->
+<!--            <div>-->
+<!--                <img ng-src= "{{technology.image}}" alt="{{technology.name + ' icon'}}">-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--            Part 3-->
+<!--        <input type="text" ng-model="message">-->
+<!--        {{message}}-->
+
+<!--        <div>Name: <input type="text" ng-model = technology.name></div>-->
+<!--        <div>Role: <input type="text" ng-model = technology.role></div>-->
+<!--        <hr>-->
+<!--        <div>Name: {{technology.name}}</div>-->
+<!--        <div>Name: {{technology.role}}</div>-->
+
+<!--        part 4  -->
+        <table>
+            <thead>
+            <tr>
+                <th>First Name{{emply.firstName}}</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emp in emply">
+                    <td>{{emp.firstName}}</td>
+                    <td>{{emp.lastName}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

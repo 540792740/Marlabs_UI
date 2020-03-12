@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Angular</title>
-<!--    <script src="angular.js"></script>-->
-    <script src="angular.min.js"></script>
+    <script src="angular.js"></script>
+<!--    <script src="min.js"></script>-->
 </head>
 <body>
     <div>
@@ -15,15 +15,14 @@
         {{   ["Apple","Mango", "Groups"][1]  }}
         <hr>
         {{1 == 1}}
+
     </div>
 
     <script>
-        var myApp = angular.module("myModule",[])
-
-        var myController = function($scope){
-            $scope.message = "Angular is awesome";
-        }
 
     </script>
+    {{message}}
+
+
 </body>
 </html>
