@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        .box{
+            margin: 50px;
+            width: 150px;
+            height: 100px;
+            background: url("img/tortoise-transparent.png");
+            position: relative;
+            animation-name: walk;
+            animation-duration: 5s;
+        }
+        @keyframes test {
+            0%{left: 0px; top: 0px;}
+            25%{left: 1000px; top: 0px;}
+            50%{left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
