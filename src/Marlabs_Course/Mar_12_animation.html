@@ -10,13 +10,17 @@
             height: 100px;
             background: url("img/tortoise-transparent.png");
             position: relative;
-            animation-name: walk;
-            animation-duration: 5s;
+            /*animation-direction: alternate-reverse;*/
+            animation: walk 5s;
+            /*animation-name: walk;*/
+            /*animation-duration: 5s 2;*/
+            /*animation-iteration-count: 2;*/
         }
-        @keyframes test {
-            0%{left: 0px; top: 0px;}
-            25%{left: 1000px; top: 0px;}
-            50%{left: 0px; top: 0px;}
+        @keyframes walk {
+            from{left: 0px; top: 0px;}
+            to{left: 75%; top: 0px;}
+            /*100%{left: 0; top: 0px;}*/
+
         }
     </style>
 </head>
