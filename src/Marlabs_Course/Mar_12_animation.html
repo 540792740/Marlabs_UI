@@ -12,6 +12,7 @@
             position: relative;
             /*animation-direction: alternate-reverse;*/
             animation: walk 5s 2;
+            transform: rotateY(180deg)
             /*animation-name: walk;*/
             /*animation-duration: 5s 2;*/
             /*animation-iteration-count: 2;*/
@@ -19,8 +20,8 @@
         @keyframes walk {
             from{left: 0px; top: 0px;}
             to{left: 75%; top: 0px;}
-            50%{transform: rotateY(180deg)}
-            100%{left: 0; top: 0px;}
+            /*50%{transform: rotateY(180deg)}*/
+            /*100%{left: 0; top: 0px;}*/
         }
     </style>
 </head>
