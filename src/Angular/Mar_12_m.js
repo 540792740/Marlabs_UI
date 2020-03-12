@@ -18,9 +18,29 @@ myApp.controller("myController", function($scope){
         {firstName:"J.K ", lastName:"Rolling", gender:"Female", salary:50000}
     ];
 
+    var countries = [
+        {
+            name: "UK",
+            cities:[
+                {name:"London"},
+                {name:"Birmingham"},
+                {name:"Manchester"}
+            ]
+        },
+        {
+            name: "USA",
+            cities:[
+                {name:"New York"},
+                {name:"Dallas"},
+                {name:"Hoboken}"}
+            ]
+        },
+
+    ];
 
     $scope.employee = employee;
     $scope.message = "Angular is awesome";
     $scope.technology = technology;
     $scope.emply = emply;
+    $scope.countries = countries;
 });

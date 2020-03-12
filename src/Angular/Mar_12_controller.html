@@ -22,6 +22,8 @@
 <!--        <div>Gender:{{employee.gender}}</div>-->
 
 
+
+
 <!--        part 2 -->
 <!--        <div>-->
 <!--            <img ng-src="img/logo.jpg">-->
@@ -34,6 +36,8 @@
 <!--            </div>-->
 <!--        </div>-->
 
+
+
 <!--            Part 3-->
 <!--        <input type="text" ng-model="message">-->
 <!--        {{message}}-->
@@ -44,7 +48,29 @@
 <!--        <div>Name: {{technology.name}}</div>-->
 <!--        <div>Name: {{technology.role}}</div>-->
 
+
+
 <!--        part 4  -->
+<!--        <table>-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>First Name{{emply.firstName}}</th>-->
+<!--            <th>Last Name</th>-->
+<!--            <th>Gender</th>-->
+<!--            <th>Salary</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr ng-repeat="emp in emply">-->
+<!--            <td>{{emp.firstName}}</td>-->
+<!--            <td>{{emp.lastName}}</td>-->
+<!--            <td>{{emp.gender}}</td>-->
+<!--            <td>{{emp.salary}}</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--        part 5-->
         <table>
             <thead>
             <tr>
@@ -55,14 +81,17 @@
             </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="emp in emply">
-                    <td>{{emp.firstName}}</td>
-                    <td>{{emp.lastName}}</td>
-                    <td>{{emp.gender}}</td>
-                    <td>{{emp.salary}}</td>
-                </tr>
+            <tr ng-repeat="emp in emply">
+                <td>{{emp.firstName}}</td>
+                <td>{{emp.lastName}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
             </tbody>
         </table>
+
+
+
 
     </div>
 
