@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnerHTML</title>
+</head>
+<body>
+<p id="demo">   This element has extra spacing   and contains <span>a span element</span>.</p>
+
+<button onclick="getInnerText()">Get innerText</button>
+<button onclick="getHTML()">Get innerHTML</button>
+<button onclick="getTextContent()">Get textContent</button>
+
+<script>
+    function getInnerText() {
+        alert(document.getElementById("demo").innerText)
+    }
+
+    function getHTML() {
+        alert(document.getElementById("demo").innerHTML)
+    }
+
+    function getTextContent() {
+        alert(document.getElementById("demo").textContent)
+    }
+</script>
+</body>
+</html>
