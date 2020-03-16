@@ -1,0 +1,31 @@
+[
+   {
+       "Name": "Pankaj Choudhary",
+       "City": "Alwar",
+       "Emp_Id": "1210038"
+   },
+   {
+       "Name": "Neeraj Saini",
+       "City": "Delhi",
+       "Emp_Id": "1210036"
+   },
+   {
+       "Name": "Rahul Prajapat",
+       "City": "Jaipur",
+       "Emp_Id": "1210042"
+   },
+   {
+       "Name": "Sandeep Jangid",
+       "City": "Alwar",
+       "Emp_Id": "1210047"
+   },
+   {
+       "Name": "Sanjeev Baldia",
+       "City": "Jaipur",
+       "Emp_Id": "1210047"
+   },
+{
+    "Name": "Narendra Sharma",
+    "City": "Alwar",
+    "Emp_Id": "1210034"
+}]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script src="angular.min.js"></script>-->
+    <script src="angular_12.js"></script>
+    <script src="Mar_16_controller.js"></script>
+<!--    <link rel="stylesheet" href="Mar_13_style.css">-->
+</head>
+<body>
+<h3>Example 1 Get Http Data</h3>
+
+    <div ng-controller="myController">
+        {{message}}
+        <br><hr><br>
+        {{status}}
+        <br><hr><br>
+        {{headers}}
+    </div>
+
+<h3>Example 2 Ttransform</h3>
+<div ng-controller="myController">
+    <input type="text" ng-model = "input"><br>
+    <input type="text" ng-model = "output"><br>
+    <input type="button" ng-click="transformString(input)" value="Process">
+
+</div>
+
+</body>
+</html>
