@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Controller</title>
+<!--    <script src="angular.js"></script>-->
+    <script src="angular.min.js"></script>
+    <script src="Mar_13_controller.js"></script>
+    <link rel="stylesheet" href="Mar_13_style.css">
+</head>
+<body>
+<div ng-controller="myController">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Likes</th>
+            <th>Dislikes</th>
+            <th>Like/Dislike</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tech in technologies">
+            <td>{{tech.name}}</td>
+            <td>{{tech.likes}}</td>
+            <td>{{tech.dislikes}}</td>
+            <td>
+                <input type="button" value="Like" ng-click="incrementLikes(tech)")>
+                <input type="button" value="Dislike" ng-click="incrementDisLikes(tech)">
+            </td>>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
+</body>
+</html>
