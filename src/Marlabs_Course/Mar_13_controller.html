@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Controller</title>
 <!--    <script src="angular.js"></script>-->
-    <script src="angular.min.js"></script>
+    <script src="angular_12.js"></script>
     <script src="Mar_13_controller.js"></script>
     <link rel="stylesheet" href="Mar_13_style.css">
 </head>
@@ -70,9 +70,11 @@
     </div>
     <br><hr><br>
 
-    Example 3: Search Text
+
+    <h2>Example 3: Search Text Filter</h2>
 <div ng-controller="myController">
-    Search: <input type="text" placeholder="Search city & name" ng-model="searchText">
+    <input type="text" placeholder="Search name" ng-model="a.name">
+    <input type="text" placeholder="Search city" ng-model="a.city">
     <table>
         <thead>
             <tr>
@@ -82,23 +84,23 @@
                 <th>City</th>
             </tr>
         <tbody>
-<!--            <tr ng-repeat="emp in employee | filter:a:exactMatch">-->
-            <tr ng-repeat="emp in employee | filter:search">
+            <tr ng-repeat="emp in employee | filter:a:exactMatch">
+<!--            <tr ng-repeat="emp in employee | filter:a:search">-->
                 <td>{{emp.name}}</td>
                 <td>{{emp.gender}}</td>
                 <td>{{emp.salary}}</td>
                 <td>{{emp.city}}</td>
             </tr>
         </tbody>
-        </thead>
 
     </table>
 </div>
 <br><hr><br>
 
+<h2>Example 4: Search Text </h2>
 <div ng-controller="myController">
     Search: <input type="text" placeholder="Search city & name" ng-model="searchText">
-    <input type="checkbox" ng-model="hideSalary"> Hide Salary
+<!--    <input type="checkbox" ng-model="hideSalary"> Hide Salary-->
     <table>
         <thead>
         <tr>
@@ -107,16 +109,16 @@
             <th ng-hide="hideSalary">Salary</th>
             <th>City</th>
         </tr>
+        </thead>
         <tbody>
-        <!--                <tr ng-repeat="emp in employees |filter:a:exactMatch">-->
-        <tr ng-repeat="emp in employee |filter:search">
+        <tr ng-repeat="emp in employee | filter:search">
             <td>{{emp.name}}</td>
             <td>{{emp.gender}}</td>
-            <td ng-hide="hideSalary">{{emp.salary}}</td>
+            <td>{{emp.salary}}</td>
+<!--            <td ng-hide="hideSalary" >{{emp.salary}}</td>-->
             <td>{{emp.city}}</td>
         </tr>
         </tbody>
-        </thead>
     </table>
 </div>
 

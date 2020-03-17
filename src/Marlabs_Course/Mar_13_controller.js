@@ -30,5 +30,19 @@ var myApp = angular
     // Example 3
     $scope.employee = employee;
     $scope.rowLimit = 3;
+
+    // Example 4
+    $scope.search = function(item){
+        if($scope.searchText == undefined){
+            return true;
+        }
+        else{
+            if(item.city.toLowerCase().indexOf($scope.searchText.toLowerCase()) != -1 ||
+               item.name.toLowerCase().indexOf($scope.searchText.toLowerCase()) != -1)
+            {
+                return true;
+            }
+        }
+    }
 });
 

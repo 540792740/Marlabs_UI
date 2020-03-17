@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Rev</title>
+    <script src="angular_12.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+<h2>Angular</h2>
+Name: <input type="text" ng-model="name" />
+<br>
+Hello {{name}}
+
+
+<h2>Jquery</h2>
+Name: <input type="text" id="txtInp" />
+<br>
+Hello <span id="span"></span>
+
+<h2>Javascript</h2>
+Name: <input type="text" id="txt" />
+<br>
+Hello <span id="sp"></span>
+
+
+
+<script>
+    //Jquery
+    $('#txtInp').on('keyup', function(){
+        $('#span').html($('#txtInp').val());
+    });
+
+    //Javascript
+    var tex = document.getElementById("txt");
+    var sp = document.getElementById("sp");
+    tex.addEventListener('keyup', function(){
+        var text = tex.value;
+        sp.innerHTML = text;
+    })
+
+</script>
+
+
+</body>
+</html>
