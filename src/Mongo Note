@@ -3,31 +3,56 @@ MongoDB
 1. mongod  -> show version
 2. mongod --dbpath "E:\Study Resource\UI\src\Data\MongoDB"  -> run server
 3. mongo -> run client
+4. mongodb:localhost
+5. terminal
+    a> first step:
+        show dbs    -> 显示数据库
+        db          -> which database you are in
+        use testdb  -> switch database
+        db.Collection1.insert({"name":"test"})
+        show collections
 
-4. terminal
-    show dbs    -> 显示数据库
-    db          -> which database you are in
-    use testdb  -> switch database
-    db.Collection1.insert({"name":"test"})
-    show collections
-    db_demo.dropDatabase()      -> drop database
-    db.createCollection('test')
-    db.employees.insert({"name":"test"})
-    db.test.drop();
-    use company     -> switch to company database
+    b> Insert / Drop data:
+        db_demo.dropDatabase()      -> drop database
+        db.createCollection('test')
+        db.employees.insert({"name":"test"})
+        db.test.drop();
+        db.employees.insert([{},{}])    -> 插入多行数据
 
-    db.employees.insert([{},{}])    -> 插入数据
-    db.employees.find().pretty()    -> Show all detail
-    db.employees.findOne()    -> Show all detail
+    c> Switch to company database
+        use company
 
-    cls     -> clear
-    db.employees.find({"EmpNo":"2"}).pretty()   -> find information
-    db.employees.find({"Age":{$lt:"30}})
-    db.employees.find({"Age":{$lt:"30}}).pretty()   -> age less than 30
-    db.employees.find({"Age":{$gt:"30}}).pretty()   -> age large than 30
-    db.employees.find({"Age":30, "salary":"8000"}).pretty()   -> find multiple condition
-    db.employees.find({"Age":30, $or:[{"salary":"8000"},{"Salary":"100000}]}).pretty()   -> find multiple condition
-    db.employees.update()
+    d> clear -> cls
 
-    db.employees.update({"_id":ObjectId("5e7c36f318a11aead97827db")},{$set:{"Salary":"90000"}})
-    db.employees.update({"Skill":"MongoDB"},{$set:{"Salary":"200000"}},{multi:true})
+    e> find()
+        db.employees.find().pretty()    -> Show all detail
+        db.employees.find({"EmpNo":"2"}).pretty()   -> find information
+        db.employees.find({"Age":{$lt:"30}})
+        db.employees.find({"Age":{$lt:"30}}).pretty()   -> age less than 30
+        db.employees.find({"Age":{$gt:"30}}).pretty()   -> age large than 30
+        db.employees.find({"Age":30, "salary":"8000"}).pretty()   -> find multiple condition
+        db.employees.find({"Age":30, $or:[{"salary":"8000"},{"Salary":"100000}]}).pretty()   -> find multiple condition
+        db.employees.find({},{"FirstName":1}).pretty()
+        db.employees.find({},{"FirstName":1, _id:0}).pretty()
+    f> skip()
+        db.employees.find({},{"FirstName":1, _id:0}).pretty().skip(3)
+    g> limit()
+        db.employees.find({},{"FirstName":1, _id:0}).pretty().skip(3).limit(2)
+    h> sort():
+        db.employees.find({},{"FirstName":1, _id:0}).pretty().sort({"FirstName":-1})
+
+    i> update()
+        db.employees.update()
+        db.employees.update({"_id":ObjectId("5e7c36f318a11aead97827db")},{$set:{"Salary":"90000"}})
+        db.employees.update({"Skill":"MongoDB"},{$set:{"Salary":"200000"}},{multi:true})
+
+    j> Remove()
+        db.employees.remove({"Skill":"MongoDB"})
+
+    k>
+
+    l>
+
+    m>
+
+    n>
