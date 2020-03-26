@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var promise = new Promise(function (resolve, reject) {
+        setTimeout(function(){
+            //Resolve only run 1 times, the second resolve cannot be excute
+            resolve("Hello World! 2");
+            resolve("Hello World! 1");
+
+        }, 2000);
+        // setTimeout(reject("Error happen while processing"), 2000);
+    });
+    promise.then(function (data) {
+        console.log(data + '1');
+    }, function (data) {
+            console.error(data + "Reject Happened");
+        }
+    );
+
+    // promise.then(function (data) {
+    //     console.log(data + '2');
+    // });
+    // promise.then(function (data) {
+    //     console.log(data + '3');
+    // });
+
+    function doubleAfter2seconds(x){
+        return new Promise(resolve => {
+            setTimeout(()=>{
+                resolve(x * 2)
+            },200)
+        })
+    }
+    // doubleAfter2seconds(12).then((data)=>{
+    //     console.log(data)
+    // });
+
+    async function addAsync(sum) {
+        //await means run line by line
+        let a = await doubleAfter2seconds(10);
+        let b = await doubleAfter2seconds(20);
+        let c = await doubleAfter2seconds(30);
+        console.log(a + b + c)
+    }
+    addAsync(12);
+
+</script>
+
+</body>
+</html>

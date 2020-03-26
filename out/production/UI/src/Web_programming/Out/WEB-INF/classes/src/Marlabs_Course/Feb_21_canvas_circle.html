@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw Circle</title>
+</head>
+<body>
+<canvas width="1600" height="1000" id="myCanvas">>
+</canvas>
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        //rect:
+        ctx.fillStyle = "rgba(255, 0,0, .3)";
+        ctx.fillRect(0, 0, 200, 200);
+        ctx.fillStyle = "rgba(0, 255,0, .3)";
+        ctx.fillRect(200, 200, 200, 200);
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(400, 400, 200, 200);
+
+        //Line
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.lineTo(200, 20);
+        ctx.lineTo(20, 40);
+        ctx.stroke();
+
+        //Move arc
+
+        var x = Math.random() * window.innerWidth;
+        var y = Math.random() * window.innerHeight;
+        var r = 80;
+        function animate(){
+            requestAnimationFrame(animate);
+            ctx.beginPath();
+            //true is clockwise, false is anticlockwise;
+            ctx.clearRect(x - 1 - r,y -1 - r,x -1 + r, y - 1 + r);
+            ctx.arc(x, y, r, 0, Math.PI, true);
+            ctx.fillStyle = "blue";
+            ctx.strokeStyle = "yellow";
+            ctx.fill();
+            ctx.stroke();
+            x+=1;
+            y+=1;
+        }
+        animate();
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+    <script>
+        function fun() {
+            var xmlhttp;
+            if(window.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }
+            else{
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.open("GET", "AjaxServlet.java?username=tom", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="Async" onclick="fun();">
+</body>
+</html>

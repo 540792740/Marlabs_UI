@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+
+    </script>
+
+</head>
+<body>
+<!--original is 800, 480 -->
+<!--picture is enlarge?-->
+<canvas style="border:1px red solid; width: 800px; height: 480px; " id="myCanvas">>
+</canvas>
+<img style="visibility: visible" src="P2.JPG" alt="sd" id="scream">
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("scream");
+
+        var img2 = new Image();
+        img2.src="logo.jpg";
+        // img2.style.border = "Red";
+
+
+        ctx.drawImage(img, 0, 0, 800, 480, 0, 0, 31, 15);
+        ctx.drawImage(img2, 0, 0, 800, 480, 50, 50, 100, 100);
+    }
+</script>
+</body>
+</html>

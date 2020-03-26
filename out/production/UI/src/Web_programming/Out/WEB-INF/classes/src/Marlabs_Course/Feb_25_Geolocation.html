@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+</head>
+<body>
+<script>
+    var opt={
+        enableHeightAccuracy: true,
+        timeout: Infinity,
+        maximumAge:0
+    };
+
+    if(navigator.geolocation){
+        document.write("All set");
+        // error = UNKNOWN_ERROR
+        navigator.geolocation.getCurrentPosition(function (position) {
+            document.write("Latitude" + position.coords.latitude + "<br>");
+            document.write("Longitude" + position.coords.longitude + "<br>");
+        }, function (error) {
+            switch(error.code){
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable");
+                    break;
+                case error.TIMEOUT:
+                    alert("Timeout");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("Unknown error");
+                    break;
+            }
+        }, opt);
+
+    }
+</script>
+</body>
+</html>

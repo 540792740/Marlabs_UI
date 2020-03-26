@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function sleep(ms){
+            return new Promise(function(resolve){
+                setTimeout(function () { resolve();}, ms);
+            })
+            // return new Promise(resolve=>setTimeout(resolve, ms))
+        }
+
+        async function download(){
+            let p = document.getElementById("file");
+            for(let i = 1; i <= 100; i++){
+                await sleep(100).then(()=>{
+                    p.value = i;
+                });
+            }
+        }
+
+    </script>
+
+</head>
+<body style="font-family: 'Arial Narrow'">
+    <label for="file">Download Progress</label>
+    <progress id="file" value="10" max="100"></progress>
+    <br>
+    <input type="button" onclick="download()" value="Click">
+
+</body>
+</html>

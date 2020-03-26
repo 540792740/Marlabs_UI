@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json Data</title>
+</head>
+<body>
+<script>
+    const promise = new Promise((resolve, reject)=>{
+       const request = new XMLHttpRequest();
+       request.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+       // request.responseType = "";
+       request.onload = function () {
+           if(request.status === 200){
+               resolve(request.response);
+           }
+           else{
+               reject(Error("Error, Reject fetching the data"));
+           }
+       };
+       request.send();
+    });
+    console.log('Async Request Made');
+    var obj;
+    promise.then(function (d) {
+        console.log("Got Data, Promise is full filled");
+        // document.body.textContent = JSON.parse(d).data[0]["employee_name"];
+        obj = JSON.parse(d);
+        for(i = 0; i < obj.data.length; i++){
+            document.write("employee_name" + (i+ 1) + " : " +  obj.data[i]["employee_name"] + "<br>");
+        }
+
+
+        // document.write(JSON.parse(d).data[0]["employee_name"]);
+    }, function (error) {
+        console.log("Promise Reject");
+        console.log(error.message);
+    });
+
+</script>
+</body>
+</html>

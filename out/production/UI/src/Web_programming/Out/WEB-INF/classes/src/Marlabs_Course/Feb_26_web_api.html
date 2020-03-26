@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="file" id="file" name="file[]" multiple>
+    <ouput id="list" ></ouput>
+
+    <script>
+        function handleFileSelect(e) {
+            console.log(e);
+            var files = e.target.files;
+            var output =[];
+
+            for(let i = 0,f; f=files[i];i++){
+                output.push('<li><strong>',f.name,'</strong>(',f.type||'n//a',
+                    '): ',f.size,' bytes, last modify', f.lastModified,'</li>' )
+            }
+            document.getElementById('list').innerHTML = "<ul>" + output.join("") + '</ul>';
+        }
+        document.getElementById("file").addEventListener("change", handleFileSelect);
+        // handleFileSelect()
+
+    </script>
+    <script>
+        // for(let i = 1, j = 1, f; i < 10; i++, f = i * j){
+        //     console.log(f)
+        //     document.write(f)
+        // }
+
+    </script>
+
+
+</body>
+</html>

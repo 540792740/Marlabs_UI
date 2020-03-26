@@ -1,0 +1,86 @@
+1.  for
+    for (int n : nums){}--> for n in nums
+
+2. ? :
+    A ？ B：C ，意思就是如果A为真执行B，否则执行C
+    int i = nums.length > 0 ? 1 : 0;
+
+3. ++
+    a = ++i --> a = i
+    a = i++ --> a + 1 = i
+
+4.  For Loop:
+    for (int i = 0; i < arr.length(); i++) -> arr is string
+    for (int i = 0; i < arr.length; i++) -> arr is integer
+    for (int i = 0; i < arr.size; i++) -> arr is in collections: list, array_list
+
+5. random
+    Math.random()  -> [0, 1)
+
+6. 三元运算符:
+    int i = (1==2 ? 100 : 200); -> 200
+
+7. String
+    a> 来由
+        char data[] = {'a', 'b', 'c'};
+        String s = new String(data);
+
+    b>  比较用equal， 忽略大小写equalsIgnoreCase
+        s1.equalsIgnoreCase(s2)
+
+    c>  concat
+        String s3 = s1.concat(s2) -> 两个string合起来
+
+    d>  indexOf
+        s1.indexOf("b") -> First show up index or -1
+
+    e>  substring
+        s1.substring(0, s1.length() - 1)
+
+    f>  Transfer string to char array
+        char[] chs = string.toCharArray();
+
+        Transfer string to byte array
+        byte[] bytes1 = string.getBytes();
+
+    g>  Replace
+        String replace = string.replace("abc", "ABC");
+
+    h>  Split()
+        String1 = "ab cd ef fs"
+        String[] s1 = string1.split(" ");
+
+8.  Static
+        a> Static variable
+            public static int numberOfStudent = 0;
+            之后可以在function中变化， 因为是共享的。
+
+        b> Static method
+
+9. Array
+        a>  print(s):
+            String s = Arrays.toString(arr);
+
+        b>  Arrays.sort(arr)
+
+10. Math
+        a>  Math.abs(-5)   -> 5
+        b>  Math.ceil(3.3) ->  4.0  比3.3大的最小整数
+        c>  Math.floor(3.3) -> 3.0  比3.3小的最大整数
+        d>  Math.round(5.5) -> 6.0  四舍五入
+
+11. Inherit
+        a>  super.() 父类方法，子类没有重写
+
+
+12. Abstract
+        a>  abstract method only contain name, don't contains function.
+                public abstract void run()
+        b>  Abstract method must save in Abstract class.
+13. Interface
+        a>
+
+
+14. For loop:
+        a> for(let i = 0,f; f=files[i];i++){}
+            condition is optional, one can be true, the for loop will never stop.
