@@ -51,10 +51,10 @@ MongoDB
     j> Remove()
         db.employees.remove({"Skill":"MongoDB"})
 
-    k>
+    k>  Resolve Mongoose
         npm init --yes
         npm install mongoose --save
-
+        mongoose.connect('mongodb://localhost/testdb')
     l>
 
     m>
