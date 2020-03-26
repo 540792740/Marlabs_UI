@@ -1,0 +1,33 @@
+MongoDB
+
+1. mongod  -> show version
+2. mongod --dbpath "E:\Study Resource\UI\src\Data\MongoDB"  -> run server
+3. mongo -> run client
+
+4. terminal
+    show dbs    -> 显示数据库
+    db          -> which database you are in
+    use testdb  -> switch database
+    db.Collection1.insert({"name":"test"})
+    show collections
+    db_demo.dropDatabase()      -> drop database
+    db.createCollection('test')
+    db.employees.insert({"name":"test"})
+    db.test.drop();
+    use company     -> switch to company database
+
+    db.employees.insert([{},{}])    -> 插入数据
+    db.employees.find().pretty()    -> Show all detail
+    db.employees.findOne()    -> Show all detail
+
+    cls     -> clear
+    db.employees.find({"EmpNo":"2"}).pretty()   -> find information
+    db.employees.find({"Age":{$lt:"30}})
+    db.employees.find({"Age":{$lt:"30}}).pretty()   -> age less than 30
+    db.employees.find({"Age":{$gt:"30}}).pretty()   -> age large than 30
+    db.employees.find({"Age":30, "salary":"8000"}).pretty()   -> find multiple condition
+    db.employees.find({"Age":30, $or:[{"salary":"8000"},{"Salary":"100000}]}).pretty()   -> find multiple condition
+    db.employees.update()
+
+    db.employees.update({"_id":ObjectId("5e7c36f318a11aead97827db")},{$set:{"Salary":"90000"}})
+    db.employees.update({"Skill":"MongoDB"},{$set:{"Salary":"200000"}},{multi:true})
