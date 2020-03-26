@@ -34,13 +34,15 @@ MongoDB
         db.employees.find({"Age":30, $or:[{"salary":"8000"},{"Salary":"100000}]}).pretty()   -> find multiple condition
         db.employees.find({},{"FirstName":1}).pretty()
         db.employees.find({},{"FirstName":1, _id:0}).pretty()
+        db.employees.find().pretty().sort({"Salary":-1}).collation({locale:"en_US",numericOrdering:true})   -> convert string into number
+
     f> skip()
         db.employees.find({},{"FirstName":1, _id:0}).pretty().skip(3)
     g> limit()
         db.employees.find({},{"FirstName":1, _id:0}).pretty().skip(3).limit(2)
     h> sort():
         db.employees.find({},{"FirstName":1, _id:0}).pretty().sort({"FirstName":-1})
-
+        db.employees.find().pretty().sort({"Salary":1}).limit(3).skip(2)
     i> update()
         db.employees.update()
         db.employees.update({"_id":ObjectId("5e7c36f318a11aead97827db")},{$set:{"Salary":"90000"}})
@@ -50,6 +52,8 @@ MongoDB
         db.employees.remove({"Skill":"MongoDB"})
 
     k>
+        npm init --yes
+        npm install mongoose --save
 
     l>
 
