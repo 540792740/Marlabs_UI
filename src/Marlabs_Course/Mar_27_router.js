@@ -1,8 +1,8 @@
-function route(handle, pathname, res) {
+function route(handle, pathname, res, commentsData) {
     console.log("Routing a Request for: "  + pathname)
 
     if(typeof handle[pathname] ==='function'){
-        handle[pathname](res);
+        handle[pathname](res, commentsData);
     }
     else{
         console.log("No Handler for : " + pathname)
