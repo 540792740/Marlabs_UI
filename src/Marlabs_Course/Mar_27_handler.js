@@ -1,4 +1,10 @@
-function home(){console.log("The home handler")}
+function home(res){
+    console.log("The home handler")
+    var htmlfile = '<html>'
+
+        + '</html>'
+
+}
 
 function comments(){console.log("the comments handler")}
 
