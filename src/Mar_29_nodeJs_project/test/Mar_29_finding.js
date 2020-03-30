@@ -1,4 +1,4 @@
-const mocha = require('mocha');
+// const mocha = require('mocha');
 const assert = require('assert');
 const MarioChar = require('../module/Mar_29_Mariochar');
 
@@ -17,7 +17,13 @@ describe('Finding Records', function () {
     });
     it('Find a record from the DB',function (done) {
         MarioChar.findOne({name:'Mario'}).then(function (result) {
-            assert(result.name === 'Mario')
+            assert(result.name === 'Mario');
+            done();
+        })
+    });
+    it('Find a record from the DB',function (done) {
+        MarioChar.findOne({_id: char._id}).then(function (result) {
+            assert(result.id.toString() === char._id.toString());
             done();
         })
     });
