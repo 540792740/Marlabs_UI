@@ -99,6 +99,33 @@ describe('Mar_31_calculator.js', function () {
 
 
 //Example 2
+    describe("Calculator", function () {
+
+        let calculator2;
+        let calculator1;
+        beforeEach(function () {
+            calculator1 = new Calculator();
+            calculator2 = new Calculator();
+        });
+
+        afterEach(function () {
+
+        });
+        xit('toMatch', function () {
+            const calculator1 = new Calculator();
+            calculator1.total=-50;
+            expect(calculator1.total).toMatch(/-?\d+/);
+            expect(typeof calculator1.total).toMatch('number')
+        });
+        it('toThrow', function () {
+            const calculator1 = new Calculator();
+            expect(function (){calculator1.divide(0)}).toThrow();
+            expect(function (){calculator1.divide(0)}).toThrowError(Error);
+            expect(function (){calculator1.divide(0)}).toThrowError(Error);
+        });
+
+
+    })
 
 });
 
