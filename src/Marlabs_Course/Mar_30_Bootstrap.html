@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Hello, World!</title>
 
 </head>
 <body>
+
+<h4>Example 1</h4>
     <header>
         <h1>Button</h1>
         <hr>
@@ -24,12 +25,48 @@
     <div class="container-fluid" style="background-color: blue">
         Fluid container
     </div>
-    <h3>AfterNoon Course</h3>
+    <hr>
+<h4>Example 2: Button Types</h4>
+    <a href="#" role="button">Link</a>
+    <button class="btn btn-primary" type="submit">Primary</button>
+    <input class="btn btn-info" type="submit" value="Submit">
+    <input class="btn btn-warning" type="button" value="button">
+    <input class="btn btn-dark" type="reset" value="Reset">
+
+<h4>Example 3: Button Outline</h4>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+
+<h4>Example 3: AfterNoon Course</h4>
     <button class="btn btn-primary" type="button">Regular</button>
     <button class="btn btn-primary active" type="button">Active</button>
     <button class="btn btn-primary disabled" type="button">Disable</button>
     <hr>
     <button class="btn btn-primary" type="button" data-toggle="button">Toggle</button>
+
+<h4>Example 4: Button size</h4>
+    <button type="button" class="btn btn-primary btn-lg">
+        <i class="fa fa-user"></i>Large
+    </button>
+    <button type="button" class="btn btn-primary">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+<h4>Example 5: Block Level Buttons</h4>
+<button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+
+<h4>Example 6: Active/Disabled Buttons</h4>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+    <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+<hr>
+
+<h4>Example 7: Vertical Button Groups</h4>
 
 <!--    Vertical Group-->
     <div class="btn-group-vertical">
@@ -38,9 +75,21 @@
         <button class="btn btn-primary" type="button">Bottom</button>
     </div>
 
-<!--Button Dropdown-->
+<h4>Example 8: Justified Button Groups</h4>
+    <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-primary">Apple</a>
+        <a href="#" class="btn btn-primary">Samsung</a>
+        <a href="#" class="btn btn-primary">Sony</a>
+    </div>
+
+<h4>Example 9:Button Dropdown</h4>
+    <h6>Nesting Button Groups & Dropdown Menus</h6>
     <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Drop Down</button>
+        <button class="btn btn-primary dropdown-toggle"
+                data-toggle="dropdown"
+                type="button">
+            Drop Down
+        </button>
         <div class="dropdown-menu">
             <a href="#" class="dropdown-item">Link One</a>
             <a href="#" class="dropdown-item">Link Two</a>
@@ -48,16 +97,19 @@
             <a href="#" class="dropdown-item">Link Four</a>
         </div>
     </div>
-    <br>
-    <br>
-
-<!--Split DropDown-->
+    <h6>Split Button Dropdowns</h6>
     <div class="btn-group">
-        <button class="btn btn-primary dropdown-toggle" type="button">My Drop Down</button>
-
+        <button type="button" class="btn btn-primary">Sony</button>
+        <button type="button"
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
 
     </div>
 
-
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
 </body>
 </html>
