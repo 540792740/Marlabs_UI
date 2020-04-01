@@ -6,10 +6,10 @@ function calculator(inputNumber) {
 
     const numberA = parseInt(number[0]);
     const numberB = parseInt(number[1]);
-    const numberC = parseInt(number[2]);
+    // const numberC = parseInt(number[2]);
 
     const operation = inputNumber.match(expression);
-    if(Number.isNaN(numberA) || Number.isNaN(numberB) || Number.isNaN(numberC) || operation ===null){
+    if(Number.isNaN(numberA) || Number.isNaN(numberB) || operation ===null){
         updateResult("Operation not recognized");
         return;
     }
