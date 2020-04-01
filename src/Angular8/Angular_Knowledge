@@ -1,1 +1,17 @@
 1. back need   <a routerLink="" routerLinkActive="active" >Back</a>
+
+2. Start
+    a> ng new project1
+    b> enter folder project 1:
+            npm install --save materialize-css jquery font-awesome
+            npm install --savefirebase angularfire2
+    c> in angular.json:
+            style:[
+            "./node_modules/font-awesome.css",
+            "./node_modules/materizlize-css/dist/css/materialize.css"
+            ]
+
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/"
+            ]
