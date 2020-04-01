@@ -23,7 +23,7 @@ import {ItemService} from './services/item.service';
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
