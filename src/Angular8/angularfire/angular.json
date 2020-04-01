@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularfs": {
+    "angularfire": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularfs",
+            "outputPath": "dist/angularfire",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,14 +25,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "./node_modules/font-awesome.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
               "./node_modules/materialize-css/dist/css/materialize.css"
-
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/materialize-css/dist/js/materialize.js/"
-
             ]
           },
           "configurations": {
@@ -69,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularfs:build"
+            "browserTarget": "angularfire:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularfs:build:production"
+              "browserTarget": "angularfire:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularfs:build"
+            "browserTarget": "angularfire:build"
           }
         },
         "test": {
@@ -117,19 +115,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angularfs:serve"
+            "devServerTarget": "angularfire:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularfs:serve:production"
+              "devServerTarget": "angularfire:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angularfs",
+  "defaultProject": "angularfire",
   "cli": {
-    "analytics": "bf067290-acef-4c95-b67d-8f79ed363d4d"
+    "analytics": "5325312d-9e52-4806-a910-5c31111b650e"
   }
 }

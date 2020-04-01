@@ -4,14 +4,39 @@
     a> ng new project1
     b> enter folder project 1:
             npm install --save materialize-css jquery font-awesome
-            npm install --savefirebase angularfire2
+            npm install --save firebase angularfire2
     c> in angular.json:
-            style:[
-            "./node_modules/font-awesome.css",
-            "./node_modules/materizlize-css/dist/css/materialize.css"
-            ]
+            "styles": [
+                          "src/styles.css",
+                          "./node_modules/font-awesome/css/font-awesome.css",
+                          "./node_modules/materialize-css/dist/css/materialize.css"
 
+                        ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/"
+                          "./node_modules/jquery/dist/jquery.js",
+                          "./node_modules/materialize-css/dist/js/materialize.js/"
+
+                        ]
+    d>  in firebase server:
+            overview : add app
+            copy firebase config into: environment/environment.ts, under "false,"
+
+    e>  to app.modules.ts:
+            import {FormsModule} from '@angular/forms';
+
+            import {AngularFireModule} from '@angular/fire';
+            import {AngularFirestoreModule} from '@angular/fire/firestore';
+            import {environment} from '../environments/environment';
+            imports: [
+                BrowserModule,
+                AppRoutingModule,
+                FormsModule,
+                AngularFirestoreModule,
+                AngularFireModule.initializeApp(environment.firebaseConfig)
             ]
+    f>  ng g c components/items
+        ng g service services/item
+
+    g>  entry item.service.ts: change
+
+    h>
