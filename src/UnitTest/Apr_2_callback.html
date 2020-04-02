@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Async</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script>
+    QUnit.testDone( ( { module, name, total, passed, failed, skipped, todo, runtime } ) => {
+        var result = {
+            "Module name": module,
+            "Test name": name,
+            "Assertions": {
+                "Total": total,
+                "Passed": passed,
+                "Failed": failed
+            },
+            "Skipped": skipped,
+            "Todo": todo,
+            "Runtime": runtime
+        };
+
+        console.log( JSON.stringify( result, null, 2 ) );
+    } );
+</script>
+
+</body>
+</html>
