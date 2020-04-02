@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Async</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+
 </head>
 <body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script>
+    QUnit.test( "multiple call done()", function( assert ) {
+        assert.expect( 3 );
+        var done = assert.async( 3 );
+
+        setTimeout(function() {
+            assert.ok( true, "first call done." );
+            done();
+        }, 500 );
+
+        setTimeout(function() {
+            assert.ok( true, "second call done." );
+            done();
+        }, 500 );
+
+        setTimeout(function() {
+            assert.ok( true, "third call done." );
+            done();
+        }, 500 );
+    });
+</script>
 
 </body>
 </html>
