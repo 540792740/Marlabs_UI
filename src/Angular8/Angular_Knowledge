@@ -39,4 +39,5 @@
 
     g>  entry item.service.ts: change
 
-    h>
+    h>  ng g c components/navbar
+    h>  ng g c components/add-item

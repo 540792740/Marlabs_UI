@@ -10,11 +10,15 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {environment} from '../environments/environment';
 import { ItemsComponent } from './components/items/items.component';
 import {ItemService} from './services/item.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AddItemComponent } from './components/add-item/add-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent
+    ItemsComponent,
+    NavbarComponent,
+    AddItemComponent
   ],
   imports: [
     BrowserModule,
