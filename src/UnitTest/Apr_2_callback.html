@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Async</title>
+    <title>callback</title>
     <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
     <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
 
@@ -11,22 +11,23 @@
 <div id="qunit"></div>
 <div id="qunit-fixture"></div>
 <script>
-    QUnit.testDone( ( { module, name, total, passed, failed, skipped, todo, runtime } ) => {
-        var result = {
-            "Module name": module,
-            "Test name": name,
-            "Assertions": {
-                "Total": total,
-                "Passed": passed,
-                "Failed": failed
-            },
-            "Skipped": skipped,
-            "Todo": todo,
-            "Runtime": runtime
-        };
 
-        console.log( JSON.stringify( result, null, 2 ) );
-    } );
+    //Register a call back to fire whenever a test suite starts
+    QUnit.begin(function( details ) {
+        console.log( "Test amount:", details.totalTests );
+        var data = document.getElementById("div");
+        data.innerHTML +=
+            "<br> Qunit Begins - Test Suite Begins <br> total Test: "+
+                details.totalTests;
+    });
+
+    QUnit.done(function( details ) {
+       var data = document.getElementById("div");
+       data.innerHTML +=
+           "<br>Runit Done - Test Suite Finished<br>"
+
+    });
+
 </script>
 
 </body>
