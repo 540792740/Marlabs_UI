@@ -10,12 +10,43 @@
 <body>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
+    <h3>Example 1 </h3>
     <script>
         QUnit.test("My First Test", function (assert) {
             var value = 10;
+
+            var str1 = "testing";
+            var str2 = "testing";
+            var str3 = null;
+
+            var val1 = 5;
+            var val2 = 6;
+
+            var expectedArr = ["1", "2", "3"];
+            var resultArr = ["1", "2", "3"];
+
+            //Example 1
             assert.equal(value,"10", "Value Expected to be 10");
+
+            // Example 2
+            assert.equal(str1, str2, "Equal String");
+
+            // Example 3
+            assert.notEqual(str1, str3, "String not equal.");
+
+            // Example 4
+            assert.ok(val1 < val2, val1+ " is less then " + val2);
+
+            //Example 5
+            assert.notOk(val1 > val2, val1+ " is larger then " + val2);
+
+            // Example 6:
+            assert.deepEqual(expectedArr, resultArr, "Arrays are equal");
+            assert.notDeepEqual(expectedArr, ['1', '2'], "Arrays are not equal");
+
         })
     </script>
+    <h3>Example 2 </h3>
 
 </body>
 </html>
