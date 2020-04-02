@@ -13,7 +13,7 @@ export class AddItemComponent implements OnInit {
 
     title:'' ,
     description:''
-  }
+  };
 
   constructor(public itemService:ItemService) { }
 
