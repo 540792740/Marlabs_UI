@@ -8,7 +8,14 @@
 
 </head>
 <body>
-<div id="qunit"></div>
-<div id="qunit-fixture"></div>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script>
+        QUnit.test("My First Test", function (assert) {
+            var value = 10;
+            assert.equal(value,"10", "Value Expected to be 10");
+        })
+    </script>
+
 </body>
 </html>
