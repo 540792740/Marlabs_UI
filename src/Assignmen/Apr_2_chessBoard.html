@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Chess Board</title>
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <style>
         .outline {
-            width: 502px;
-            height: 502px;
+            width: 500px;
+            height: 500px;
             border: solid black 2px;
             margin: 100px 200px  ;
             background-color: #E6CCAB;
 
         }
         .innerLine{
-            margin-left:  49px ;
-            margin-top: 49px ;
-            border: solid black 2px;
+            border: solid black 1px;
             width: 400px;
             height: 400px;
+            float: left;
         }
+        #topAlpha{
+            width:500px ;
+            height: 48px;
+            float: left;
+            background-color: #E6CCAB;
+        }
+        #bottomAlpha{
+            width:500px ;
+            height: 48px;
+            float: left;
+            background-color: #E6CCAB;
+        }
+        #leftNumber{
+            width:49px ;
+            height: 400px;
+            float: left;
+            background-color: darkred;
+        }
+        #rightNumber {
+            width:49px ;
+            height: 400px;
+            float: left;
+            background-color: darkred;
+        }
+
+
         .shallow{
             width: 50px;
             height: 50px;
@@ -35,16 +57,75 @@
             float: left;
         }
 
-    </style>
 
+        .Alpha{
+            width:50px ;
+            height: 30px;
+            float: left;
+            font-size:x-large;
+            background-color: #E6CCAB;
+            text-align: center;
+            padding: 10px 0
+        }
+        .num{
+            width:49px ;
+            height: 30px;
+            float: left;
+            font-size:x-large;
+            background-color: #E6CCAB;
+            text-align: center;
+            padding: 10px 0
+        }
+        .conner{
+            width:50px ;
+            height: 50px;
+            float: left;
+            background-color: #E6CCAB;
+        }
+    </style>
 </head>
 <body>
     <div class="outline">
-        <div class="innerLine" id="inner">
-
-        </div>
+        <div id="topAlpha" class=" font_side"></div>
+        <div id="leftNumber" class="leftRightNumber font_side"></div>
+        <div class="innerLine" id="inner"></div>
+        <div id="rightNumber" class="leftRightNumber font_side"></div>
+        <div id="bottomAlpha" class=" font_side"></div>
     </div>
     <script>
+        alpha_list = ["A","B","C","D","E","F","G","H"];
+
+        //Top Alpha
+        var top_alp = document.getElementById("topAlpha");
+        top_alp.innerHTML += "<div class='conner'></div>";
+        for(let i in alpha_list){
+            console.log(alpha_list[i])
+            top_alp.innerHTML += "<div class='Alpha'>" + alpha_list[i] + "</div>";
+        }
+        top_alp.innerHTML += "<div class='conner'></div>";
+
+        //Bottom Alpha
+        var bottom_alp = document.getElementById("bottomAlpha");
+        bottom_alp.innerHTML += "<div class='conner'></div>";
+        for(let i in alpha_list){
+            bottom_alp.innerHTML += "<div class='Alpha'>" + alpha_list[i] + "</div>";
+        }
+        bottom_alp.innerHTML += "<div class='conner'></div>";
+
+        // Left number
+        var left_num = document.getElementById("leftNumber");
+        for(let i = 8; i > 0; i--){
+            left_num.innerHTML += "<div class='num'>" + i + "</div>";
+        }
+
+        // Right number
+        var right_num = document.getElementById("rightNumber");
+        for(let i = 8; i > 0; i--){
+            right_num.innerHTML += "<div class='num'>" + i + "</div>";
+        }
+
+
+        // Chess Board
         var temp = document.getElementById("inner");
             for (let i = 0; i < 8; i++){
                 for(let j = 0; j < 8; j++){
