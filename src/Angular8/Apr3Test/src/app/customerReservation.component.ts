@@ -2,12 +2,21 @@ export class customerReservationComponent{
   hotelRoomCapacity = 30;
   customerCount = 10;
 
-  reserveRoom():boolean{
-    let roomReserved = false;
-    if(this.customerCount < this.hotelRoomCapacity){
-      this.customerCount ++;
-      roomReserved = true;
-    }
-    return roomReserved;
+  // reserveRoom():boolean{
+  //   let roomReserved = false;
+  //   if(this.customerCount < this.hotelRoomCapacity){
+  //     this.customerCount ++;
+  //     roomReserved = true;
+  //   }
+  //   return roomReserved;
+  // }
+
+
+  registerCustomer(){
+    return ++this.customerCount;
   }
+  unRegisterCustomer(){
+    return --this.customerCount;
+  }
+
 }
