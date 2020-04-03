@@ -15,7 +15,7 @@
             width: 50px;
             height: 50px;
             position: absolute;
-            border-radius: 100px;
+            border-radius: 1000px;
             background-color: red;
         }
     </style>
@@ -30,23 +30,28 @@
 </div>
 
 <script>
+    var elem = document.getElementById("animate");
+    var pos = 0;
+    var id;
     function myMove() {
-        var elem = document.getElementById("animate");
-        var pos = 0;
-        var id = setInterval(frame, 5);
+        id = setInterval(frame, 5);
+
         function frame() {
-            if (pos == 350) {
-                clearInterval(id);
-            } else {
+            if (pos < 350) {
                 pos++;
                 elem.style.top = pos + "px";
-                elem.style.left = pos + "px";
+            }
+        else if(pos === 700) {
+                pos = 0;
+            }
+            else{
+                pos++;
+                elem.style.top = 700 - pos + "px";
             }
         }
     }
     function myEnd() {
-        var elem = document.getElementById("animate");
-            elem.clearInterval(id)
+        clearInterval(id)
     }
 </script>
 
