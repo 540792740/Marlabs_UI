@@ -1,5 +1,5 @@
 1. back need   <a routerLink="" routerLinkActive="active" >Back</a>
-
+    ng test to start test
 2. Start
     a> ng new project1
     b> enter folder project 1:
@@ -40,4 +40,7 @@
     g>  entry item.service.ts: change
 
     h>  ng g c components/navbar
-    h>  ng g c components/add-item
+    I>  ng g c components/add-item
+
+
+    j>Apr 3: ng new Apr3Test

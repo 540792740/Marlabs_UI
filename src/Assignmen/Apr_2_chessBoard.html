@@ -10,16 +10,31 @@
         .outline {
             width: 502px;
             height: 502px;
-            border: solid black 1px;
+            border: solid black 2px;
             margin: 100px 200px  ;
+            background-color: #E6CCAB;
+
         }
         .innerLine{
             margin-left:  49px ;
             margin-top: 49px ;
-            border: solid black 1px;
-            width: 402px;
-            height: 402px;
+            border: solid black 2px;
+            width: 400px;
+            height: 400px;
         }
+        .shallow{
+            width: 50px;
+            height: 50px;
+            background-color: #E6CCAB;
+            float: left;
+        }
+        .deep{
+            width: 50px;
+            height: 50px;
+            background-color: #9D571B;
+            float: left;
+        }
+
     </style>
 
 </head>
@@ -30,8 +45,18 @@
         </div>
     </div>
     <script>
-        document.getElementById("inner").innerHTML =
+        var temp = document.getElementById("inner");
+            for (let i = 0; i < 8; i++){
+                for(let j = 0; j < 8; j++){
+                    if((i + j) % 2 === 0){
+                        temp.innerHTML +=   "<div class='shallow'></div>"
+                    }
+                    else{
+                        temp.innerHTML +=   "<div class='deep'></div>"
 
+                    }
+                }
+            }
     </script>
 </body>
 </html>
