@@ -43,4 +43,6 @@
     I>  ng g c components/add-item
 
 
-    j>Apr 3: ng new Apr3Test
+    j> TypeScript:
+        toMatch() can find email using ress expression
+        .toContain can only macth same word
