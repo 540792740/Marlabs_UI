@@ -17,7 +17,7 @@ export class EmployeeComponent implements OnInit {
 
   getSalarySlip() {
     if (this.authService.checkAuthentication()) {
-      return "Salary "
+      return "Salary Slip"
     } else {
       return "Not Authenticated"
     }
