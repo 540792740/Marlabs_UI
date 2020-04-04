@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import {AuthenticationService} from "./authentication.service";
+import { EventTestComponent } from './event-test/event-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EventTestComponent
   ],
   imports: [
     BrowserModule,
