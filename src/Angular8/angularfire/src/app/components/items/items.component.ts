@@ -8,6 +8,8 @@ import {Item} from '../../models/Item';
 })
 export class ItemsComponent implements OnInit {
   items: Item[];
+  editState: boolean = false;
+  itemToEdit: Item;
   constructor(public itemService: ItemService) { }
 
   ngOnInit(): void {
@@ -17,4 +19,23 @@ export class ItemsComponent implements OnInit {
     });
   }
 
+  deleteItem(event, item) {
+    this.clearState();
+    this.itemService.deleteItem(item);
+  }
+
+  clearState() {
+    this.editState = false;
+    this.itemToEdit = null;
+  }
+
+  editItem($event, item) {
+    this.editState = true;
+    this.itemToEdit = item;
+  }
+
+  updateItem(item) {
+    this.itemService.updateItem(item);
+    this.clearState();
+  }
 }

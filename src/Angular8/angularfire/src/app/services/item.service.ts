@@ -16,6 +16,7 @@ export class ItemService {
   itemsCollection: AngularFirestoreCollection<Item>;
   // what is this line used for? this file i didnot use
   items: Observable<Item[]>;
+  itemDoc : AngularFirestoreDocument<Item>;
 
   constructor(public afs: AngularFirestore) {
     // this.items = this.afs.collection('items').valueChanges();
@@ -36,6 +37,16 @@ export class ItemService {
   addItem(item: Item) {
     this.itemsCollection.add(item);
 
+  }
+
+  deleteItem(item) {
+    this.itemDoc = this.afs.doc(`items/${item.id}`)
+    this.itemDoc.delete();
+  }
+
+  updateItem(item) {
+    this.itemDoc = this.afs.doc(`items/${item.id}`);
+    this.itemDoc.update(item);
   }
 }
 
