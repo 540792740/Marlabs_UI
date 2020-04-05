@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsonTest</title>
+</head>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Show Content</button>
+
+<script>
+   var  myObj, txt = "";
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "ajax_info.json", false);
+        xhttp.send();
+        myObj = JSON.parse(xhttp.responseText);
+
+        txt += "<table border='1'>";
+        txt += "  <tr>\n" +
+            "    <th>optiontext</th>\n" +
+            "    <th>optionvalue</th>\n" +
+            "  </tr>";
+
+        for (x in myObj) {
+            // console.log(myObj[x].optiontext)
+
+            txt += "<tr><td>" + myObj[x].optiontext + "</td>";
+            txt += "<td>" + myObj[x].optionvalue + "</td></tr>";
+        }
+        txt += "</table>"
+        document.getElementById("demo").innerHTML = txt;
+    }
+        // document.getElementById("demo").innerHTML = xhttp.responseText;
+    // }
+</script>
+
+</body>
+</html>
