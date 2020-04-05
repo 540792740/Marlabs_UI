@@ -39,13 +39,13 @@ export class ItemService {
 
   }
 
-  deleteItem(item) {
-    this.itemDoc = this.afs.doc(`items/${item.id}`)
+  deleteItem(item: Item) {
+    this.itemDoc = this.afs.doc(`auto/${item.id}`);
     this.itemDoc.delete();
   }
 
-  updateItem(item) {
-    this.itemDoc = this.afs.doc(`items/${item.id}`);
+  updateItem(item: Item) {
+    this.itemDoc = this.afs.doc(`auto/${item.id}`);
     this.itemDoc.update(item);
   }
 }
