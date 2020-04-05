@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Prime number</title>
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <body>
+<div class="container" align="center" style="margin-top: 100px">
+    <button onclick="clickCounter()" class="btn btn-primary">Start</button>
+    <button onclick="clickEnd()" class="btn btn-primary">end</button>
+    <div  class=" well ">
+        <div>Now number is: </div>
+        <div id="number" style="font-size:x-large; color:red"> 2</div>
+        <hr>
+        <div>Last prime number is : </div>
+        <div id="result" style="font-size:x-large; color:red"> 2</div>
+    </div>
+
+<script>
+
+    var Pos = 2;
+    var temp_num = 2;
+    var id;
+    function clickCounter() {
+        id = setInterval(count, 100);
+        function count() {
+            console.log(temp_num);
+            var flag = true;
+            for (let j = 2; j < temp_num; j++) {
+                if (temp_num % j === 0) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                Pos = temp_num;
+            }
+
+            document.getElementById("number").innerHTML = temp_num;
+            temp_num++
+        }
+    }
+    function clickEnd(){
+        clearInterval(id);
+        if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML =  Pos;
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+
+    }
+
+
+</script>
+</div>
 
 </body>
 </html>
