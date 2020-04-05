@@ -1,0 +1,84 @@
+HTML5
+1.	B. CSS3
+2.	C. Autocomplete
+3.	C. Form method
+4.	B. Autocomplete = “on”.
+5.	D. Required
+6.	B. Input type = “Tel”
+7.	B. Base-font tag
+8.	B. Datetime-local
+9.	A. Search
+10.	D. input type = “week”
+11.	A. Email
+12.	C. 3: MP4, Web-M, O-gg
+13.	C. 3: Mp3, O-gg, Wav
+14.	D. <div>
+15.	B. <mark>
+16.	C. <fig-caption>
+17.	D. line-To(x, y)
+18.	A. <Canvas>
+19.	B. Rect (x, y, width, height)
+20.	A. Transform
+21.	A. <Output>
+22.	D. Private locally, public server
+23.	A. Plugin
+24.	C. <figcation>
+25.	A. <font> not supported in HTML5.
+26.	D. Whatwg
+27.	D. <big>
+28.	D. <Canvas>
+
+Angular 2:
+1.	A. True
+2.	B. component, controllers
+3.	A. True
+4.	C. typescript
+5.	C. Camel case
+6.	C. Typescript
+7.	B. Server-Side rendering
+8.	A. RouterLink
+9.	B. model-driven
+10.	D. All
+11.	C. zone.js
+12.	B. Imperative
+13.	D. ES2015
+14.	D. None of above
+15.	B. Async
+16.	D. A & B
+17.	A. config.js
+18.	E. All of above
+19.	B. Dynamic Controller Loader
+20.	B False
+
+Node Js:
+1.	B. node sample.js
+2.	B. Var http = new http ()
+3.	A. True
+4.	A. welcome to Node Js
+5.	C. undefined
+
+J query
+1.	A. toggle class
+2.	B id = intro, class = head
+3.	B yes
+4.	D all
+5.	D. None
+6.	B. No
+7.	A. $. Get ()
+8.	B. odd or even position
+9.	B. get Element By ID
+10.	D. None
+
+MongoDB
+1.	B. Mongo.exe is shell process, mongod.exe is an actual database process
+2.	A. MMAPv1
+3.	B. Less than 400
+4.	B. For read-heavy application, increase the size of replica set and distribute read operations to secondary members.
+5.	D. All
+6.	C. Server Status
+7.	A. sum of all likes on all posts by an author grouped by author
+8.	A. mem resident
+9.	C. $push
+10.	B. A single page fault completes slowly and is problematic
+11.	C. 16MB
+12.	A. specify {U pert : true} option can be used as the third parameter
