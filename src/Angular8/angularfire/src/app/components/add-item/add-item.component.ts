@@ -10,7 +10,6 @@ import {from} from "rxjs";
 })
 export class AddItemComponent implements OnInit {
   item: Item={
-
     title:'' ,
     description:''
   };

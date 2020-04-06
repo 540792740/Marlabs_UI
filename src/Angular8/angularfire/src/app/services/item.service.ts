@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore,
   AngularFirestoreCollection,
   // tslint:disable-next-line:import-spacing
-  AngularFirestoreDocument}
+AngularFirestoreDocument}
   from 'angularfire2/firestore';
 import {Item} from '../models/Item';
 import {Observable} from 'rxjs';
@@ -14,7 +14,6 @@ import {map} from 'rxjs/operators';
 export class ItemService {
 
   itemsCollection: AngularFirestoreCollection<Item>;
-  // what is this line used for? this file i didnot use
   items: Observable<Item[]>;
   itemDoc : AngularFirestoreDocument<Item>;
 
@@ -36,7 +35,6 @@ export class ItemService {
 
   addItem(item: Item) {
     this.itemsCollection.add(item);
-
   }
 
   deleteItem(item: Item) {
