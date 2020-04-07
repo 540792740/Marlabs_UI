@@ -19,6 +19,9 @@
 
 9.  Post: Postman: body, x-www-form-urlencoded: type your data
 
-10.     npm install -save bootstrap
-        go to angular.json: style += "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+10. npm install -save bootstrap
+    go to angular.json: style += "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    `ng build`   `ng server`
+11. `ng g cl Video`
+12.
 
