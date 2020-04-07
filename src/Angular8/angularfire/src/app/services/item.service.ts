@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore,
   AngularFirestoreCollection,
-  // tslint:disable-next-line:import-spacing
 AngularFirestoreDocument}
   from 'angularfire2/firestore';
 import {list} from '../models/Item';
@@ -18,7 +17,6 @@ export class ItemService {
   itemDoc : AngularFirestoreDocument<list>;
 
   constructor(public afs: AngularFirestore) {
-    // this.items = this.afs.collection('items').valueChanges();
     this.itemsCollection = this.afs.collection('auto',  ref=>ref.orderBy('title','asc'));
     this.items = this.itemsCollection.snapshotChanges().pipe(map(changes => {
       return changes.map(a => {
