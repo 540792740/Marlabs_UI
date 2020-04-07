@@ -17,7 +17,7 @@
         }  
 8.  `npm install --save mongoose`
 
-9.
+9.  Post: Postman: body, x-www-form-urlencoded: type your data
 
 10. 
 

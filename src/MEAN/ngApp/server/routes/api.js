@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/videos/:id', function (req, res) {
-  console.log("Get request for all videos")
+  console.log("Get request for all videos");
   Video.findById(req.params.id)
     .exec(function (err, result) {
       if(err) {
@@ -30,7 +30,7 @@ router.get('/videos/:id', function (req, res) {
 });
 
 router.get('/videos', function (req, res) {
-  console.log("Get request for all videos")
+  console.log("Get request for all videos");
   Video.find({})
     .exec(function (err, result) {
       if(err) {
@@ -41,5 +41,23 @@ router.get('/videos', function (req, res) {
     });
 });
 
+router.post('/videos', function (req, res) {
+  console.log("Post a video");
+  var newVideo = new Video();
+  newVideo.title = req.body.title;
+  newVideo.url  = req.body.url;
+  newVideo.description = req.body.description;
+
+  newVideo.save(function (err, insertedVideo) {
+    if(err){
+        console.log("Error Saving Video")
+    }else{
+      res.json(insertedVideo);
+    }
+  });
+
+
+});
+//https://www.youtube.com/watch?v=RWMKGAzuszM
 
 module.exports = router;
