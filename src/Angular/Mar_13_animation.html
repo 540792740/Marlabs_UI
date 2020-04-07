@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Controller</title>
-    <script src="angular.min.js"></script>
+<!--    <script src="angular.min.js"></script>-->
+    <script src="angular.js"></script>
     <script src="Mar_13_controller.js"></script>
     <style>
         div{
@@ -14,37 +15,37 @@
             transform-origin: right;
         }
         @keyframes flips {
-            /*25%{*/
-            /*    transform-origin: right;*/
-            /*    animation-mode: forward;*/
-            /*    transform: rotate(-180deg);*/
-            /*}*/
-            /*25.0001%{*/
-            /*    transform-origin: bottom;*/
-            /*    transform: translateX(200px);*/
-            /*}*/
-            /*50%{*/
-            /*    transform-origin: bottom;*/
-            /*    transform: translateX(200px) rotate(-180deg);*/
-            /*}*/
-            /*50.0002%{*/
-            /*    transform-origin: left;*/
-            /*    transform: translateX(200px) translateY(200px);*/
-            /*}*/
-            /*75%{*/
-            /*    transform-origin: left;*/
-            /*    transform: translateX(200px) translateY(200px) rotateY(180deg);*/
+            25%{
+                transform-origin: right;
+                animation-mode: forward;
+                transform: rotate(-180deg);
+            }
+            25.0001%{
+                transform-origin: bottom;
+                transform: translateX(200px);
+            }
+            50%{
+                transform-origin: bottom;
+                transform: translateX(200px) rotate(-180deg);
+            }
+            50.0002%{
+                transform-origin: left;
+                transform: translateX(200px) translateY(200px);
+            }
+            75%{
+                transform-origin: left;
+                transform: translateX(200px) translateY(200px) rotateY(180deg);
 
-            /*}*/
-            /*75.0001%{*/
-            /*    transform-origin: top;*/
-            /*    transform: translateY(200px);*/
-            /*}*/
-        /*    100%{*/
-        /*        transform-origin: top;*/
-        /*        transform: translateY(200px) rotate(180deg);*/
-        /*    }*/
-        /*}*/
+            }
+            75.0001%{
+                transform-origin: top;
+                transform: translateY(200px);
+            }
+            100%{
+                transform-origin: top;
+                transform: translateY(200px) rotate(180deg);
+            }
+        }
         }
     </style>
 
