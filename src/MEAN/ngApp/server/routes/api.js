@@ -17,6 +17,7 @@ router.get('/', function (req, res) {
   res.send('api works');
 });
 
+// Find specific items by id
 router.get('/videos/:id', function (req, res) {
   console.log("Get request for all videos");
   Video.findById(req.params.id)
@@ -29,6 +30,7 @@ router.get('/videos/:id', function (req, res) {
     });
 });
 
+//Find all data
 router.get('/videos', function (req, res) {
   console.log("Get request for all videos");
   Video.find({})
@@ -41,6 +43,7 @@ router.get('/videos', function (req, res) {
     });
 });
 
+//Post data
 router.post('/videos', function (req, res) {
   console.log("Post a video");
   var newVideo = new Video();
@@ -55,9 +58,39 @@ router.post('/videos', function (req, res) {
       res.json(insertedVideo);
     }
   });
-
-
 });
-//https://www.youtube.com/watch?v=RWMKGAzuszM
+
+//Updating data
+router.put('/videos/:id', function (req, res) {
+  console.log("Updating a video");
+
+  Video.findByIdAndUpdate(req.params.id,{
+      $set:{title:req.body.title, url:req.body.url, description:req.body.description}
+    },
+    {
+      new:true
+    },
+    function(err, updatedVideo){
+      if(err){
+        req.send("Error updating Video")
+      }else{
+        res.json(updatedVideo);
+      }
+    }
+  );
+});
+
+router.delete('/videos/:id', function (req, res) {
+  console.log("Delete a video");
+
+  Video.findByIdAndRemove(req.params.id, function (err, deletedVideo) {
+    if (err) {
+      req.send("Error updating Video")
+    } else {
+      res.json(deletedVideo);
+    }
+  });
+});
+
 
 module.exports = router;
