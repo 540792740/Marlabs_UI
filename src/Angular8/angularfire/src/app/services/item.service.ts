@@ -4,7 +4,7 @@ import {AngularFirestore,
   // tslint:disable-next-line:import-spacing
 AngularFirestoreDocument}
   from 'angularfire2/firestore';
-import {Item} from '../models/Item';
+import {list} from '../models/Item';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
@@ -13,16 +13,16 @@ import {map} from 'rxjs/operators';
 })
 export class ItemService {
 
-  itemsCollection: AngularFirestoreCollection<Item>;
-  items: Observable<Item[]>;
-  itemDoc : AngularFirestoreDocument<Item>;
+  itemsCollection: AngularFirestoreCollection<list>;
+  items: Observable<list[]>;
+  itemDoc : AngularFirestoreDocument<list>;
 
   constructor(public afs: AngularFirestore) {
     // this.items = this.afs.collection('items').valueChanges();
     this.itemsCollection = this.afs.collection('auto',  ref=>ref.orderBy('title','asc'));
     this.items = this.itemsCollection.snapshotChanges().pipe(map(changes => {
       return changes.map(a => {
-        const data = a.payload.doc.data() as Item;
+        const data = a.payload.doc.data() as list;
         data.id = a.payload.doc.id;
         return data;
       });
@@ -33,16 +33,16 @@ export class ItemService {
     return this.items;
   }
 
-  addItem(item: Item) {
+  addItem(item: list) {
     this.itemsCollection.add(item);
   }
 
-  deleteItem(item: Item) {
+  deleteItem(item: list) {
     this.itemDoc = this.afs.doc(`auto/${item.id}`);
     this.itemDoc.delete();
   }
 
-  updateItem(item: Item) {
+  updateItem(item: list) {
     this.itemDoc = this.afs.doc(`auto/${item.id}`);
     this.itemDoc.update(item);
   }

@@ -61,11 +61,63 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="web" name="Web7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web11">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/Out/WEB-INF/classes/src/Web_programming/web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Assignmen/AngularAss/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/src/Assignmen/AngularAss/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

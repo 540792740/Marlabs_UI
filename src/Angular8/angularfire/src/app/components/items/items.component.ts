@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {ItemService} from '../../services/item.service';
-import {Item} from '../../models/Item';
+import {list} from '../../models/Item';
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent implements OnInit {
-  items: Item[];
+  items: list[];
   editState: boolean = false;
-  itemToEdit: Item;
+  itemToEdit: list;
   constructor(public itemService: ItemService) { }
 
   ngOnInit(): void {
@@ -28,12 +28,12 @@ export class ItemsComponent implements OnInit {
     this.itemToEdit = null;
   }
 
-  editItem(event, item:Item) {
+  editItem(event, item:list) {
     this.editState = true;
     this.itemToEdit = item;
   }
 
-  updateItem(item: Item) {
+  updateItem(item: list) {
     this.itemService.updateItem(item);
     this.clearState();
   }

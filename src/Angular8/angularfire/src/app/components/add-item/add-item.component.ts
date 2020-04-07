@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ItemService} from '../../services/item.service';
-import {Item} from '../../models/Item';
+import {list} from '../../models/Item';
 import {from} from "rxjs";
 
 @Component({
@@ -9,7 +9,7 @@ import {from} from "rxjs";
   styleUrls: ['./add-item.component.css']
 })
 export class AddItemComponent implements OnInit {
-  item: Item={
+  item: list={
     title:'' ,
     description:''
   };
