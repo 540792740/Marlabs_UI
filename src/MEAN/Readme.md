@@ -9,3 +9,6 @@
     ng build(complied project)
 
 3.  npm install --save express body-parser
+    
+    create server.js, create server\routes\api.js 
+    node server
