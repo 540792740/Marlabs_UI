@@ -22,6 +22,8 @@
 10. npm install -save bootstrap
     go to angular.json: style += "./node_modules/bootstrap/dist/css/bootstrap.min.css"
     `ng build`   `ng server`
-11. `ng g cl Video`
-12.
+11. `ng g cl Video` generate class
+12. ng g s video`   generate service
+13. 
+
 
