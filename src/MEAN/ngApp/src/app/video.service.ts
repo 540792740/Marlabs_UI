@@ -31,7 +31,7 @@ export class VideoService {
     return this._http.post<Video>(this._postUrl, video, this.httpOptions)
   }
   updateVideo(video:Video):Observable<Video>{
-    return this._http.put<Video>(this._putUrl, video, this.httpOptions)
+    return this._http.put<Video>(this._putUrl+video._id, video, this.httpOptions)
       .pipe();
   }
 
