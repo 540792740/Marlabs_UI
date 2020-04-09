@@ -7,11 +7,17 @@ class Apr_9_Message extends Component{
             message : 'Welcome Message: Welcome visitor'
         }
     }
+    changeMessage(){
+        this.setState({
+            message: " The New Message"
+        })
+    }
 
     render(){
         return(
             <div>
-                Welcome <h3>{this.state.message}</h3>
+                <h3>{this.state.message}</h3>
+                <button onClick={()=>{this.changeMessage()}}>Click it to change</button>
             </div>
         )
     }
