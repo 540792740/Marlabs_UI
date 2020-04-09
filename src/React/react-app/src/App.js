@@ -29,7 +29,7 @@ function App() {
           <Apr_9_Welcome name="Node" dev="Baby"></Apr_9_Welcome>
           <Apr_9_Welcome name="Node" dev="Baby"></Apr_9_Welcome><hr/>
 
-          <Apr_9_Message></Apr_9_Message>
+          <Apr_9_Message></Apr_9_Message> <hr/>
           <Apr9Counter></Apr9Counter>
 
       </div>
