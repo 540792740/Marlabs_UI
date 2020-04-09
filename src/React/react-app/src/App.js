@@ -5,13 +5,14 @@ import './App.css';
 
 
 //Example 2
-import  {Apr_9_Greet} from './Components/Apr_9_Greet'
+import  Apr_9_Greet from './Components/Apr_9_Greet'
 
 import Apr_9_Welcome from './Components/Apr_9_Welcome'
 
 import Hello from "./Components/Apr_9_Hello";
 import Apr_9_Message from "./Components/Apr_9_Message";
 import Apr9Counter from "./Components/Apr_9_Counter";
+import Apr9Event from "./Components/Apr_9_Event";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
           <Apr_9_Welcome name="Node" dev="Baby"></Apr_9_Welcome><hr/>
 
           <Apr_9_Message></Apr_9_Message> <hr/>
-          <Apr9Counter></Apr9Counter>
+          <Apr9Counter></Apr9Counter>       <hr/>
+          <Apr9Event></Apr9Event>
 
       </div>
   );

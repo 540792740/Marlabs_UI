@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+/*
 class Apr_9_Message extends Component{
     constructor() {
         super();
@@ -24,3 +24,15 @@ class Apr_9_Message extends Component{
 }
 
 export default Apr_9_Message;
+
+
+ */
+
+class Apr_9_Message extends Component{
+    render(){
+        const {name, dev} = this.props
+        return <h1>I am {dev}, working on {name}</h1>
+    }
+}
+export default Apr_9_Message
+
