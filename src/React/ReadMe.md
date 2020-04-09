@@ -6,13 +6,13 @@
     bower install react => install react
     bower install babel => install babel: browser.js can recognize jsx.
     
-3.
+3.  React is component based
 
-4.
+4.  `npx create-react-app react-app` : New project of React
 
-5.
+5.  `npm start` : start server
 
+6.  webpack: bundling application, related files to view.
 
-6.
-
+7. 
 
