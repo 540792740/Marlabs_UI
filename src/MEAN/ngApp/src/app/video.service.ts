@@ -36,7 +36,7 @@ export class VideoService {
   }
 
   deleteVideo(video:Video):Observable<Video>{
-    return this._http.delete<Video>(this._putUrl+video._id);
+    return this._http.delete<Video>(this._putUrl+video._id).pipe();
   }
 
 }
