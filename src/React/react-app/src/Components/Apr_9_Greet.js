@@ -9,6 +9,6 @@ import React from 'react';
 
 //Example 2
 export const Apr_9_Greet = (props) => <div>
-    <h1>Hello {props.name}, My name is : {props.dev}</h1>
+    <h3>Hello {props.name}, My name is : {props.dev}</h3>
     <div>{props.children}</div>
 </div>;
