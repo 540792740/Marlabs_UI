@@ -18,7 +18,7 @@ const Apr_9_Greet = (props) =>{
     const {name, dev} = props;
     return(
         <div>
-            <h1>I am {dev}, working{name}</h1>
+            <h3>I am {dev}, working{name}</h3>
         </div>
     )
 };

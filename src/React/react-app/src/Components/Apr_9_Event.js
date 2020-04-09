@@ -1,14 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 // class Apr9Event extends Component {
 function Apr9Event(){
-    function clickHandler(){
-        console.log("Button Clicked")
+    function clickHandler(para){
+
+        console.log(para);
+        console.log("Button Clicked" )
+
     }
     return (
         <div>
-            <button onClick={()=>{clickHandler()}}>Click</button>
+            <input type="text"  id={"x"}/>
+            <button onClick={()=>{clickHandler(document.getElementById("x").value)}}>Click</button>
         </div>
+
+
     )
 }
 
