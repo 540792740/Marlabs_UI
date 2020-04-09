@@ -11,7 +11,7 @@ class Apr_9_Message extends Component{
     render(){
         return(
             <div>
-                Welcome Visitor
+                Welcome <h3>{this.state.message}</h3>
             </div>
         )
     }
