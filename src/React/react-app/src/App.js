@@ -1,17 +1,7 @@
 import React from 'react';
 import './App.css';
 //Day 1
-// import Apr_9_Greet from './Components/Apr_9_Greet'
-// import Apr9Event from "./Components/Apr_9_Event";
-// import Apr9EventBinding from "./Components/Apr_9_EventBinding";
-// import Apr9Counter from "./Components/Apr_9_Counter";
-// import Hello from "./Components/Apr_9_Hello";
-// import Apr_9_Welcome from "./Components/Apr_9_Welcome";
-// import Apr_9_Message from "./Components/Apr_9_Message";
-import ReactVideo from "./Apr_9_ReactVideo/ReactVideo";
-import Apr9State from "./Apr_9_ReactVideo/Apr_9_state";
-import Apr9StateTest from "./Apr_9_ReactVideo/Apr_9_state_test";
-import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
+import Apr10ParentComponent from "./Components/Apr_10_ParentComponent";
 
 function App() {
   return (
@@ -29,17 +19,21 @@ function App() {
           {/*<Apr_9_Welcome name="Angular" dev="Cris"></Apr_9_Welcome>*/}
           {/*<Apr_9_Welcome name="Node" dev="Baby"></Apr_9_Welcome>*/}
           {/*<Apr_9_Welcome name="Node" dev="Baby"></Apr_9_Welcome><hr/>*/}
-
           {/*<Apr_9_Message></Apr_9_Message> <hr/>*/}
           {/*<Apr9Counter></Apr9Counter>       <hr/>*/}
           {/*<Apr9Event></Apr9Event> <hr/>*/}
           {/*<Apr9EventBinding></Apr9EventBinding>*/}
 
-      {/*    Video*/}
-          <ReactVideo></ReactVideo><hr/>
-          <Apr9State></Apr9State><hr/>
-          <Apr9StateTest></Apr9StateTest><hr/>
-          <Apr9CartSample></Apr9CartSample><hr/>
+          {/*    Video*/}
+          {/*<ReactVideo></ReactVideo><hr/>*/}
+          {/*<Apr9State></Apr9State><hr/>*/}
+          {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
+          {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
+
+          {/*    Day 2*/}
+          <Apr10ParentComponent></Apr10ParentComponent>
+
+
       </div>
   );
 }

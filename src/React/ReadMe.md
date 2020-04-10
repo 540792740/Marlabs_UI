@@ -9,6 +9,8 @@
 3.  React is component based
 
 4.  `npx create-react-app react-app` : New project of React
+    `npm run build` : build the project
+
 
 5.  `npm start` : start server
 
@@ -21,7 +23,8 @@
 8.  React: Logical control
     ReactDOM: render
 
-9.
+9.  npm install -g serve
+    serve -s build
 
 10.
 11.
