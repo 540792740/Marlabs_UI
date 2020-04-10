@@ -4,8 +4,8 @@ class Apr10Form extends Component {
     constructor(props) {
         super(props);
         this.state ={
-            username:'CC',
-            comment: 'Cris',
+            username:'Hi, ',
+            comment: 'I work in ',
             phone:'Google'
 
         }
@@ -33,10 +33,15 @@ class Apr10Form extends Component {
             console.log(this.state.phone)
 
         });
-    }
+    };
+
+    handleSubmit =(event)=> {
+        alert(`${this.state.username} ${this.state.comment} ${this.state.phone} `);
+        event.preventDefault();
+        };
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username : </label>
                     <input type="text" value={this.state.username}
@@ -55,9 +60,8 @@ class Apr10Form extends Component {
                         <option value="Google">Google</option>
                         <option value="Facebook">Facebook</option>
                     </select>
-
                 </div>
-
+                <button type="submit">Submit</button>
 
             </form>
             );
