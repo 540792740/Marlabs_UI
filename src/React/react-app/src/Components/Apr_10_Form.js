@@ -10,16 +10,22 @@ class Apr10Form extends Component {
     handleFormChange=(event)=>{
         this.setState ({
             username:event.target.value
-        })
+        });
+        console.log(event.target.value)
     };
-
     render() {
         return (
             <form>
-                <label>Username : </label>
-                <input type="text" value={this.state.username}
-                onChange={this.handleFormChange}
-                />
+                <div>
+                    <label>Username : </label>
+                    <input type="text" value={this.state.username}
+                           onChange={this.handleFormChange}
+                    />
+                </div>
+                <div>
+
+
+                </div>
             </form>
             );
     }
