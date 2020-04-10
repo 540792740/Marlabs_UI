@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 //Day 1
 import Apr10ParentComponent from "./Components/Apr_10_ParentComponent";
+import Apr10CondRen from "./Components/Apr_10_CondRen";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
 
           {/*    Day 2*/}
           <Apr10ParentComponent></Apr10ParentComponent>
-
+          <Apr10CondRen></Apr10CondRen>
 
       </div>
   );
