@@ -4,6 +4,7 @@ import './App.css';
 import Apr10ParentComponent from "./Components/Apr_10_ParentComponent";
 import Apr10CondRen from "./Components/Apr_10_CondRen";
 import Apr10ListRen from "./Components/Apr_10_listRen";
+import Apr10StyleSheet from "./Components/Apr_10_styleSheet";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Apr10ParentComponent></Apr10ParentComponent><hr/>
           <Apr10CondRen></Apr10CondRen><hr/>
           <Apr10ListRen></Apr10ListRen><hr/>
+          <Apr10StyleSheet primary></Apr10StyleSheet>
 
       </div>
   );
