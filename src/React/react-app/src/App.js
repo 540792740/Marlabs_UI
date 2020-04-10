@@ -3,6 +3,7 @@ import './App.css';
 //Day 1
 import Apr10ParentComponent from "./Components/Apr_10_ParentComponent";
 import Apr10CondRen from "./Components/Apr_10_CondRen";
+import Apr10ListRen from "./Components/Apr_10_listRen";
 
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
           {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
 
           {/*    Day 2*/}
-          <Apr10ParentComponent></Apr10ParentComponent>
-          <Apr10CondRen></Apr10CondRen>
+          <Apr10ParentComponent></Apr10ParentComponent><hr/>
+          <Apr10CondRen></Apr10CondRen><hr/>
+          <Apr10ListRen></Apr10ListRen><hr/>
 
       </div>
   );
