@@ -1,6 +1,6 @@
 ###React
 
-1. JSX: Js的XML语法扩展
+1. JSX: Js的XML语法扩展, Can improve efficiency to develop software.
 
 2.  npm install -g bower  => install bower 
     bower install react => install react
@@ -14,7 +14,14 @@
 
 6.  webpack: bundling application, related files to view.
 
-7. rcc + tab键 
-    rccp + tab键 - - 创建一个带有PropTypes和ES6模块系统的React组件类
-    rcfc + tab键 - - 创建一个带有PropTypes和所有生命周期方法以及ES6模块系统的React组件类
-    rcjc + tab键 - - 用ES6模块系统创建一个React组件类（无导出）
+7.  rcc  => Class
+    rsf  => Function
+    rcfc => PropTypes + Reac
+
+8.  React: Logical control
+    ReactDOM: render
+
+9.
+
+10.
+11.

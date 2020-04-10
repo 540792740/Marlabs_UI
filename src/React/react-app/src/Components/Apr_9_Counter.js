@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 class Apr9Counter extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             count:0
         }
@@ -18,15 +18,10 @@ class Apr9Counter extends Component {
         // );
 
         //Example 2
-        this.setState(prevState=>({
-            count:prevState.count + 1
-                }), () =>{
-                    console.log("Callback : " + this.state.count)
-                    }
-                );
-
-        console.log(this.state.count)
-
+        this.setState(prevState=>{
+                console.log("Callback : " + prevState.count);
+                return {count:prevState.count + 1}
+                });
     }
     incrementFive(){
         this.increment();
