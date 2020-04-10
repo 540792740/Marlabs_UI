@@ -37,7 +37,7 @@ function App() {
           <Apr10ParentComponent></Apr10ParentComponent><hr/>
           <Apr10CondRen></Apr10CondRen><hr/>
           <Apr10ListRen></Apr10ListRen><hr/>
-          <Apr10StyleSheet primary></Apr10StyleSheet>
+          <Apr10StyleSheet primary={true}></Apr10StyleSheet>
 
       </div>
   );
