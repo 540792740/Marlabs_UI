@@ -40,6 +40,7 @@ class Apr10Form extends Component {
         event.preventDefault();
         };
     render() {
+        // this.refs.a.getInputDom
         return (
             <form onSubmit={this.handleSubmit}>
                 <div>
