@@ -5,7 +5,7 @@ function Apr10StyleSheet(props) {
     let className = props.primary ? 'primary': '';
 
     return (
-        <div className={className}>
+        <div className={`${className} fontClass`}>
             styleSheet
         </div>
     );
