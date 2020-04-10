@@ -11,6 +11,7 @@ import './App.css';
 import ReactVideo from "./Apr_9_ReactVideo/ReactVideo";
 import Apr9State from "./Apr_9_ReactVideo/Apr_9_state";
 import Apr9StateTest from "./Apr_9_ReactVideo/Apr_9_state_test";
+import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
 
 function App() {
   return (
@@ -35,9 +36,10 @@ function App() {
           {/*<Apr9EventBinding></Apr9EventBinding>*/}
 
       {/*    Video*/}
-          <ReactVideo></ReactVideo>
-          <Apr9State></Apr9State>
-          <Apr9StateTest></Apr9StateTest>
+          <ReactVideo></ReactVideo><hr/>
+          <Apr9State></Apr9State><hr/>
+          <Apr9StateTest></Apr9StateTest><hr/>
+          <Apr9CartSample></Apr9CartSample><hr/>
       </div>
   );
 }
