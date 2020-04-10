@@ -7,6 +7,7 @@ import Apr10ListRen from "./Components/Apr_10_listRen";
 import Apr10StyleSheet from "./Components/Apr_10_styleSheet";
 import Apr10InlineStyle from "./Components/Apr_10_inlineStyle";
 import './Components/Apr_10_appStyle.css'
+import Apr10Form from "./Components/Apr_10_Form";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           <Apr10ListRen></Apr10ListRen><hr/>
           <Apr10StyleSheet primary={true}></Apr10StyleSheet><hr/>
           <Apr10InlineStyle></Apr10InlineStyle><hr/>
-
+          <Apr10Form></Apr10Form>
 
 
       </div>
