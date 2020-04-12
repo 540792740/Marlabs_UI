@@ -34,4 +34,13 @@
         e>  Do not interact with Dom
         f>  Do not make ajax calls
         g>  children components lifecycle methods are also excuted
-11.
+11. LifeCycle:
+        a>  Before V16.0
+            
+            
+        
+        
+        
+        b>  After V16.0
+            add Fiber
+        
