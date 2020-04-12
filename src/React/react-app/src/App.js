@@ -3,6 +3,7 @@ import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
 import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
+import Apr12LifeCycle from "./Apr_9_ReactVideo/Apr_12_lifeCycle";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           {/*<Apr9State></Apr9State><hr/>*/}
           {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
           <Apr9CartSample></Apr9CartSample><hr/>
+          <Apr12LifeCycle></Apr12LifeCycle>
 
           {/*    Day 2*/}
           {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}
