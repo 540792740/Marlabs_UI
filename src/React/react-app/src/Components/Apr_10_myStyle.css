@@ -1,3 +1,7 @@
 .primary{
     color:mediumvioletred;
 }
+
+#div1 {
+    float: left;
+}

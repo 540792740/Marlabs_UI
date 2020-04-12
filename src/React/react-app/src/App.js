@@ -1,14 +1,8 @@
 import React from 'react';
 import './App.css';
 //Day 1
-import Apr10ParentComponent from "./Components/Apr_10_ParentComponent";
-import Apr10CondRen from "./Components/Apr_10_CondRen";
-import Apr10ListRen from "./Components/Apr_10_listRen";
-import Apr10StyleSheet from "./Components/Apr_10_styleSheet";
-import Apr10InlineStyle from "./Components/Apr_10_inlineStyle";
 import './Components/Apr_10_appStyle.css'
-import Apr10Form from "./Components/Apr_10_Form";
-import Apr10LifeCycleParent from "./Components/Apr_10_LifeCycleParent";
+import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
 
 function App() {
   return (
@@ -35,16 +29,16 @@ function App() {
           {/*<ReactVideo></ReactVideo><hr/>*/}
           {/*<Apr9State></Apr9State><hr/>*/}
           {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
-          {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
+          <Apr9CartSample></Apr9CartSample><hr/>
 
           {/*    Day 2*/}
-          <Apr10ParentComponent></Apr10ParentComponent><hr/>
-          <Apr10CondRen></Apr10CondRen><hr/>
-          <Apr10ListRen></Apr10ListRen><hr/>
-          <Apr10StyleSheet primary={true}></Apr10StyleSheet><hr/>
-          <Apr10InlineStyle></Apr10InlineStyle><hr/>
-          <Apr10Form></Apr10Form><hr/>
-          <Apr10LifeCycleParent></Apr10LifeCycleParent>
+          {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}
+          {/*<Apr10CondRen></Apr10CondRen><hr/>*/}
+          {/*<Apr10ListRen></Apr10ListRen><hr/>*/}
+          {/*<Apr10StyleSheet primary={true}></Apr10StyleSheet><hr/>*/}
+          {/*<Apr10InlineStyle></Apr10InlineStyle><hr/>*/}
+          {/*<Apr10Form></Apr10Form><hr/>*/}
+          {/*<Apr10LifeCycleParent></Apr10LifeCycleParent>*/}
 
       </div>
   );
