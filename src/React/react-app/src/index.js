@@ -5,10 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Apr13Contact from "./Components/Apr_13_contact";
 import Apr13Users from "./Components/Apr_13_users";
-// import Router from "react-router-dom/es/Router";
 import {BrowserRouter as Router, Link, NavLink, Route, Switch} from 'react-router-dom'
 import Apr13NotFound from "./Components/Apr_13_notFound";
-// import Switch from "react-router-dom/es/Switch";
+
 const routing = (
     <Router>
         <div>
@@ -25,7 +24,6 @@ const routing = (
                 <Route path='/users/:id' component={Apr13Users}></Route>
                 <Route path='/contact' component={Apr13Contact}></Route>
                 <Route component={Apr13NotFound}></Route>
-
             </Switch>
 
         </div>
