@@ -1,13 +1,25 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
 import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
 import Apr12LifeCycle from "./Apr_9_ReactVideo/Apr_12_lifeCycle";
 
-function App() {
-  return (
-      <div className="App">
+
+class App extends Component{
+    state = {prop:'some prop'};
+
+    componentDidMount() {
+        this.setState({prop:'New prop'});
+
+        setTimeout(()=>{
+            this.setState({prop:''})
+        }, 2000);
+    }
+
+    render(){
+        return (
+          <div className="App">
           {/*Day 1*/}
           {/*<Hello/><hr/>*/}
           {/*<Apr_9_Greet name="React" dev="Robin" >*/}
@@ -31,7 +43,7 @@ function App() {
           {/*<Apr9State></Apr9State><hr/>*/}
           {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
           <Apr9CartSample></Apr9CartSample><hr/>
-          <Apr12LifeCycle></Apr12LifeCycle>
+          {this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}
 
           {/*    Day 2*/}
           {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}
@@ -41,9 +53,9 @@ function App() {
           {/*<Apr10InlineStyle></Apr10InlineStyle><hr/>*/}
           {/*<Apr10Form></Apr10Form><hr/>*/}
           {/*<Apr10LifeCycleParent></Apr10LifeCycleParent>*/}
-
-      </div>
-  );
+        </div>
+        )
+    }
 }
 
 

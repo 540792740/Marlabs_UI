@@ -23,7 +23,7 @@ class Apr12LifeCycle extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         console.log("5. shouldComponentUpdate Execution")
-
+        return true;
     }
 
     componentWillUpdate(nextProps, nextState) {

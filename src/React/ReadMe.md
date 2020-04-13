@@ -36,7 +36,7 @@
         g>  children components lifecycle methods are also excuted
 11. LifeCycle:
         a>  Before V16.0
-            
+                componentDidCatch(error, info) -> error component
             
         
         
