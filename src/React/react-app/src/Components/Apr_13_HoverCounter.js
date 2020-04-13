@@ -1,26 +1,14 @@
 import React, {Component} from 'react';
 
 class Apr13HoverCounter extends Component {
-    constructor(props) {
-        super(props);
-        this.state={
-            count:0
-        }
-
-    }
-    incrementCount = () => {
-        this.setState(prevState=>{
-            return{count:prevState.count + 1}
-        })
-    };
-
     render() {
+        const {count, incrementCount} = this.props;
         return (
             <div>
-                <h3 onMouseOver={this.incrementCount}>Hovered {this.state.count} times</h3>
+                <h3 onMouseOver={incrementCount}>{this.props.name} Hovered {count} times</h3>
             </div>
         );
     }
 }
-
-export default Apr13HoverCounter;
+nent(Apr13HoverCounter);
+export default UpdatedCompo
