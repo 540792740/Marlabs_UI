@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import UpdatedComponent from "./Apr_13_WithComponent";
 
 class Apr13HoverCounter extends Component {
     render() {
@@ -10,5 +11,4 @@ class Apr13HoverCounter extends Component {
         );
     }
 }
-nent(Apr13HoverCounter);
-export default UpdatedCompo
+export default UpdatedComponent(Apr13HoverCounter);
