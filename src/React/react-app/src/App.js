@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
-import Apr9CartSample from "./Apr_9_ReactVideo/Apr_9_CartSample";
-import Apr12LifeCycle from "./Apr_9_ReactVideo/Apr_12_lifeCycle";
 
 
 class App extends Component{
@@ -20,7 +18,7 @@ class App extends Component{
     render(){
         return (
           <div className="App">
-          {/*Day 1*/}
+          {/*Day 1  Apr 9 */}
           {/*<Hello/><hr/>*/}
           {/*<Apr_9_Greet name="React" dev="Robin" >*/}
           {/*    <h3>Child Element</h3>*/}
@@ -42,10 +40,10 @@ class App extends Component{
           {/*<ReactVideo></ReactVideo><hr/>*/}
           {/*<Apr9State></Apr9State><hr/>*/}
           {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
-          <Apr9CartSample></Apr9CartSample><hr/>
-          {this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}
+          {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
+          {/*{this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}*/}
 
-          {/*    Day 2*/}
+          {/*    Day 2 Apr 10*/}
           {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}
           {/*<Apr10CondRen></Apr10CondRen><hr/>*/}
           {/*<Apr10ListRen></Apr10ListRen><hr/>*/}
@@ -53,6 +51,11 @@ class App extends Component{
           {/*<Apr10InlineStyle></Apr10InlineStyle><hr/>*/}
           {/*<Apr10Form></Apr10Form><hr/>*/}
           {/*<Apr10LifeCycleParent></Apr10LifeCycleParent>*/}
+
+          {/*Day 3 Apr 13*/}
+
+
+
         </div>
         )
     }
