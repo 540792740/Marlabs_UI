@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
-import Apr13RefsDemo from "./Components/Apr_13_RefsDemo";
 import Apr13ClickCounter from "./Components/Apr_13_ClickCounter";
+import Apr13HoverCounter from "./Components/Apr_13_HoverCounter";
 
 
 class App extends Component{
@@ -57,9 +57,9 @@ class App extends Component{
               {/*Day 3 Apr 13*/}
               {/*<h3>home</h3>*/}
               {/*<Apr13ParCom></Apr13ParCom>*/}
-              <Apr13RefsDemo></Apr13RefsDemo>
+              {/*<Apr13RefsDemo></Apr13RefsDemo>*/}
               <Apr13ClickCounter></Apr13ClickCounter>
-
+              <Apr13HoverCounter></Apr13HoverCounter>
         </div>
         )
     }

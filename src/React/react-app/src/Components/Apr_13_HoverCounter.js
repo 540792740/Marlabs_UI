@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Apr13ClickCounter extends Component {
+class Apr13HoverCounter extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -15,14 +15,12 @@ class Apr13ClickCounter extends Component {
     };
 
     render() {
-        const {count} = this.state
         return (
             <div>
-
-                <button onClick={this.incrementCount}> Clicked {count}</button>
+                <h3 onMouseOver={this.incrementCount}>Hovered {this.state.count} times</h3>
             </div>
         );
     }
 }
 
-export default Apr13ClickCounter;
+export default Apr13HoverCounter;
