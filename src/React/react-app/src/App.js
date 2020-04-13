@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
+import Apr13ProCom from "./Components/Apr_13_ProCom";
 
 
 class App extends Component{
@@ -54,6 +55,7 @@ class App extends Component{
 
           {/*Day 3 Apr 13*/}
           <h3>home</h3>
+          <Apr13ProCom></Apr13ProCom>
         </div>
         )
     }
