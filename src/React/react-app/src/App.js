@@ -54,8 +54,6 @@ class App extends Component{
 
           {/*Day 3 Apr 13*/}
           <h3>home</h3>
-
-
         </div>
         )
     }
