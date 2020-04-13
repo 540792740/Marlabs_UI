@@ -6,14 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import Apr13Contact from "./Components/Apr_13_contact";
 import Apr13Users from "./Components/Apr_13_users";
 // import Router from "react-router-dom/es/Router";
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Link, NavLink, Route, Switch} from 'react-router-dom'
 import Apr13NotFound from "./Components/Apr_13_notFound";
 // import Switch from "react-router-dom/es/Switch";
 const routing = (
     <Router>
         <div>
             <ul>
-                <li> <Link to="/">Home</Link> </li>
+                <li> <NavLink activeClassName="active" to="/">Home</NavLink> </li>
                 <li> <Link to="/users">Users</Link> </li>
                 <li> <Link to="/contact">Contact</Link> </li>
             </ul>
