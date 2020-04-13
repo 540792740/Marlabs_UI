@@ -53,7 +53,7 @@ class App extends Component{
           {/*<Apr10LifeCycleParent></Apr10LifeCycleParent>*/}
 
           {/*Day 3 Apr 13*/}
-
+          <h3>home</h3>
 
 
         </div>
