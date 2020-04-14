@@ -51,6 +51,7 @@
         b>  npm install --save-dev gulp
         c>  npm install --save-dev gulp -g
         d>  npm install --save-dev gulp-rename
+        e>  gulp style
 14.
 
 15.
