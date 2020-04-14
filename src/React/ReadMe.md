@@ -46,18 +46,19 @@
 12.  Routing:
         npm install react-router-dom
 
-13. gulp: automation of time consuming task In a development work flow
-        a>  npm init    -> generate package.json
-        b>  npm install --save-dev gulp
-        c>  npm install --save-dev gulp -g
-        d>  npm install --save-dev gulp-rename
-        e>  npm install --save-dev gulp-sass
-        f>  npm install --save-dev gulp-autoprefixer
-        g>  gulp style
-        h>  npm install --save-dev gulp-imagemin
-            gulp image
-        i>  npm install --save-dev gulp-sourcemaps
-
+13. gulp to map scss: automation of time consuming task In a development work flow
+        a>  `npm init`    -> generate package.json
+        b>  `npm install --save-dev gulp`
+        c>  `npm install --save-dev gulp -g`
+        d>  `npm install --save-dev gulp-rename`
+        e>  `npm install --save-dev gulp-sass`
+        f>  `npm install --save-dev gulp-autoprefixer`
+        g>  `gulp style`
+        h>  `npm install --save-dev gulp-imagemin`
+            `gulp image`
+        i>  `npm install --save-dev gulp-sourcemaps`
+        j>  `gulp` -> generate map automatically
+        k>  `npm install --save-dev browser-sync`
 14.
 
 15.

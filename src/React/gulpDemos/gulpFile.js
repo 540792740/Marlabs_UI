@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync').create();
 
 var styleSrc ='./src/scss/style.scss';
 var styleDest ='./dist/css/';
@@ -28,8 +29,18 @@ gulp.task('style', function(done){
         }))
         .pipe(rename({suffix:'.min'}))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(styleDest));
+        .pipe(gulp.dest(styleDest))
+        .pipe(browserSync.reload({
+        stream:true
+    }));
     done();
+});
+gulp.task('browserSync', function () {
+    browserSync.init({
+        server:{
+            baseDir:'../gulpDemos'
+        }
+    })
 });
 
 var jsSRC = './src/js/script.js';
@@ -39,7 +50,7 @@ gulp.task('js',function(done){
     gulp.src(jsSRC)
         .pipe(gulp.dest(jsDEST));
     done();
-})
+});
 
 
 
@@ -59,7 +70,7 @@ var jsWatch = './src/js/**/*.js';
 gulp.task('watch', function () {
     gulp.watch(styleWatch, gulp.series('style'));
     gulp.watch(jsWatch, gulp.series('js'));
-    return;
+    // return
 });
 
-gulp.task('default', gulp.parallel('style', 'js', 'image'),function(){});
+gulp.task('default', gulp.parallel('style', 'js', 'image', 'watch','browserSync'),function(){});
