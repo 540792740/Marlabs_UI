@@ -52,7 +52,12 @@
         c>  npm install --save-dev gulp -g
         d>  npm install --save-dev gulp-rename
         e>  npm install --save-dev gulp-sass
-        f>  gulp style
+        f>  npm install --save-dev gulp-autoprefixer
+        g>  gulp style
+        h>  npm install --save-dev gulp-imagemin
+        
+        gulp image
+
 14.
 
 15.
