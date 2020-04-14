@@ -55,8 +55,8 @@
         f>  npm install --save-dev gulp-autoprefixer
         g>  gulp style
         h>  npm install --save-dev gulp-imagemin
-        
-        gulp image
+            gulp image
+        i>  npm install --save-dev gulp-sourcemaps
 
 14.
 

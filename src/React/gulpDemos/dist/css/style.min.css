@@ -3,5 +3,7 @@ body {
   color: orange; }
 
 a {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
+  -webkit-transition: all 330ms ease;
+  transition: all 330ms ease; }
+
+/*# sourceMappingURL=style.min.css.map */
