@@ -49,6 +49,8 @@
 13. gulp: automation of time consuming task In a development work flow
         a>  npm init    -> generate package.json
         b>  npm install --save-dev gulp
+        c>  npm install --save-dev gulp -g
+        d>  npm install --save-dev gulp-rename
 14.
 
 15.
