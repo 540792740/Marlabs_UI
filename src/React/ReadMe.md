@@ -59,6 +59,12 @@
         i>  `npm install --save-dev gulp-sourcemaps`
         j>  `gulp` -> generate map automatically
         k>  `npm install --save-dev browser-sync`
+        L>  gulp: conver an SVG image to ico file:
+                1> `npm install gulp-svgmin --save-dev`
+                2> `npm install gulp-svgstore --save-dev`
+        M>
+        N>
+        
 14. Grunt
         a>  npm install grunt-cli -g
         b>  npm init

@@ -12,26 +12,26 @@ module.exports = function(grunt){
             css:{
                 src:['css/*.js'],
                 dest:'build/style.css'
+            }
+        },
+        sass:{
+            options:{
+                implementation:sass,
+                sourceMap: true
             },
-            sass:{
-                options:{
-                    implementation:sass,
-                    sourceMap: true
-                },
-                build:{
-                    files:[{
-                        src:'css/sass/styles.scss',
-                        dest:'css/styles.css'
-                    }]
-                }
-            },
-            uglify:{
-                build:{
-                    files:[{
-                        src:'build/script.js',
-                        dest:'build/scripts.js'
-                    }]
-                }
+            build:{
+                files:[{
+                    src:'css/sass/styles.scss',
+                    dest:'css/styles.css'
+                }]
+            }
+        },
+        uglify:{
+            build:{
+                files:[{
+                    src:'build/script.js',
+                    dest:'build/scripts.js'
+                }]
             }
         }
     });

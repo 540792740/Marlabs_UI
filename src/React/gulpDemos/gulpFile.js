@@ -9,12 +9,20 @@ var browserSync = require('browser-sync').create();
 var styleSrc ='./src/scss/style.scss';
 var styleDest ='./dist/css/';
 
-// gulp.task('style', function(done){
-//     gulp.src(styleSrc)
-//         .pipe(rename({suffix:'.min'}))
-//         .pipe(gulp.dest(styleDest));
-//         done();
-// });
+var svgmin = require('gulp-svgmin');
+var svgstore = require('gulp-svgstore');
+
+var svgSrc = './src/images/*.svg';
+var svgDest = './dist/images/*.svg';
+
+gulp.task('icon-generator', function(done){
+    return gulp.src(svgSrc)
+        .pipe(svgmin())
+        .pipe(svgstore({inlineSvg:true}))
+        .pipe(rename('icon.svg'))
+        .pipe(gulp.dest(svgDest));
+    done()
+});
 
 gulp.task('style', function(done){
     gulp.src(styleSrc)
