@@ -59,7 +59,20 @@
         i>  `npm install --save-dev gulp-sourcemaps`
         j>  `gulp` -> generate map automatically
         k>  `npm install --save-dev browser-sync`
-14.
+14. Grunt
+        a>  npm install grunt-cli -g
+        b>  npm init
+        c>  npm install grunt --save-dev
+        d>  Task:
+                1>  configure task
+                2>  Load plugin
+                3>  
+        e>  grunt run
+        f>
+        g>
+        h>
+        h>
+        
 
 15.
 
