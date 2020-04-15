@@ -1,3 +1,6 @@
+var sass = require('node-sass');
+
+
 module.exports = function(grunt){
     //Configuration
     grunt.initConfig({
@@ -9,7 +12,27 @@ module.exports = function(grunt){
             css:{
                 src:['css/*.js'],
                 dest:'build/style.css'
-    }
+            },
+            sass:{
+                options:{
+                    implementation:sass,
+                    sourceMap: true
+                },
+                build:{
+                    files:[{
+                        src:'css/sass/styles.scss',
+                        dest:'css/styles.css'
+                    }]
+                }
+            },
+            uglify:{
+                build:{
+                    files:[{
+                        src:'build/script.js',
+                        dest:'build/scripts.js'
+                    }]
+                }
+            }
         }
     });
 
@@ -21,7 +44,7 @@ module.exports = function(grunt){
     //Register Tasks
     grunt.registerTask('concat-js',['concat:js']);
 
-    grunt.registerTask('concat-js',['concat:css'])
+    grunt.registerTask('concat-css',['concat:css'])
 
 
     // grunt.registerTask('run',function () {

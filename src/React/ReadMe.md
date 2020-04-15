@@ -63,13 +63,19 @@
         a>  npm install grunt-cli -g
         b>  npm init
         c>  npm install grunt --save-dev
+            npm install grunt-contrib-concat --save -dev
+            npm install node-sass --save-dev
+            npm install grunt-sass --save-dev
+            npm install grunt-contrib-uglify --save-dev
         d>  Task:
                 1>  configure task
                 2>  Load plugin
                 3>  
         e>  grunt run
-        f>
-        g>
+        f>  grunt concat-js
+            grunt concat-css
+        g>  
+            
         h>
         h>
         

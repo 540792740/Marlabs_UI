@@ -18,4 +18,5 @@ $heading-font: Arial;
 
 .heading{
   font-family: $heading-font;
+  @include stylelink('blue', 'red', 'green', 'pink')
 }
