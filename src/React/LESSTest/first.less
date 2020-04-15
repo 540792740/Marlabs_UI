@@ -1,0 +1,52 @@
+//@primarycolor:#ccc;
+//@color:#800888;
+//h1{
+//  color: @primarycolor
+//}
+//
+//h2{
+//  color: @color;
+//}
+
+
+@fontSize:10px;
+
+.div1{
+  font-size: @fontSize;
+  color: gold;
+}
+
+.div2{
+  font-size: @fontSize * 2;
+  color: gold;
+}
+
+.count(@c) when (@c > 0){
+  .count((@c - 1));
+  width: 10px * @c
+}
+div{
+  .count(5)
+}
+
+div{
+  width: 30px;
+  height: 30px;
+  margin:10px 5px;
+  text-align:center;
+  border: 1px solid #000000;
+  font-size: 15px;
+  line-height:30px;
+}
+
+body{
+  display: flex;
+}
+
+.loop(@i) when (@i>0){
+  div:nth-child(@{i}):after{
+    content:'@{i}';
+  }
+  .loop(@i - 1);
+}
+

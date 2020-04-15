@@ -86,7 +86,21 @@
         h>
         
 
-15.
+15. LESS:
+
+16: differences between sass and scss:
+        sass(indented syntax)
+        scss(parents and semicolons)
+        
+17: differences between LESS and SASS:
+        1>  
+        2>  
+18> `npm install less -g` ->LESS build
+        a> `lessc first.less style.css`  -> generate css file
+        b> Example Links:  
+            1> 
+    
+
 
 
 

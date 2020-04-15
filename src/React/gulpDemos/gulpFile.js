@@ -21,7 +21,7 @@ gulp.task('icon-generator', function(done){
         .pipe(svgstore({inlineSvg:true}))
         .pipe(rename('icon.svg'))
         .pipe(gulp.dest(svgDest));
-    done()
+    // done()
 });
 
 gulp.task('style', function(done){
