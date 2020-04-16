@@ -44,3 +44,7 @@
     j> TypeScript:
         toMatch() can find email using ress expression
         .toContain can only macth same word
+
+
+3. High Chart in Angular:
+        a> npm i --save angular-highcharts highcharts
