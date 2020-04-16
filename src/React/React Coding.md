@@ -11,4 +11,7 @@
             <Comp title = {} onSubmit=>{this.onSubmit}>
             
             
+2.  HOC: Higher-Order component
+        Memo Component:
+            const Comment = React.memo(function(){return ...}) -> return pure component             
 44：26
