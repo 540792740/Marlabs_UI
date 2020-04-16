@@ -114,6 +114,11 @@
         e>
 20> Bower:
     `npm install -g bower` 
+    `bower install/uninstall jquery` + (Specific Version optional: #1.1.1)
+    `bower list --path` show path of tool packages
+    `bower install backbone`
+    `bower install bootstrap -s`
+    
     
 
 21>
