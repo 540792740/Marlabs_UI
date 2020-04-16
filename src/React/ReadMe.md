@@ -99,8 +99,18 @@
         a> `lessc first.less style.css`  -> generate css file
         b> Example Links:  
             1> 
-    
 
 
+19> ant component
+        a> `npm install antd --save` -> antd component
+        b> `npm install react-app-rewired@2.0.2-next.0 babel-plugin-import --save`
+        c> add file override.js
+        d> package.json: 
+            "scripts": {
+                "start": "react-app-rewired start",
+                "build": "react-app-rewired build",
+                "test": "react-app-rewired test",
+                "eject": "react-app-rewired eject"}
+        e>
 
 

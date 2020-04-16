@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
-import Apr13ClickCounter from "./Components/Apr_13_ClickCounter";
-import Apr13HoverCounter from "./Components/Apr_13_HoverCounter";
+import Apr15AntdTest from "./Apr_9_ReactVideo/Apr_15_antdTest";
 
 
 class App extends Component{
@@ -44,6 +43,7 @@ class App extends Component{
               {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
               {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
               {/*{this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}*/}
+              <Apr15AntdTest></Apr15AntdTest>
 
               {/*    Day 2 Apr 10*/}
               {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}
@@ -58,8 +58,8 @@ class App extends Component{
               {/*<h3>home</h3>*/}
               {/*<Apr13ParCom></Apr13ParCom>*/}
               {/*<Apr13RefsDemo></Apr13RefsDemo>*/}
-              <Apr13ClickCounter></Apr13ClickCounter>
-              <Apr13HoverCounter></Apr13HoverCounter>
+              {/*<Apr13ClickCounter></Apr13ClickCounter>*/}
+              {/*<Apr13HoverCounter></Apr13HoverCounter>*/}
         </div>
         )
     }
