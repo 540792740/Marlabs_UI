@@ -8,7 +8,8 @@ export default class CommentList extends Component {
         };
     }
     componentDidMount() {
-        setTimeout(() => {
+        setInterval(() => {
+        // setTimeout(() => {
             this.setState({
                 comments: [
                     { body: "react is very good", author: "facebook" },
@@ -21,7 +22,8 @@ export default class CommentList extends Component {
         return (
             <div>
                 {this.state.comments.map((c, i) => (
-                    <Comment key={i} data={c} />
+                    // <Comment key={i} body={c.data.body} author={c.data.author} />
+                    <Comment key={i} {...c}/>
                 ))}
             </div>
         );
@@ -29,11 +31,22 @@ export default class CommentList extends Component {
 }
 
 //Display component
-function Comment({ data }) {
-    return (
-        <div>
-            <p>{data.body}</p>
-            <p> --- {data.author}</p>
-        </div>
-    );
+class Comment extends React.PureComponent{
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //     if (nextProps.data.body === this.props.data.body &&
+    //         nextProps.data.author === this.props.data.body){
+    //         return false;
+    //     }
+    //     return true;
+    // }
+
+    render(){
+        console.log('Rendering comment');
+        return (
+            <div>
+                <p>{this.props.body}</p>
+                <p> --- {this.props.author}</p>
+            </div>
+        );
+    }
 }
