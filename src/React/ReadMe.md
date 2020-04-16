@@ -112,5 +112,10 @@
                 "test": "react-app-rewired test",
                 "eject": "react-app-rewired eject"}
         e>
+20> Bower:
+    `npm install -g bower` 
+    
+
+21>
 
 
