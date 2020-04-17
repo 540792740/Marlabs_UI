@@ -32,9 +32,15 @@
         
 ###4.  Redux:  Redux is a predictable state container for JS app
         a> `npm install redux`
-        b>  `Store`： holds the state of Application
-            `Action`: Describes the changes in the sate of the App
-            `Reducer`: carries out the sate transition depending on the action
+        b>      1>`Store`： holds the state of Application
+                    Responsibilities:
+                        A> Holds application state
+                        B> Allows access to state via getState()
+                        C> Allows state to be updated via dispatch
+                        D> Register listenners via subscribe(listenner)
+                        E> Handles unregistering, by a function returned  by subscribe
+                2> `Action`: Describes the changes in the sate of the App
+                3> `Reducer`: carries out the sate transition depending on the action
         
         c> principle:
             1>
