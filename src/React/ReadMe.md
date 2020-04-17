@@ -119,8 +119,10 @@
     `bower install backbone`
     `bower install bootstrap -s`
     
-    
-
-21>
+   
+###React-redux-demo
+    This project is about redux
+    1. npm init
+    2. components create CakeContainer.js
 
 
