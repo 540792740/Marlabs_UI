@@ -5,7 +5,7 @@ import './Components/Apr_10_appStyle.css'
 import Apr15AntdTest from "./Apr_9_ReactVideo/Apr_15_antdTest";
 import CommentList from "./Apr_9_ReactVideo/Apr_15_CommentList";
 import Apr116Hoc from "./Apr_9_ReactVideo/Apr_116_HOC";
-import Apr16Conposition from "./Apr_9_ReactVideo/Apr_16_Conposition";
+import Apr16Conposition from "./Apr_9_ReactVideo/Apr_16_Composition";
 
 
 class App extends Component{
