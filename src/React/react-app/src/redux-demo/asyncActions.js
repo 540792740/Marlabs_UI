@@ -2,6 +2,7 @@ const redux = require('redux');
 const createStore = redux.createStore;
 const applyMiddleware = redux.applyMiddleware;
 const thunkMiddleware = require('redux-thunk').default;
+const axios = require('axios');
 
 const initailState={
     loading:true,
@@ -21,15 +22,17 @@ const fetchUsersRequest =()=>{
     }
 };
 
-const fetchUsersRequest =()=>{
+const fetchUsersSuccess =(users)=>{
     return{
-        type:FETCH_USERS_SUCCESS
+        type:FETCH_USERS_SUCCESS,
+        payload:users
     }
 };
 
-const fetchUsersRequest =(error)=>{
+const fetchUsersFail =(error)=>{
     return{
-        type:FETCH_USERS_FAILURE
+        type:FETCH_USERS_FAILURE,
+        payload:error
     }
 };
 
@@ -41,16 +44,39 @@ const reducer = (state = initailState, action)=>{
             };
         case FETCH_USERS_SUCCESS:
             return{
+                ...state,
                 loading:false,
                 users:action.payload,
                 error:''
             };
-        case FETCH_USERS_SUCCESS:
+        case FETCH_USERS_FAILURE:
             return{
-            loading:true,
+                loading:true,
                 user:[],
                 error: action.payload
             };
     }
 };
+//Create an action creator that returns an action, thunk lets us return
+// A function instead of an action obj
+
+const fetchUsers =()=>{
+    //not a pure function, can make api calls, side effects, can dispatch action
+    return function(dispatch){
+        dispatch(fetchUsersRequest());
+        axios.get('https://jsonplaceholder.typicode.com/users')
+            .then(response => {
+                // Response is an array of user
+                // const users = response.data.map(user=>user.id);
+                const users = response.data;
+                dispatch(fetchUsersSuccess(users))
+            })
+            .catch(error=>{
+                dispatch(fetchUsersFail(error.message))
+            })
+    }
+};
+
 const store = createStore(reducer, applyMiddleware(thunkMiddleware));
+store.subscribe(()=>{console.log(store.getState())});
+store.dispatch(fetchUsers());
