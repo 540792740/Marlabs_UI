@@ -47,4 +47,6 @@
             2> The only way to change the state is to emit an ction, an object descriping what happen
             3> To specify how the satet tree is transformed by actions, you write pure reducers.
          d> Redux-logger
-                npm i --save redux-logger
+                `npm i --save redux-logger`
+                
+         e> `npm install axios redux-thunk`
