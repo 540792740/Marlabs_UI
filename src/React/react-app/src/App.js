@@ -4,6 +4,7 @@ import './App.css';
 import './Components/Apr_10_appStyle.css'
 import Apr15AntdTest from "./Apr_9_ReactVideo/Apr_15_antdTest";
 import CommentList from "./Apr_9_ReactVideo/Apr_15_CommentList";
+import Apr116Hoc from "./Apr_9_ReactVideo/Apr_116_HOC";
 
 
 class App extends Component{
@@ -46,6 +47,7 @@ class App extends Component{
               {/*{this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}*/}
               <Apr15AntdTest></Apr15AntdTest>   <hr/>
               <CommentList></CommentList>   <hr/>
+              <Apr116Hoc></Apr116Hoc>
 
               {/*    Day 2 Apr 10*/}
               {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}

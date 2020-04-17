@@ -11,7 +11,16 @@
             <Comp title = {} onSubmit=>{this.onSubmit}>
             
             
-2.  HOC: Higher-Order component
-        Memo Component:
-            const Comment = React.memo(function(){return ...}) -> return pure component             
-44：26
+2.  HOC: Higher-Order component: 
+        a>  a component(actually is a function), receive a "C", return a "C"
+        b>  improve reusability
+            Memo Component:
+                const Comment = React.memo(function(){return ...}) -> return pure component             
+
+        c>  Simplify Higher order component:
+            `npm install --save-dev babel-plugin-transform-decorators-legacy`
+            in override.js: add:
+                config = injectBabelPlugin(
+                ['@babel/plugin-proposal-decorators', { "legacy": true }],
+                config,
+                )
