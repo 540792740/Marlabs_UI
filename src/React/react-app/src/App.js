@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
-import Apr15AntdTest from "./Apr_9_ReactVideo/Apr_15_antdTest";
-import CommentList from "./Apr_9_ReactVideo/Apr_15_CommentList";
-import Apr116Hoc from "./Apr_9_ReactVideo/Apr_116_HOC";
 import Apr16Conposition from "./Apr_9_ReactVideo/Apr_16_Composition";
 
 
@@ -46,9 +43,9 @@ class App extends Component{
               {/*<Apr9StateTest></Apr9StateTest><hr/>*/}
               {/*<Apr9CartSample></Apr9CartSample><hr/>*/}
               {/*{this.state.prop && <Apr12LifeCycle prop={this.state}></Apr12LifeCycle>}*/}
-              <Apr15AntdTest></Apr15AntdTest>   <hr/>
-              <CommentList></CommentList>   <hr/>
-              <Apr116Hoc></Apr116Hoc>   <hr/>
+              {/*<Apr15AntdTest></Apr15AntdTest>   <hr/>*/}
+              {/*<CommentList></CommentList>   <hr/>*/}
+              {/*<Apr116Hoc></Apr116Hoc>   <hr/>*/}
               <Apr16Conposition></Apr16Conposition>
 
               {/*    Day 2 Apr 10*/}

@@ -6,6 +6,9 @@ function Dialog(props){
     return(
     <div style={{border: `4px solid ${props.color || 'blue'}`}}>
         {props.children}
+        <div className="footer">
+            {props.footer}
+        </div>
     </div>
     )
 }
