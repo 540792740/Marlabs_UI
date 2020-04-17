@@ -24,3 +24,6 @@
                 ['@babel/plugin-proposal-decorators', { "legacy": true }],
                 config,
                 )
+
+3.  Composition: safety and specific compared with inherent(which is not Recommended )
+        a>  

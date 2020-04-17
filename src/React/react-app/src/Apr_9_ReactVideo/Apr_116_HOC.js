@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 
-//display component
-function KeKa(props){
-    return <div>{props.stage}-{props.name}</div>
-}
 
 // HOC Component
 const withKeKa = Comp => {
@@ -16,11 +12,9 @@ const withKeKa = Comp => {
         componentDidMount() {
             console.log('Do something')
         }
-
         render() {
+            // return <Comp {...props}/>
             return <Comp {...this.props} name={name}/>
-
-            // return props => <Comp {...props} name={name}/>
         }
     };
 };
@@ -31,13 +25,25 @@ const withLog = Comp =>{
 };
 
 
-const NewKeKa = withKeKa(withLog(KeKa));
-
+//display component, using decorator
+@withLog
+@withKeKa
+@withLog
+class KeKa extends Component{
+    render() {
+        return (
+            <div>
+                {this.props.stage}-{this.props.name}
+            </div>
+        )
+    }
+}
+// const NewKeKa = withKeKa(withLog(KeKa));
 class Apr116Hoc extends Component {
     render() {
         return (
             <div>
-                <NewKeKa stage="React"/>
+                <KeKa stage="React"/>
             </div>
         );
     }
