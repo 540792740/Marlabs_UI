@@ -57,4 +57,5 @@
          e> `npm install axios redux-thunk`
 
 ###5. Hook
-        a> import useState
+        a> Using `state` without create class, just using function
+        b> import useState
