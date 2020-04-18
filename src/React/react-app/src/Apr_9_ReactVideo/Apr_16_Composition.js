@@ -51,14 +51,17 @@ function Dialog(props){
 function RadioGroup(props){
     return <div>
         {React.Children.map(props.children, child=>{
-            child.props.name = props.name;
+            // Clone
+            return React.cloneElement(child, {name:props.name});
         })}
     </div>
 }
 
-function Radio(props) {
+function Radio({children, ...rest}) {
     return(
-        <label type="radio" {...props}></label>
+        <label>
+            <input type="radio" {...rest}/>
+        </label>
     )
 }
 
