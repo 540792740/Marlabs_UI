@@ -59,3 +59,5 @@
 ###5. Hook
         a> Using `state` without create class, just using function
         b> import useState
+        c> useEffect: Effect Hook, executed when render everytime
+        d> Custom Hook

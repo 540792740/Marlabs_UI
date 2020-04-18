@@ -1,13 +1,30 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+
+function UseAge() {
+    const [age, setAge] = useState(0);
+    useEffect(()=>{
+        setTimeout(()=>{
+            setAge(20);
+        }, 2000)
+    });
+    return age;
+}
 
 function Apr18HookTest(props) {
-
     const [count, setCount] = useState(0);
     const [age] = useState(20);
     const [fruit, setFruit] = useState('Banana');
     const [input, setInput] = useState("");
     const [fruits, setFruits] = useState(["apple", "Banana"]);
 
+    // useEffect hook, executed when render
+    // useEffect(() => {
+    //     document.title = `You click ${count} times`;
+    // });
+    useEffect(() => {
+        //Api, second para is dependence
+        console.log("Api executed")
+    }, [count]);
     return (
         <div>
             <p>Click {count} times</p>
@@ -20,7 +37,7 @@ function Apr18HookTest(props) {
                 <button onClick={() => setFruits([...fruits, input])}>New Fruit</button>
             </p>
             <ul>
-                {fruits.map(f => (<li onClick={()=>setFruit(f)} key={{f}}>{f}</li>))}
+                {fruits.map(f => (<li onClick={()=>setFruit(f)} key={{f}[1]}>{f}</li>))}
             </ul>
 
         </div>
