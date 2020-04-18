@@ -13,7 +13,7 @@
             
 ###2.  HOC: Higher-Order component: 
         a>  a component(actually is a function), receive a "C", return a "C"
-        b>  improve reusability
+        b>  improve reusability, add property
             Memo Component:
                 const Comment = React.memo(function(){return ...}) -> return pure component             
 
@@ -24,9 +24,13 @@
                 ['@babel/plugin-proposal-decorators', { "legacy": true }],
                 config,
                 )
+        d>   Decorator:
+                1> should be used in order before `class` not `function`
 
 ###3.  Composition: safety and specific compared with inherent(which is not Recommended )
-        a>  
+        a>  Add functions to orighinal component
+        b>  Core: props.children 
+        c>  If want to add/change props, need to use React.cloneElement()
         
         
         
