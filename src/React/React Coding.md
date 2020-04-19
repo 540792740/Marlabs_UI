@@ -73,6 +73,11 @@
                 `static contextType = MyContext;`
       
 ###6. Antd Form
-        a>
+        a> Setps:
+            1> Regular class, just contain Login in and Password
+            2> HOC component, wrap `input`  event, get input validation   
+            3> Provide validation form to class based on data
+            4> Most important: getFieldDec, can be handle in parent component
+            5> Finish validation rules.
         b>
         c>

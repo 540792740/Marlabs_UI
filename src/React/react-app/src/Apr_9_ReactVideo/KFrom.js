@@ -54,7 +54,7 @@ function KFromCreate(Comp){
             cb(ret, this.state)
         };
 
-        // Create input decorator
+        // Create input decorator, return a HOC
         getFieldDec = (field, option) =>{
             //Save input config
             this.options[field] = option;
