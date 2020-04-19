@@ -66,5 +66,5 @@
         a> React.createContext
            Context.Provider
            Class.contextType
-           Context.Consumer
+           Context.Consumer: get element from parent tag
 
