@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-function UseAge() {
+function useAge() {
     const [age, setAge] = useState(0);
     useEffect(()=>{
         setTimeout(()=>{
@@ -12,7 +12,7 @@ function UseAge() {
 
 function Apr18HookTest(props) {
     const [count, setCount] = useState(0);
-    const [age] = useState(20);
+    const age = useAge(20);
     const [fruit, setFruit] = useState('Banana');
     const [input, setInput] = useState("");
     const [fruits, setFruits] = useState(["apple", "Banana"]);
@@ -30,7 +30,7 @@ function Apr18HookTest(props) {
             <p>Click {count} times</p>
             <button onClick={() => setCount(count + 1)}>CLick</button>
 
-            <p>Age{age}</p>
+            <p>Age{age? age: ' loading'}</p>
             <p>Selected Fruit : {fruit}</p>
             <p>
                 <input type="text" value={input} onChange={e=>setInput(e.target.value)}/>
