@@ -3,6 +3,7 @@ import './App.css';
 //Day 1
 import './Components/Apr_10_appStyle.css'
 import Apr19Context from "./Apr_9_ReactVideo/Apr_19_Context";
+import KFrom from "./Apr_9_ReactVideo/KFrom";
 
 
 class App extends Component{
@@ -48,8 +49,9 @@ class App extends Component{
               {/*<Apr116Hoc></Apr116Hoc>   <hr/>*/}
               {/*<Apr16Conposition></Apr16Conposition><hr/>*/}
               {/*<Apr18HookTest></Apr18HookTest> <hr/>*/}
-              <Apr19Context></Apr19Context>
-
+              <Apr19Context></Apr19Context> <hr/>
+              {/*<WrappedNormalLoginForm></WrappedNormalLoginForm>*/}
+              <KFrom></KFrom>
 
               {/*    Day 2 Apr 10*/}
               {/*<Apr10ParentComponent></Apr10ParentComponent><hr/>*/}

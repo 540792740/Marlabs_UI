@@ -5,7 +5,7 @@ const User = ({match}) => <p>User Component: {match.params.id}</p>;
 
 class Apr13Users extends Component {
     render() {
-        const {params} = this.props.match;
+        // const {} = this.props.match;
         return (
             <div>
                 <h3>Users</h3>
