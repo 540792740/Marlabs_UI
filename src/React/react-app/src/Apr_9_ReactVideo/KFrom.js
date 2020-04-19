@@ -82,13 +82,13 @@ function KFromCreate(Comp){
 @KFromCreate
 class KFrom extends Component {
     onSubmit = ()=>{
-        console.log("Submit ******")
+        console.log("Submit ******");
         this.props.validate((isValid, data) => {
             if(isValid){
                 //Submit
                 console.log("Login: " + data)
                 // Later Coding after Login
-                //...
+                //....
             }
             else{
                 //Fail
