@@ -51,7 +51,7 @@ function KFromCreate(Comp){
               this.validateField(field)
           );
             const ret = rets.every(v => v === true);
-            cb(ret)
+            cb(ret, this.state)
         };
 
         // Create input decorator
@@ -65,11 +65,16 @@ function KFromCreate(Comp){
                         value: this.state[field] || '',
                         onChange: this.handleChange
                     })}
+                    {/*    Validation error message*/}
+                    {this.state[field + 'Message'] && (
+                        <p style={{color:'red'}}>{this.state[field + 'Message']}</p>
+                    )}
+
                 </div>
             )
         };
         render(){
-            return <Comp getFieldDec = {this.getFieldDec}></Comp>
+            return <Comp getFieldDec = {this.getFieldDec} validate = {this.validate}></Comp>
         }
     }
 }
@@ -78,6 +83,18 @@ function KFromCreate(Comp){
 class KFrom extends Component {
     onSubmit = ()=>{
         console.log("Submit ******")
+        this.props.validate((isValid, data) => {
+            if(isValid){
+                //Submit
+                console.log("Login: " + data)
+                // Later Coding after Login
+                //...
+            }
+            else{
+                //Fail
+                alert("Fail to validation")
+            }
+        })
     };
 
     render() {
@@ -87,7 +104,7 @@ class KFrom extends Component {
                 {getFieldDec('Username', {rules:[{required:true, message:"User required"}]
                 })( <Input/>)}
 
-                {getFieldDec('Password', {rules:[{required:true, message:"User required"}]
+                {getFieldDec('Password', {rules:[{required:true, message:"Password required"}]
                 })( <Input type="password"/>)}
 
                 <Button onClick={this.onSubmit}>Login </Button>
