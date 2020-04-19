@@ -62,9 +62,14 @@
         c> useEffect: Effect Hook, executed when render everytime
         d> Custom Hook: based on useState
 
-###5. Context
-        a> React.createContext
-           Context.Provider
-           Class.contextType
-           Context.Consumer: get element from parent tag
+###5. Context:
+      Exasperating transfer parameters
+        a> React.createContext()
+         Context.Provider
+                Context.Consumer(in provider): get element from provider tag
+        b> Using hook as consumer by using
+                `const ctx = useContext(MyContext);`
+        c> Using class static contextType:
+                `static contextType = MyContext;`
+      
 
