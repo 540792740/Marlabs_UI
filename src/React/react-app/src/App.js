@@ -4,6 +4,7 @@ import './App.css';
 import './Components/Apr_10_appStyle.css'
 import Apr16Conposition from "./Apr_9_ReactVideo/Apr_16_Composition";
 import Apr18HookTest from "./Apr_9_ReactVideo/Apr_18_HookTest";
+import Apr19Context from "./Apr_9_ReactVideo/Apr_19_Context";
 
 
 class App extends Component{
@@ -48,7 +49,8 @@ class App extends Component{
               {/*<CommentList></CommentList>   <hr/>*/}
               {/*<Apr116Hoc></Apr116Hoc>   <hr/>*/}
               <Apr16Conposition></Apr16Conposition><hr/>
-              <Apr18HookTest></Apr18HookTest>
+              <Apr18HookTest></Apr18HookTest> <hr/>
+              <Apr19Context></Apr19Context>
 
 
               {/*    Day 2 Apr 10*/}

@@ -63,3 +63,8 @@
         d> Custom Hook: based on useState
 
 ###5. Context
+        a> React.createContext
+           Context.Provider
+           Class.contextType
+           Context.Consumer
+
