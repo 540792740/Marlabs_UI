@@ -15,7 +15,6 @@ const reducer = (state = initailState, action)=>{
             };
         case FETCH_USERS_SUCCESS:
             return{
-                ...state,
                 loading:false,
                 users:action.payload,
                 error:''
@@ -26,6 +25,10 @@ const reducer = (state = initailState, action)=>{
                 user:[],
                 error: action.payload
             };
+        default :
+            return{
+                state
+            }
     }
 };
 

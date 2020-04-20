@@ -1,9 +1,9 @@
-import React, {userEffect} from 'react';
+import React, {useEffect} from 'react';
 import {fetchUsers} from "../redux/user/userActions";
 import {connect} from "react-redux";
 
-function UserContainer({fetchUsers}) {
-    userEffect(()=>{
+function UserContainer({userData, fetchUsers}) {
+    useEffect(()=>{
         fetchUsers()
     }, []);
 
@@ -16,7 +16,7 @@ function UserContainer({fetchUsers}) {
                     <h3>User List</h3>
                     <div>
                         {userData && userData.users &&
-                        userData.users.map(user => <p>user.name</p>)}
+                        userData.users.map(user => <p>{user.name}</p>)}
                     </div>
                 </div>
             )
