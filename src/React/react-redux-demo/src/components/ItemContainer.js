@@ -26,6 +26,7 @@ const mapDispatchToProps = (dispatch, ownProps)=>{
 
     return {
         buyItem: () => dispatchFunction()
+        // buyItem:dispatchFunction
     }
 };
 
