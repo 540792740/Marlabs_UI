@@ -6,12 +6,13 @@ const initialState = {
 };
 
 const iceCreamReducer = (state = initialState, action) =>{
-    switch (action.type) {
-        case BUY_ICE_CREAM: return{
+    if (action.type === BUY_ICE_CREAM) {
+        return{
             ...state,
             numOfIceCreams: state.numOfIceCreams - 1
         };
-        default: return state
+    } else {
+        return state
     }
 };
 
