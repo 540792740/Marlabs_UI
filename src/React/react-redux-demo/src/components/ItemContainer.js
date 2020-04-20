@@ -9,9 +9,10 @@ function ItemContainer(props) {
         </div>
     );
 }
-const mapStateToProps = (dispatch, ownProps) =>{
-    const itemState = ownProps.cake ? state.cake.numOfCakes:
-        state.iceCream.numOfIceCreams
+const mapStateToProps = (state, ownProps) =>{
+    const itemState = ownProps.cake ?
+        state.cake.numOfCakes:
+        state.iceCream.numOfIceCreams;
     return {
         item:itemState
     }

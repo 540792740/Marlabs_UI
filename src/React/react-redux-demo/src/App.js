@@ -16,6 +16,7 @@ function App() {
             {/*<HooksCakeContainer></HooksCakeContainer>*/}
             <IceCreamContainer></IceCreamContainer> <hr/>
             <ItemContainer></ItemContainer>
+            <ItemContainer cake></ItemContainer>
         </div>
       </Provider>
   );
