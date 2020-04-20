@@ -7,6 +7,6 @@ const rootReducer = combineReducers({
     cake:cakeReducer,
     iceCream:iceCreamReducer,
     user:userReducer
-})
+});
 
 export default rootReducer

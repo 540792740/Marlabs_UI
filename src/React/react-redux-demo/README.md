@@ -69,3 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### `npm install redux-logger`
     `nom install --save redux-devtools-extension`
+    `npm install axios redux-thunk`
