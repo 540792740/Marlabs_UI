@@ -4,11 +4,11 @@ import {buyCake} from "../redux";
 
 function HooksCakeContainer(props) {
     //we accessing the numOfCakes from redux and storing it in a variable
-    const numOfCakes = useSelector(state => state.numOfCakes);
+    const numOfCakes = useSelector(state => state.cake.numOfCakes);
     const dispatch = useDispatch();
     return (
         <div>
-            <h3>Number of Cakes - {numOfCakes} </h3>
+            <h3>Number of Cakes = {numOfCakes} </h3>
             <button onClick={()=>dispatch(buyCake())}>Buy Cake</button>
         </div>
     );
