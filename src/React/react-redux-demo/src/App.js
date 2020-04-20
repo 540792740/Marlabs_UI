@@ -4,13 +4,16 @@ import './App.css';
 import {Provider} from 'react-redux';
 import store from './redux/store'
 import HooksCakeContainer from "./components/hooksCakeContainer";
+import IceCreamContainer from "./components/IceCreamContainer";
+import CakeContainer from "./components/CakeContainer";
 
 function App() {
   return (
       <Provider store={store}>
         <div className="App">
-          {/*<CakeContainer></CakeContainer>*/}
-          <HooksCakeContainer></HooksCakeContainer>
+            <CakeContainer></CakeContainer>
+            <HooksCakeContainer></HooksCakeContainer>
+            <IceCreamContainer></IceCreamContainer>
         </div>
       </Provider>
   );
