@@ -10,6 +10,8 @@ function CakeContainer(props) {
         </div>
     );
 }
+
+// state here belongs to the redux
 const mapStateToProps = (state) =>{
     return{
         numOfCakes : state.cake.numOfCakes
