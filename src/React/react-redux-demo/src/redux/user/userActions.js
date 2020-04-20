@@ -6,7 +6,7 @@ const fetchUsersFailure = (error) =>{
         type: FETCH_USERS_FAILURE,
         payload: error
     }
-}
+};
 
 export const fetchUsers =()=>{
     //not a pure function, can make api calls, side effects, can dispatch action
