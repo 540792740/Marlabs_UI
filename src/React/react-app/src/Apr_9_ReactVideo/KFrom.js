@@ -9,6 +9,7 @@ function KFromCreate(Comp){
 
             this.options = {};
             this.state = {};
+            //
         }
 
         handleChange = e =>{
