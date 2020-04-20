@@ -57,10 +57,12 @@
          e> `npm install axios redux-thunk`
 
 ###5. Hook
-        a> Using `state` without create class, just using function
+        a> Using `state` without create class, just using function,
+            subscribe to store and dispatch actions without connect()
         b> import useState
         c> useEffect: Effect Hook, executed when render everytime
         d> Custom Hook: based on useState
+        e> `userSelector hook`: 
 
 ###5. Context:
       Exasperating transfer parameters
