@@ -3,7 +3,10 @@
   column-gap: 1em;
   padding:1em;
   margin-left: 150px
-
-
-
+}
+.NoteSection_container_empty{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:red;
 }
