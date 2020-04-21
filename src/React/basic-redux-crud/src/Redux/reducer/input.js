@@ -1,5 +1,6 @@
 import actionType from "../actionType";
 
+
 const initialState = {
     title:'',
     content:'',
