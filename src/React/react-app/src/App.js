@@ -4,7 +4,8 @@ import './App.css';
 import './Components/Apr_10_appStyle.css'
 import Apr19Context from "./Apr_9_ReactVideo/Apr_19_Context";
 import KFrom from "./Apr_9_ReactVideo/KFrom";
-import HooksCakeContainer from "../../react-redux-demo/src/components/hooksCakeContainer";
+// import HooksCakeContainer from "../../react-redux-demo/src/components/hooksCakeContainer";
+import Apr21Layout from "./Components/Apr_21_Layout";
 
 
 class App extends Component{
@@ -71,7 +72,8 @@ class App extends Component{
               {/*<Apr13HoverCounter></Apr13HoverCounter>*/}
 
               {/*Day 46 Apr 20*/}
-              <HooksCakeContainer></HooksCakeContainer>
+              {/*<HooksCakeContainer></HooksCakeContainer>*/}
+              <Apr21Layout></Apr21Layout>
 
         </div>
         )
