@@ -4,7 +4,7 @@ class Apr21Footer extends Component {
     render() {
         return (
             <div>
-
+                Footer
             </div>
         );
     }
