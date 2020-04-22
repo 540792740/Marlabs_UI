@@ -21,20 +21,20 @@ function NoteSection() {
     }
     return (
         <div className="NoteSection_container">
-            {notes.map((item, index) =>(
-                <NoteItem
-                    title={item.title}
-                    content= {item.content}
-                    onItemClicked={() => {
-                        onItemClicked(item, index);
-                    }}
-                />
-            ))}
-            {/*<NoteItem title="note Title" content= "Note Content"></NoteItem>*/}
-            {/*<NoteItem title="note Title" content= "Note Content"></NoteItem>*/}
-            {/*<NoteItem title="note Title" content= "Note Content"></NoteItem>*/}
-            {/*<NoteItem title="note Title" content= "Note Content"></NoteItem>*/}
-            {/*<NoteItem title="note Title" content= "Note Content"></NoteItem>*/}
+            {notes.map((item, index) =>{
+                if(item){
+                    return (
+                        <NoteItem
+                            title={item.title}
+                            content= {item.content}
+                            onItemClicked={() => {
+                                onItemClicked(item, index);
+                        }}
+                    />
+                    );
+                }
+                return null;
+            })}
         </div>
     );
 }
