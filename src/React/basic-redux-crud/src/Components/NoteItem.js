@@ -1,7 +1,7 @@
 import React from 'react';
 import './NoteItem.style.scss'
 
-const NoteItem ({title, content, onItemClick}) => {
+const NoteItem  =  ({title, content, onItemClick}) => {
     return (
         <div className="NoteItem_container"
              role="button"
@@ -11,6 +11,6 @@ const NoteItem ({title, content, onItemClick}) => {
             <p>{content}</p>
         </div>
     );
-}
+};
 
 export default NoteItem;
