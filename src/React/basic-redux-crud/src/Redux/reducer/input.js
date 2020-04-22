@@ -2,6 +2,7 @@ import actionType from "../actionType";
 
 
 const initialState = {
+    id = -1,
     title:'',
     content:'',
 };
