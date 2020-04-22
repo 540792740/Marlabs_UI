@@ -3,7 +3,7 @@ import './App.css';
 // import logo from './logo.svg'
 import {Provider} from 'react-redux';
 // import store from './redux/store'
-import store from "./components/Apr_21_store";
+import store from "./components/store/Apr_21_index";
 import Apr21ReduxTest from "./components/Apr_21_reduxTest";
 
 function App() {
