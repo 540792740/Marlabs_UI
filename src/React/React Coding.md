@@ -45,8 +45,11 @@
                         D> Register listenners via subscribe(listenner)
                         E> Handles unregistering, by a function returned  by subscribe
                 2> `Action`: Describes the changes in the sate of the App
-                3> `Reducer`: carries out the sate transition depending on the action
-        
+                        A> dispatch(action)
+                3> `Reducer`: state initialize and update
+                        A> Carries out the state transition depending on the action
+                        
+                        
         c> principle:
             1>
             2> The only way to change the state is to emit an ction, an object descriping what happen
