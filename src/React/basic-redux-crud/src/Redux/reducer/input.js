@@ -23,9 +23,7 @@ export default (state = initialState, action) =>{
             }
         }
         case actionType.RESET_INPUT:{
-            return{
-                initialState
-            }
+            return initialState
         }
         default :
             return state;
