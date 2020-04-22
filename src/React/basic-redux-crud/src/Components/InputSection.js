@@ -20,8 +20,17 @@ const  InputSection = () => {
         else{alert("Fill Empty")}
     };
 
-    const deleteNote = () =>{
+    const updateNote = () =>{
+        if(title && content){
+            dispatch(noteActions.updateNote(id,{
+                title, content
+            }))
+        }
+        dispatch(inputActions.resetInputs())
+    };
 
+    const deleteNote = () =>{
+        dispatch(inputActions.deleteNote(id))
     };
 
     return (
@@ -37,7 +46,7 @@ const  InputSection = () => {
                 onChange={e => dispatch(inputActions.setInputContent(e.target.value))}
             ></textarea>
             <div className="inputSection_container_btnWrapper">
-                <button onClick={addNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
+                <button onClick={id === -1 ? addNote : updateNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
                 {id !== -1 && <button onClick={deleteNote} style={{marginLeft: '1em',backgroundColor:'red'}}>Delete Note</button>}
             </div>
             </div>
