@@ -35,7 +35,7 @@
         
         
 ###4.  Redux:  Redux is a predictable state container for JS app
-        a>  `npm install redux`
+        a>  `npm i redux -s`
             `npm install react-redux`
         b>      1>`Store`： holds the state of Application
                     Responsibilities:
