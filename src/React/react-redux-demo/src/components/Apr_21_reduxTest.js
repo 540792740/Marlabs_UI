@@ -1,17 +1,23 @@
 import React from 'react';
-import store from "./Apr_21_store";
+// import store from "./Apr_21_store";
+import {connect} from 'react-redux'
 
+const mapStateToProps = state => ({num: state});
+const mapDispatchToProps = {
+    add:() =>({type:'add'}),
+    minus:() =>({type:'minus'})
+};
 
-function Apr21ReduxTest(props) {
+function Apr21ReduxTest({num, add, minus}) {
     return (
         <div>
-            <p>{store.getState()}</p>
+            <p>{num}</p>
             <div>
-                <button onClick={()=>store.dispatch({type:'minus'})}> - </button>
-                <button onClick={()=>store.dispatch({type:'add'})}> + </button>
+                <button onClick={minus}> - </button>
+                <button onClick={add}> + </button>
             </div>
         </div>
     );
 }
 
-export default Apr21ReduxTest;
+export default connect(mapStateToProps, mapDispatchToProps)(Apr21ReduxTest);

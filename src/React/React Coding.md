@@ -37,27 +37,26 @@
 ###4.  Redux:  Redux is a predictable state container for JS app
         a>  `npm i redux -s`
             `npm install react-redux`
-        b>      1>`Store`： holds the state of Application
-                    Responsibilities:
-                        A> Holds application state
-                        B> Allows access to state via getState()
-                        C> Allows state to be updated via dispatch
-                        D> Register listenners via subscribe(listenner)
-                        E> Handles unregistering, by a function returned  by subscribe
-                2> `Action`: Describes the changes in the sate of the App
-                        A> dispatch(action)
-                3> `Reducer`: state initialize and update
-                        A> Carries out the state transition depending on the action
-                        
-                        
-        c> principle:
-            1>
-            2> The only way to change the state is to emit an ction, an object descriping what happen
-            3> To specify how the satet tree is transformed by actions, you write pure reducers.
-         d> Redux-logger
+        b>  1>`Store`： holds the state of Application
+                Responsibilities:
+                    A> Holds application state
+                    B> Allows access to state via getState()
+                    C> Allows state to be updated via dispatch
+                    D> Register listenners via subscribe(listenner)
+                    E> Handles unregistering, by a function returned  by subscribe
+            2> `Action`: Describes the changes in the sate of the App
+                    A> dispatch(action)
+            3> `Reducer`: state initialize and update
+                    A> Carries out the state transition depending on the action
+        C> Provider: Using context to pass parameter.
+            1>  in app.js: <Provider store={store}>
+        d> {connect} is a HOC:
+                connect by mapping using mapStateToPRops and mapDispatchToProps
+        e> Redux-logger
                 `npm i --save redux-logger`
-                
-         e> `npm install axios redux-thunk`
+        f> thunk
+                 `npm install axios redux-thunk`
+         
 
 ###5. Hook
         a> Using `state` without create class, just using function,
@@ -86,3 +85,4 @@
             5> Finish validation rules.
         b>
         c>
+
