@@ -52,10 +52,11 @@
             1>  in app.js: <Provider store={store}>
         d> {connect} is a HOC:
                 connect by mapping using mapStateToPRops and mapDispatchToProps
-        e> Redux-logger
-                `npm i --save redux-logger`
-        f> thunk
-                 `npm install axios redux-thunk`
+        e>  applyMiddleware:
+                1>Redux-logger: 日志记录
+                    `npm i --save redux-logger`
+                2> thunk: 异步操作
+                    `npm i axios redux-thunk`
          
 
 ###5. Hook
