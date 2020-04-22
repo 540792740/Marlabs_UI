@@ -6,6 +6,7 @@ import inputActions from "../Redux/actions/inputActions";
 
 const  InputSection = () => {
     const title = useSelector(state =>state.inputs.title);
+    const id = useSelector(state =>state.inputs.id);
     const content = useSelector(state =>state.inputs.content);
     const dispatch = useDispatch();
     const addNote = () =>{
@@ -16,11 +17,15 @@ const  InputSection = () => {
             }));
             dispatch(inputActions.resetInputs())
         }
-        else{alert("Fill")}
+        else{alert("Fill Empty")}
+    };
+
+    const deleteNote = () =>{
+
     };
 
     return (
-        <div className="inputSection_container">
+        <div className="inputSection_container_btnWrapper">
             <input type="text"
                    placeholder="Note Title"
                    value={title}
@@ -31,8 +36,8 @@ const  InputSection = () => {
                 value={content}
                 onChange={e => dispatch(inputActions.setInputContent(e.target.value))}
             ></textarea>
-            <button onClick={addNote}>Add Note</button>
-
+            <button onClick={addNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
+            <button onClick={deleteNote}>Delete Note</button>
         </div>
     );
 };
