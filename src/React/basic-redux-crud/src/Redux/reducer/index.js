@@ -1,7 +1,8 @@
 import {combineReducers} from "redux";
-
-import notes from './notes'
+import inputs from './input';
+import notes from './notes';
 
 export default combineReducers({
     notes,
+    inputs,
 })

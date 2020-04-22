@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import {Provider} from 'react-redux'
 import store from './Redux/createStore'
-import InputSection from "./Components/inputSection";
+import InputSection from "./Components/InputSection";
 import NoteSection from "./Components/NoteSection";
 
 function App() {
