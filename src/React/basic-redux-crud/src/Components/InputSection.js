@@ -30,7 +30,7 @@ const  InputSection = () => {
     };
 
     const deleteNote = () =>{
-        dispatch(inputActions.deleteNote(id))
+        dispatch(noteActions.deleteNote(id))
     };
 
     return (
