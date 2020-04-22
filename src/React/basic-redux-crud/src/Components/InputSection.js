@@ -38,7 +38,7 @@ const  InputSection = () => {
             ></textarea>
             <div className="inputSection_container_btnWrapper">
                 <button onClick={addNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
-                <button onClick={deleteNote} style={{marginLeft: '1em',backgroundColor:'red'}}>Delete Note</button>
+                {id !== -1 && <button onClick={deleteNote} style={{marginLeft: '1em',backgroundColor:'red'}}>Delete Note</button>}
             </div>
             </div>
 
