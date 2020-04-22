@@ -25,7 +25,7 @@ const  InputSection = () => {
     };
 
     return (
-        <div className="inputSection_container_btnWrapper">
+        <div className="inputSection_container">
             <input type="text"
                    placeholder="Note Title"
                    value={title}
@@ -36,9 +36,12 @@ const  InputSection = () => {
                 value={content}
                 onChange={e => dispatch(inputActions.setInputContent(e.target.value))}
             ></textarea>
-            <button onClick={addNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
-            <button onClick={deleteNote}>Delete Note</button>
-        </div>
+            <div className="inputSection_container_btnWrapper">
+                <button onClick={addNote}>{id === -1 ? "Add Note" : "Update node"}Add Note</button>
+                <button onClick={deleteNote} style={{marginLeft: '1em',backgroundColor:'red'}}>Delete Note</button>
+            </div>
+            </div>
+
     );
 };
 
