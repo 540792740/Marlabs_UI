@@ -76,7 +76,7 @@ const Login = connect(
         return(
             <div>
                 <p>Login</p> <hr/>
-                <button onClick={login}>Login</button>
+                <button onClick={login} disabled={loading}>{loading ? "Loading..." : "login"}</button>
             </div>
         )
     });
