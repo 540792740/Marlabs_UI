@@ -97,3 +97,7 @@
             3> `Redirect` :  navigate to new location which can override current location
             4> `Route` : most time, Route in Switch tag, render some UI when its path matches url
             5> `Switch`: Render the first child <Route> or <Redirect>
+
+###8. Webpack:
+        a> npm init -y
+        b> npm i -D webpack webpack-cli
