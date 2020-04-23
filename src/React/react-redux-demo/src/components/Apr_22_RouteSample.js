@@ -43,14 +43,16 @@ function NoMatch({location}){
 
 // Private Route
 // <P.R. component={about} path="/about"...>
-function privateRoute({component: Comp, isLogin, ...rest}){
+function PrivateRoute({component: Comp, isLogin, ...rest}){
     // Verify
     //render: dynamic render
     return(
         <Route {...rest} render={
             props =>
                 isLogin? <Comp></Comp> :
-                    <Redirect to={{pathname:"./login", redirect: props.location.pathname}}></Redirect>
+                    <Redirect to={{pathname:"./login",
+                        state:{redirect: props.location.pathname}}}>
+                    </Redirect>
         }></Route>
     )
 }
@@ -86,7 +88,7 @@ function Apr22RouteSample(props) {
                         {/*Router: router is component*/}
                         <Route exact path="/" component={Home}></Route>
                         <Route path="/detail/:course" component={Detail}></Route>
-                        <Route path="/about" component={About}></Route>
+                        <PrivateRoute path="/about" component={About}></PrivateRoute>
                         <Route path="/login" component={Login}></Route>
                         {/*404 has no path, can be matched*/}
                         <Route component={NoMatch}></Route>

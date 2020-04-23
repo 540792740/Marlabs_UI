@@ -103,6 +103,9 @@
                                 isLogin? <Comp></Comp> :
                                     <Redirect to={{pathname:"./login", redirect: props.location.pathname}}></Redirect>
                         }></Route>)
+             2> in return: 
+                <PrivateRoute path="/about" component={About}></PrivateRoute>
+
 ###8. Webpack:
         a> npm init -y
         b> npm i -D webpack webpack-cli
