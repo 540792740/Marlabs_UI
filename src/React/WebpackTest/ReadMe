@@ -1,0 +1,3 @@
+run by:
+    npm run build
+    npm run start:dev
