@@ -91,3 +91,9 @@
 
 ###7. React-router
         a>  `npm i react-router-dom`
+        b>  Conponent:
+            1> `BrowserRouter`:  router's tag
+            2> `Link` : provide accessible navigation 
+            3> `Redirect` :  navigate to new location which can override current location
+            4> `Route` : most time, Route in Switch tag, render some UI when its path matches url
+            5> `Switch`: Render the first child <Route> or <Redirect>

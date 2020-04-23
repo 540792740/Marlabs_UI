@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Link, Redirect, Route, Switch} from 'react-router-dom'
 
 function Home(params){
     return <div>
@@ -12,17 +12,21 @@ function Home(params){
     </div>
 }
 function About(params){
-    return <div>About
-        <h3>Information Center</h3>
-        <div>
-            <Link to="about/me">Person Information</Link>
-            <Link to="about/order">Order Tracking</Link>
+    return (
+        <div>About
+            <h3>Information Center</h3>
+            <div>
+                <Link to="/about/me">Person Information</Link>
+                <Link to="/about/order">Order Tracking</Link>
+            </div>
+            <Switch>
+                <Route path="/about/me" component={()=> <div>Me</div>}/>
+                <Route path="/about/order" component={()=> <div>Order</div>}/>
+                {/*Default Naigation*/}
+                <Redirect to="/about/me"></Redirect>
+            </Switch>
         </div>
-        <Switch>
-            <Route path="about/me" component={()=>(<div>Me</div>)}></Route>
-            <Route path="about/order" component={()=>(<div>Order</div>)}></Route>
-        </Switch>
-    </div>
+    )
 }
 function Detail(props){
     // 1. history: nav
