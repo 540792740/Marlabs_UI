@@ -41,6 +41,35 @@ function NoMatch({location}){
     return <div>404, {location.pathname} does not exist</div>
 }
 
+// Private Route
+// <P.R. component={about} path="/about"...>
+function privateRoute({component: Comp, isLogin, ...rest}){
+    // Verify
+    //render: dynamic render
+    return(
+        <Route {...rest} render={
+            props =>
+                isLogin? <Comp></Comp> :
+                    <Redirect to={{pathname:"./login", redirect: props.location.pathname}}></Redirect>
+        }></Route>
+    )
+}
+
+//Login Component
+function Login({location, isLogin, login}){
+    const redirect = location.state.redirect || "/";
+    if(isLogin){
+        return <Redirect to={redirect}></Redirect>
+    }
+    // Else login page
+    return(
+        <div>
+            <p>Login</p> <hr/>
+            <button onClick={login}>Login</button>
+        </div>
+    )
+}
+
 
 function Apr22RouteSample(props) {
     return (
@@ -56,8 +85,9 @@ function Apr22RouteSample(props) {
                     <Switch>
                         {/*Router: router is component*/}
                         <Route exact path="/" component={Home}></Route>
-                        <Route path="/about" component={About}></Route>
                         <Route path="/detail/:course" component={Detail}></Route>
+                        <Route path="/about" component={About}></Route>
+                        <Route path="/login" component={Login}></Route>
                         {/*404 has no path, can be matched*/}
                         <Route component={NoMatch}></Route>
                     </Switch>

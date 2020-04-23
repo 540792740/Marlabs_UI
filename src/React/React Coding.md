@@ -97,7 +97,12 @@
             3> `Redirect` :  navigate to new location which can override current location
             4> `Route` : most time, Route in Switch tag, render some UI when its path matches url
             5> `Switch`: Render the first child <Route> or <Redirect>
-
+        c>  privateRoute
+            1>   return (<Route {...rest} render={
+                            props =>
+                                isLogin? <Comp></Comp> :
+                                    <Redirect to={{pathname:"./login", redirect: props.location.pathname}}></Redirect>
+                        }></Route>)
 ###8. Webpack:
         a> npm init -y
         b> npm i -D webpack webpack-cli
