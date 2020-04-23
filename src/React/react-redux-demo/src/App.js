@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 // import store from './redux/store'
 import store from "./components/store/Apr_21_index";
 import Apr21ReduxTest from "./components/Apr_21_reduxTest";
+import Apr22RouteSample from "./components/Apr_22_RouteSample";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
             {/*<UserContainer></UserContainer>*/}
 
             {/*Apr 21 Video*/}
-            <Apr21ReduxTest></Apr21ReduxTest>
-
+            <Apr21ReduxTest></Apr21ReduxTest>   <hr/>
+            <Apr22RouteSample></Apr22RouteSample>
 
         </div>
       </Provider>

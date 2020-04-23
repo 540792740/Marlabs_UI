@@ -56,7 +56,9 @@
                 1>Redux-logger: 日志记录
                     `npm i --save redux-logger`
                 2> thunk: 异步操作
-                    `npm i axios redux-thunk`
+        f>  combineReducer:
+                1> 
+
          
 
 ###5. Hook
@@ -87,3 +89,5 @@
         b>
         c>
 
+###7. React-router
+        a>  `npm i react-router-dom`
