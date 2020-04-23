@@ -101,3 +101,9 @@
 ###8. Webpack:
         a> npm init -y
         b> npm i -D webpack webpack-cli
+        c> npm i http-server -g
+            http-server -o
+         d> npm i -D html-webpack-plugin html-loader
+         d> npm i -D webpack-dev-server
+            Json add:  "start:dev" : "webpack-dev-server"
+            npm run start:dev
