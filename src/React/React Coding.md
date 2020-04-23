@@ -107,3 +107,14 @@
          d> npm i -D webpack-dev-server
             Json add:  "start:dev" : "webpack-dev-server"
             npm run start:dev
+         e> bebel:
+            npm i -D @babel/core babel-loader @babel/preset-env
+         f> npm i -D file-loader
+         g> npm i -D node-sass
+            npm i -D style-loader css-loader sass-loader mini-css-extract-plugin
+
+###9. MERN:
+        a>  M
+        b>  E
+        c>  R
+        d>  N
