@@ -1,8 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Link, Redirect, Route, Switch} from 'react-router-dom'
 import {connect} from 'react-redux'
+import {login} from "./store/user.redux";
 
-function Home(params){
+function Home(){
     return <div>
         <h3>List of Course</h3>
         <ul>
@@ -12,7 +13,7 @@ function Home(params){
         Home
     </div>
 }
-function About(params){
+function About(){
     return (
         <div>About
             <h3>Information Center</h3>
@@ -59,10 +60,13 @@ const PrivateRoute = connect(
                         </Redirect>
             }></Route>
         )
-    })
+    });
 
 //Login Component
-const Login = connect()(
+const Login = connect(
+    state => ({isLogin: state.user.isLogin,
+    loading: state.user.loading
+    }), {login})(
     function ({location, isLogin, login, loading}){
         const redirect = location.state.redirect || "/";
         if(isLogin){
@@ -75,7 +79,7 @@ const Login = connect()(
                 <button onClick={login}>Login</button>
             </div>
         )
-    })
+    });
 
 
 function Apr22RouteSample(props) {
