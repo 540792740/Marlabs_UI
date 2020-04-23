@@ -62,19 +62,20 @@ const PrivateRoute = connect(
     })
 
 //Login Component
-function Login({location, isLogin, login}){
-    const redirect = location.state.redirect || "/";
-    if(isLogin){
-        return <Redirect to={redirect}></Redirect>
-    }
-    // Else login page
-    return(
-        <div>
-            <p>Login</p> <hr/>
-            <button onClick={login}>Login</button>
-        </div>
-    )
-}
+const Login = connect()(
+    function ({location, isLogin, login, loading}){
+        const redirect = location.state.redirect || "/";
+        if(isLogin){
+            return <Redirect to={redirect}></Redirect>
+        }
+        // Else login page
+        return(
+            <div>
+                <p>Login</p> <hr/>
+                <button onClick={login}>Login</button>
+            </div>
+        )
+    })
 
 
 function Apr22RouteSample(props) {
