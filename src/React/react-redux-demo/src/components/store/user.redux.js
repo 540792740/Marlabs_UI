@@ -1,14 +1,25 @@
-export const counterReducer = (state = 0, action) =>{
+const initial = {
+    isLogin: false,
+    loading: false
+}
+
+
+export const user = (state = initial, action) =>{
     switch(action.type){
-        case 'add':
-            return state + 1;
-        case 'minus':
-            return state  - 1;
+        case 'requestLogin':
+            return {
+                isLogin: false,
+                loading: true
+            };
+        case 'login':
+            return {
+                isLogin: true,
+                loading: false
+            };
         default:
             return state;
     }
 };
-
 
 
 //action creator
