@@ -23,10 +23,9 @@ export const user = (state = initial, action) =>{
 
 
 //action creator
-export const add = () => ({ type:'add' });
-export const minus = () => ({type:'minus'});
-export const asyncAdd = () =>dispatch =>{
+export const login = () =>dispatch =>{
+    dispatch({type:"requestLogin"});
     setTimeout(()=>{
-        dispatch({type:'add'})
-    }, 1500);
+        dispatch({type:'login'})
+    }, 2000);
 };

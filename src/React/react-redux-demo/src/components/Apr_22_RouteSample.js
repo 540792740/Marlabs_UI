@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Link, Redirect, Route, Switch} from 'react-router-dom'
+import {connect} from 'react-redux'
 
 function Home(params){
     return <div>
@@ -43,19 +44,22 @@ function NoMatch({location}){
 
 // Private Route
 // <P.R. component={about} path="/about"...>
-function PrivateRoute({component: Comp, isLogin, ...rest}){
-    // Verify
-    //render: dynamic render
-    return(
-        <Route {...rest} render={
-            props =>
-                isLogin? <Comp></Comp> :
-                    <Redirect to={{pathname:"./login",
-                        state:{redirect: props.location.pathname}}}>
-                    </Redirect>
-        }></Route>
-    )
-}
+const PrivateRoute = connect(
+    state => ({isLogin: state.user.isLogin})
+)(
+    ({component: Comp, isLogin, ...rest})=> {
+        // Verify
+        //render: dynamic render
+        return(
+            <Route {...rest} render={
+                props =>
+                    isLogin? <Comp></Comp> :
+                        <Redirect to={{pathname:"./login",
+                            state:{redirect: props.location.pathname}}}>
+                        </Redirect>
+            }></Route>
+        )
+    })
 
 //Login Component
 function Login({location, isLogin, login}){
