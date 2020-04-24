@@ -43,7 +43,7 @@
                     B> Allows access to state via getState()
                     C> Allows state to be updated via dispatch
                     D> Register listenners via subscribe(listenner)
-                    E> Handles unregistering, by a function returned  by subscribe
+                    E> Handles unregistering, by a function ret****urned  by subscribe
             2> `Action`: Describes the changes in the sate of the App
                     A> dispatch(action)
             3> `Reducer`: state initialize and update
