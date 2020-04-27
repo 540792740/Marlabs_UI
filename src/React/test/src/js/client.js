@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
+import {hashHistory, IndexRoute, Route, Router} from "react-router";
 
 import Favorites from "./pages/Favorites";
 import Todos from "./pages/Todos";
