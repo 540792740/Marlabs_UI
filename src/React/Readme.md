@@ -127,3 +127,7 @@
 
 
 ### basic-redux-crud
+
+#### Apr 27
+    npm intall expo-cli --global
+    expo -v
