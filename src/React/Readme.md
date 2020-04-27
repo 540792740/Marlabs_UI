@@ -128,6 +128,8 @@
 
 ### basic-redux-crud
 
-#### Apr 27
-    npm intall expo-cli --global
-    expo -v
+#### ReactNative
+    This is an React Native project:
+    with starting environment:
+        `npm intall expo-cli --global`
+        `expo -v`
