@@ -5,18 +5,7 @@ export default class Todos extends React.Component {
   constructor() {
     super();
    this.state = {
-    todos:[
-            {
-              id: 113464613,
-              text: "Go Shopping",
-              complete: false
-            },
-            {
-              id: 235684679,
-              text: "Pay Water Bills",
-              complete: false
-            },
-          ],
+    todos:,
         }
       }
 
