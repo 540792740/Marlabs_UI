@@ -59,6 +59,10 @@
                 3> saga:
                     `npm install --save redux-saga`
                     Fetch Data or Cache, easy to use, batter then thunk
+                    steps:
+                        a> store/saga.js:  
+                        b> store/index: 
+                        c>  
         f>  combineReducer:
                 1> 
 
@@ -132,3 +136,10 @@
 
 ####10. umi:
         a. 
+        
+####11. generator:
+        a. function* g(){}
+        b. function next(){
+                let {value, done} = gen.next();
+                       console.log(value);
+                       if(!done) next();}
