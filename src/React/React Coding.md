@@ -52,10 +52,13 @@
             1>  in app.js: <Provider store={store}>
         d> {connect} is a HOC:
                 connect by mapping using mapStateToPRops and mapDispatchToProps
-        e>  applyMiddleware:
+        e>  applyMiddleware (from action to store):
                 1>Redux-logger: 日志记录
                     `npm i --save redux-logger`
                 2> thunk: 异步操作
+                3> saga:
+                    `npm install --save redux-saga`
+                    Fetch Data or Cache, easy to use, batter then thunk
         f>  combineReducer:
                 1> 
 
@@ -127,4 +130,5 @@
         c>  R
         d>  N
 
-####10. MERN:
+####10. umi:
+        a. 
