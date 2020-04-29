@@ -1,4 +1,5 @@
-###1.  Basic Coding
+####1.  Basic Coding
+
     a>  If and loop: 
             {this.state.isLogin ? <p>{userInfo.name}</p> : Login}
             {this.state.message && <p>{this.state.message} </p>
@@ -10,8 +11,7 @@
     c>  Communication
             <Comp title = {} onSubmit=>{this.onSubmit}>
             
-            
-###2.  HOC: Higher-Order component: 
+####2.  HOC: Higher-Order component: 
         a>  a component(actually is a function), receive a "C", return a "C"
         b>  improve reusability, add property
             Memo Component:
@@ -27,14 +27,14 @@
         d>   Decorator:
                 1> should be used in order before `class` not `function`
 
-###3.  Composition: safety and specific compared with inherent(which is not Recommended )
+####3.  Composition: safety and specific compared with inherent(which is not Recommended )
         a>  Add functions to orighinal component
         b>  Core: props.children 
         c>  If want to add/change props, need to use React.cloneElement()
         
         
         
-###4.  Redux:  Redux is a predictable state container for JS app
+####4.  Redux:  Redux is a predictable state container for JS app
         a>  `npm i redux -s`
             `npm install react-redux`
         b>  1>`Store`： holds the state of Application
@@ -61,7 +61,7 @@
 
          
 
-###5. Hook
+####5. Hook
         a> Using `state` without create class, just using function,
             subscribe to store and dispatch actions without connect()
         b> import useState
@@ -69,7 +69,7 @@
         d> Custom Hook: based on useState
         e> `userSelector hook`: 
 
-###5. Context:
+####5. Context:
       Exasperating transfer parameters
         a> React.createContext()
          Context.Provider
@@ -79,7 +79,7 @@
         c> Using class static contextType:
                 `static contextType = MyContext;`
       
-###6. Antd Form
+####6. Antd Form
         a> Setps:
             1> Regular class, just contain Login in and Password
             2> HOC component, wrap `input`  event, get input validation   
@@ -89,7 +89,7 @@
         b>
         c>
 
-###7. React-router
+####7. React-router
         a>  `npm i react-router-dom`
         b>  Conponent:
             1> `BrowserRouter`:  router's tag
@@ -106,7 +106,7 @@
              2> in return: 
                 <PrivateRoute path="/about" component={About}></PrivateRoute>
 
-###8. Webpack:
+####8. Webpack:
         a> npm init -y
         b> npm i -D webpack webpack-cli
         c> npm i http-server -g
@@ -121,8 +121,10 @@
          g> npm i -D node-sass
             npm i -D style-loader css-loader sass-loader mini-css-extract-plugin
 
-###9. MERN:
+####9. MERN:
         a>  M
         b>  E
         c>  R
         d>  N
+
+####10. MERN:
