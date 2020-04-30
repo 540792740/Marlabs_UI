@@ -148,8 +148,12 @@
         a. App Categoay: 
             1. WebApp: render by browser
             2. NativeApp: render by mobile device
-            3. HybridApp: render by browser which was installed on mobile device
+            3. HybridApp: 
+                render by browser which was installed on mobile device
+                Coding using web language, then using framework wrap as App.
+                such as: Html5+, Lonic, wechat public account
         b. Advantage:
             FaceBook's ReactNative
             1. 性能和原生的一样
             2. 可跨平台 
+            3. 开发成本低
