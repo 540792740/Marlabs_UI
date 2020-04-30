@@ -3,9 +3,11 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 const GoalItem = (props) =>{
-    <View style={styles.listItem}>
-        <Text style={{fontSize:17}}>{props.title}</Text>
-    </View>
+    return (
+        <View style={styles.listItem}>
+            <Text style={{fontSize:17}}>{props.title}</Text>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
@@ -13,7 +15,9 @@ const styles = StyleSheet.create({
         padding:10,
         marginVertical:10,
         backgroundColor: "#F44336",
-        borderColor:"black",
+        borderColor:"#af8baf",
         borderWidth:1,
     }
 });
+
+export default GoalItem;
