@@ -37,10 +37,7 @@
 11. LifeCycle:
         a>  Before V16.0
                 componentDidCatch(error, info) -> error component
-            
-        
-        
-        
+           
         b>  After V16.0
             add Fiber
 12.  Routing:

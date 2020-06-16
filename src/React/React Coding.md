@@ -145,7 +145,7 @@
                        if(!done) next();}
 
 ####12. ReactNative:
-        a. App Categoay: 
+        a. App Category: 
             1. WebApp: render by browser
             2. NativeApp: render by mobile device
             3. HybridApp: 
@@ -157,4 +157,9 @@
             1. 性能和原生的一样
             2. 可跨平台 
             3. 开发成本低
-        c. Environment
+        c. Environment:
+            1. npm install create-react-native-app --global: 全局命令
+            2. npm start / expo start
+            3. Create a project
+            
+            

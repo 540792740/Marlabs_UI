@@ -3,7 +3,6 @@
 
 2.  Different between http and https:
         a>  HTTP: Hyper Text Transfer Protocol
-
         b>  HTTP    Unsecured; Port Number 80,  Operates at Application Layer
             HTTPS   Secured;  Port Number 443, Operates at transport Layer
         c>  HTTP:   No SSL certificates are required
@@ -20,11 +19,6 @@
 
 5.  textBox: Not Resizable -> Single Line
     textarea: Resizable -> Multi lines
-
-6.  Can we have one more form in one page?
-
-7.  Different between Text_box and textarea?
-        a>
 
 8. Selector:
     a> Basic Selector:
@@ -233,13 +227,6 @@
 
         d> JSON.parse(): Use the JavaScript function JSON.parse() to convert text into a JavaScript object
 
-
-        e>
-
-        f>
-
-
-
 22. AJAX: Asynchronous JavaScript and XML
         a>  Web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page
         b>  Advantage: Makes the application faster and more responsive to user actions.
@@ -266,13 +253,6 @@
 
         f>  CDATA area: Just like document.write()
 
-        g>
-
-        h>
-
-        i>
-        j>
-        k>
 
 25.  reader.onload = (function(theFile))(f) -> f trans to theFile
         console.log((function (x){return x*x;})(2));
